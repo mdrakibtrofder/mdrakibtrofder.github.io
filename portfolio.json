@@ -37,7 +37,8 @@
       "result": "GPA 5.00/5.00",
       "achievements": [
         "Finalist, Bangladesh Chemistry Olympiad, 2017"
-      ]
+      ],
+      "logo": "/lovable-uploads/03aae794-06a9-467e-b3bd-2f0f4adce92f.png"
     },
     {
       "degree": "B.Sc, Software Engineering",
@@ -46,7 +47,8 @@
       "cgpa": "3.78/4.00",
       "achievements": [
         "1st Runner-up, BUET CSE Fest Hackathon, 2023"
-      ]
+      ],
+      "logo": "/lovable-uploads/0e990ffe-7287-4b73-88c9-19ad5383d7a4.png"
     }
   ],
   "professional_experience": [
@@ -59,7 +61,8 @@
         "Developed end-to-end AI agent solutions leveraging the Gemini API.",
         "Restructured on-prem server infrastructure and implemented a fully automated CI/CD pipeline.",
         "Architected data infrastructure for geospatial data and processed large-scale satellite datasets for agro decision-making."
-      ]
+      ],
+      "logo": "/lovable-uploads/016002f1-cac3-4f20-ab46-f5f2aa8073c9.png"
     }
   ],
   "internship_experience": [
@@ -70,7 +73,8 @@
       "responsibilities": [
         "Analyzed and reconstructed existing software structures to create detailed datasets.",
         "Evaluated performance of reconstruction tools and studied limitations of LLMs in software reconstruction."
-      ]
+      ],
+      "logo": "/lovable-uploads/9807cfcd-be71-4379-9c34-282ffd9b28d5.png"
     },
     {
       "role": "Trainee Software Engineer",
@@ -79,7 +83,8 @@
       "responsibilities": [
         "Designed and built an in-house social media platform from prototype to deployment.",
         "Completed intensive training in core web development."
-      ]
+      ],
+      "logo": "/lovable-uploads/3f66c540-7a5c-4ceb-a5d0-3dc6647e4bfa.png"
     }
   ],
   "projects": [
