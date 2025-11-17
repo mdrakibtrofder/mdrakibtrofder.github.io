@@ -1,0 +1,122 @@
+{
+  "name": "MD. RAKIB TROFDER",
+  "contact": {
+    "phone": "+8801939649428",
+    "email": "mdrakibtrofder@gmail.com",
+    "website": "https://mdrakibtrofder.github.io"
+  },
+  "title": "Software Engineer (Web + ML Integrations)",
+  "technical_skills": {
+    "languages_frameworks": [
+      "Python",
+      "Javascript",
+      "Typescript",
+      "Shell",
+      "React",
+      "Node JS",
+      "Nest JS",
+      "Fast API"
+    ],
+    "tools_technologies": [
+      "Git",
+      "Github",
+      "Postgres",
+      "Redis",
+      "Docker",
+      "Jenkins",
+      "AWS",
+      "Google Gen AI",
+      "MCP Server"
+    ]
+  },
+  "education": [
+    {
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institute": "Notre Dame College, Dhaka",
+      "duration": "July 2016 - June 2018",
+      "result": "GPA 5.00/5.00",
+      "achievements": [
+        "Finalist, Bangladesh Chemistry Olympiad, 2017"
+      ]
+    },
+    {
+      "degree": "B.Sc, Software Engineering",
+      "institute": "IIT, University of Dhaka",
+      "duration": "January 2019 - December 2023",
+      "cgpa": "3.78/4.00",
+      "achievements": [
+        "1st Runner-up, BUET CSE Fest Hackathon, 2023"
+      ]
+    }
+  ],
+  "professional_experience": [
+    {
+      "role": "Associate Software Engineer",
+      "company": "Streams Tech Ltd.",
+      "duration": "January 2024 - Present",
+      "responsibilities": [
+        "Developed microservice-based web application for monitoring and evaluation systems using Angular, ASP.NET, and Python.",
+        "Developed end-to-end AI agent solutions leveraging the Gemini API.",
+        "Restructured on-prem server infrastructure and implemented a fully automated CI/CD pipeline.",
+        "Architected data infrastructure for geospatial data and processed large-scale satellite datasets for agro decision-making."
+      ]
+    }
+  ],
+  "internship_experience": [
+    {
+      "role": "Research Intern",
+      "company": "SEMERU Lab, William & Mary",
+      "duration": "August 2023 - December 2023",
+      "responsibilities": [
+        "Analyzed and reconstructed existing software structures to create detailed datasets.",
+        "Evaluated performance of reconstruction tools and studied limitations of LLMs in software reconstruction."
+      ]
+    },
+    {
+      "role": "Trainee Software Engineer",
+      "company": "Cefalo Bangladesh Ltd.",
+      "duration": "January 2023 - June 2023",
+      "responsibilities": [
+        "Designed and built an in-house social media platform from prototype to deployment.",
+        "Completed intensive training in core web development."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Software System Reconstruction Tool",
+      "technologies": ["Python", "Nest JS", "React JS"],
+      "description": "Translated Java code to JSON from repositories, hid information, regenerated using LLMs, and compared with actual system JSON."
+    },
+    {
+      "name": "Git, Docker & Kubernetes Bioscope",
+      "technologies": ["React", "Tailwind CSS"],
+      "description": "Developed an interactive platform with concept visualizations, animations, and command simulation tools for Git, Docker, and Kubernetes."
+    }
+  ],
+  "certificates": {
+    "AI_ML": [
+      "AI For Everyone (DeepLearning.AI)",
+      "Generative AI with Large Language Models (Coursera)",
+      "Intro to AI Agents and Agentic AI (365 Data Science)",
+      "Machine Learning for All (Coursera)"
+    ],
+    "frameworks": [
+      "MERN Stack with Blog Project (Udemy)",
+      "Learn React (Interactive Care)"
+    ],
+    "devops": [
+      "Google IT Support Certificate (Coursera)",
+      "Fully Automated MLOps (365 Data Science)",
+      "AWS Identity and Access Management (Udemy)",
+      "Amazon ECS (KodeKloud)"
+    ]
+  },
+  "links": [
+    "https://mdrakibtrofder.github.io/",
+    "https://github.com/rakib3004/spl3",
+    "https://riresearchlab.github.io/git/",
+    "https://riresearchlab.github.io/docker/",
+    "https://riresearchlab.github.io/kubernetes/"
+  ]
+}
