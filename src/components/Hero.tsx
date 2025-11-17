@@ -1,7 +1,7 @@
 
 import { ArrowDown, Github, Linkedin } from "lucide-react";
 
-const Hero = () => {
+const Hero = ({ name, title }: { name: string; title: string }) => {
   const scrollToAbout = () => {
     const aboutSection = document.getElementById("about");
     if (aboutSection) {
@@ -14,10 +14,10 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
-            Md. Rakib Trofder
+            {name}
           </h1>
           <h2 className="text-2xl md:text-3xl text-gray-300 mb-8 font-light">
-            Associate Software Engineer
+            {title}
           </h2>
           <div className="text-lg md:text-xl text-emerald-400 mb-8">
             @ Streams Tech Ltd. • Dhaka, Bangladesh

@@ -8,6 +8,7 @@ import Projects from "../components/Projects";
 import Education from "../components/Education";
 import Contact from "../components/Contact";
 import Navigation from "../components/Navigation";
+import portfolioData from "../../portfolio.json";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("home");
@@ -37,25 +38,25 @@ const Index = () => {
       <Navigation activeSection={activeSection} />
       <main>
         <section id="home">
-          <Hero />
+          <Hero name={portfolioData.name} title={portfolioData.title} />
         </section>
         <section id="about">
           <About />
         </section>
         <section id="skills">
-          <Skills />
+          <Skills skills={portfolioData.technical_skills} certificates={portfolioData.certificates} />
         </section>
         <section id="experience">
-          <Experience />
+          <Experience professional={portfolioData.professional_experience} internship={portfolioData.internship_experience} />
         </section>
         <section id="projects">
-          <Projects />
+          <Projects projects={portfolioData.projects} />
         </section>
         <section id="education">
-          <Education />
+          <Education education={portfolioData.education} />
         </section>
         <section id="contact">
-          <Contact />
+          <Contact contact={portfolioData.contact} links={portfolioData.links} />
         </section>
       </main>
     </div>

@@ -1,20 +1,27 @@
 
 import { Mail, Phone, Github, Linkedin, MapPin } from "lucide-react";
 
-const Contact = () => {
+const Contact = ({ contact, links }: {
+  contact: {
+    phone: string;
+    email: string;
+    website: string;
+  };
+  links: string[];
+}) => {
   const contactInfo = [
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      value: "mdrakibtrofder@gmail.com",
-      href: "mailto:mdrakibtrofder@gmail.com",
+      value: contact.email,
+      href: `mailto:${contact.email}`,
       color: "text-emerald-400"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       label: "Phone",
-      value: "+8801939649428",
-      href: "tel:+8801939649428",
+      value: contact.phone,
+      href: `tel:${contact.phone}`,
       color: "text-blue-400"
     },
     {
@@ -58,22 +65,22 @@ const Contact = () => {
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-          {contactInfo.map((contact, index) => (
+          {contactInfo.map((contactItem, index) => (
             <a
               key={index}
-              href={contact.href}
-              target={contact.href.startsWith('http') ? '_blank' : '_self'}
-              rel={contact.href.startsWith('http') ? 'noopener noreferrer' : ''}
+              href={contactItem.href}
+              target={contactItem.href.startsWith('http') ? '_blank' : '_self'}
+              rel={contactItem.href.startsWith('http') ? 'noopener noreferrer' : ''}
               className="bg-slate-800/40 rounded-lg p-6 border border-slate-700 hover:border-slate-600 transition-all duration-300 hover:scale-105 group"
             >
               <div className="flex items-center space-x-4">
-                <div className={`${contact.color} group-hover:scale-110 transition-transform`}>
-                  {contact.icon}
+                <div className={`${contactItem.color} group-hover:scale-110 transition-transform`}>
+                  {contactItem.icon}
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold">{contact.label}</h3>
+                  <h3 className="text-white font-semibold">{contactItem.label}</h3>
                   <p className="text-gray-400 group-hover:text-gray-300 transition-colors">
-                    {contact.value}
+                    {contactItem.value}
                   </p>
                 </div>
               </div>

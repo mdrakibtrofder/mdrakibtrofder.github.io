@@ -1,47 +1,27 @@
 
-const Experience = () => {
-  const experiences = [
-    {
-      title: "Associate Software Engineer",
-      company: "Streams Tech Ltd.",
-      location: "Dhaka, Bangladesh",
-      period: "Jan 2024 - Present",
-      type: "Full-time",
-      achievements: [
-        "Restructured deployment pipeline and scaled server/database provisioning by 60%",
-        "Managed Docker containers, optimized architectures, and improved database security",
-        "Automated pull request and deployment notifications with JIRA integration",
-        "Built scheduled backups and secure transfer jobs for system resilience"
-      ],
-      logo: "/lovable-uploads/016002f1-cac3-4f20-ab46-f5f2aa8073c9.png"
-    },
-    {
-      title: "Research Intern",
-      company: "SEMERU Lab, William & Mary",
-      location: "Virginia, USA",
-      period: "2023",
-      type: "Internship",
-      achievements: [
-        "Focused on software system reconstruction using GitHub APIs and OpenAI",
-        "Measured LLM-based reconstruction performance and effectiveness",
-        "Contributed to cutting-edge research in AI-driven software analysis"
-      ],
-      logo: "/lovable-uploads/9807cfcd-be71-4379-9c34-282ffd9b28d5.png"
-    },
-    {
-      title: "Trainee Software Engineer",
-      company: "Cefalo Bangladesh Ltd.",
-      location: "Dhaka, Bangladesh",
-      period: "2023",
-      type: "Internship",
-      achievements: [
-        "Worked on social media platform development with NodeJS/React stack",
-        "Designed user interface prototypes using Figma",
-        "Deployed applications to Netlify and Render platforms"
-      ],
-      logo: "/lovable-uploads/3f66c540-7a5c-4ceb-a5d0-3dc6647e4bfa.png"
-    }
-  ];
+const Experience = ({ professional, internship }: {
+  professional: {
+    role: string;
+    company: string;
+    duration: string;
+    responsibilities: string[];
+  }[];
+  internship: {
+    role: string;
+    company: string;
+    duration: string;
+    responsibilities: string[];
+  }[];
+}) => {
+  const experiences = [...professional, ...internship].map(exp => ({
+    title: exp.role,
+    company: exp.company,
+    location: "Dhaka, Bangladesh", // This can be added to JSON if needed
+    period: exp.duration,
+    type: professional.includes(exp as any) ? "Full-time" : "Internship",
+    achievements: exp.responsibilities,
+    logo: "/placeholder.svg" // This can be added to JSON if needed
+  }));
 
   return (
     <div className="py-20 px-4 bg-slate-800/20">

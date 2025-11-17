@@ -1,31 +1,32 @@
 
-const Skills = () => {
+const Skills = ({ skills, certificates }: {
+  skills: {
+    languages_frameworks: string[];
+    tools_technologies: string[];
+  };
+  certificates: {
+    AI_ML: string[];
+    frameworks: string[];
+    devops: string[];
+  };
+}) => {
   const skillCategories = [
     {
-      title: "Programming Languages",
-      skills: ["Python", "C#", "TypeScript", "Java"],
+      title: "Languages & Frameworks",
+      skills: skills.languages_frameworks,
       color: "emerald"
     },
     {
-      title: "Frameworks",
-      skills: ["Angular", "ASP.NET", "Flask", "ReactJS", "NestJS"],
+      title: "Tools & Technologies",
+      skills: skills.tools_technologies,
       color: "blue"
-    },
-    {
-      title: "Technologies",
-      skills: ["Docker", "Git", "PostgreSQL", "NGINX", "Shell", "MongoDB"],
-      color: "purple"
-    },
-    {
-      title: "Cloud & Tools",
-      skills: ["Jenkins", "GitHub", "Bitbucket", "GCP", "AWS", "Linux"],
-      color: "cyan"
-    },
-    {
-      title: "Specialties",
-      skills: ["CI/CD", "Containerization", "System Optimization", "Cloud Monitoring"],
-      color: "pink"
     }
+  ];
+
+  const allCertificates = [
+    ...certificates.AI_ML,
+    ...certificates.frameworks,
+    ...certificates.devops,
   ];
 
   const getColorClasses = (color: string) => {
@@ -46,8 +47,8 @@ const Skills = () => {
           Technical Skills
         </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillCategories.map((category, index) => (
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          {skillCategories.map((category) => (
             <div
               key={category.title}
               className={`bg-gradient-to-br ${getColorClasses(category.color)} rounded-lg p-6 border backdrop-blur-sm hover:scale-105 transition-all duration-300`}
@@ -70,7 +71,7 @@ const Skills = () => {
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-semibold mb-8 text-gray-300">Certifications</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {["Kubernetes", "AWS IAM", "MySQL", "Git", "Linux Admin", "System Administration"].map((cert) => (
+            {allCertificates.map((cert) => (
               <div
                 key={cert}
                 className="bg-slate-800/30 border border-slate-600 px-4 py-2 rounded-lg text-emerald-400 font-medium"
