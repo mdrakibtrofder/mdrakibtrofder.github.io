@@ -31,7 +31,7 @@ const Navigation = ({ activeSection }: NavigationProps) => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900/90 backdrop-blur-sm border-b border-slate-700">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold text-emerald-400">
+          <div className="text-xl font-bold bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
             Md. Rakib Trofder
           </div>
 
