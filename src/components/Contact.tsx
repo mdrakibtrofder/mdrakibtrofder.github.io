@@ -6,8 +6,8 @@ const Contact = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       label: "Email",
-      value: "bsse1129@iit.du.ac.bd",
-      href: "mailto:bsse1129@iit.du.ac.bd",
+      value: "mdrakibtrofder@gmail.com",
+      href: "mailto:mdrakibtrofder@gmail.com",
       color: "text-emerald-400"
     },
     {
@@ -20,15 +20,15 @@ const Contact = () => {
     {
       icon: <Github className="w-6 h-6" />,
       label: "GitHub",
-      value: "rakib3004",
-      href: "https://github.com/rakib3004",
+      value: "mdrakibtrofder",
+      href: "https://github.com/mdrakibtrofder",
       color: "text-purple-400"
     },
     {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
-      value: "rakib-iit",
-      href: "https://www.linkedin.com/in/rakib-iit/",
+      value: "mdrakibtrofder",
+      href: "https://www.linkedin.com/in/mdrakibtrofder/",
       color: "text-cyan-400"
     },
     {
