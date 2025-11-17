@@ -38,7 +38,7 @@
       "achievements": [
         "Finalist, Bangladesh Chemistry Olympiad, 2017"
       ],
-      "logo": "/lovable-uploads/03aae794-06a9-467e-b3bd-2f0f4adce92f.png"
+      "logo": "/organizations/notre-dame-college-dhaka.png"
     },
     {
       "degree": "B.Sc, Software Engineering",
@@ -48,7 +48,7 @@
       "achievements": [
         "1st Runner-up, BUET CSE Fest Hackathon, 2023"
       ],
-      "logo": "/lovable-uploads/0e990ffe-7287-4b73-88c9-19ad5383d7a4.png"
+      "logo": "/organizations/iit-university-of-dhaka.png"
     }
   ],
   "professional_experience": [
@@ -62,7 +62,7 @@
         "Restructured on-prem server infrastructure and implemented a fully automated CI/CD pipeline.",
         "Architected data infrastructure for geospatial data and processed large-scale satellite datasets for agro decision-making."
       ],
-      "logo": "/lovable-uploads/016002f1-cac3-4f20-ab46-f5f2aa8073c9.png"
+      "logo": "/organizations/streams-tech-ltd.png"
     }
   ],
   "internship_experience": [
@@ -74,7 +74,7 @@
         "Analyzed and reconstructed existing software structures to create detailed datasets.",
         "Evaluated performance of reconstruction tools and studied limitations of LLMs in software reconstruction."
       ],
-      "logo": "/lovable-uploads/9807cfcd-be71-4379-9c34-282ffd9b28d5.png"
+      "logo": "/organizations/semeru-lab-william-mary.png"
     },
     {
       "role": "Trainee Software Engineer",
@@ -84,7 +84,7 @@
         "Designed and built an in-house social media platform from prototype to deployment.",
         "Completed intensive training in core web development."
       ],
-      "logo": "/lovable-uploads/3f66c540-7a5c-4ceb-a5d0-3dc6647e4bfa.png"
+      "logo": "/organizations/cefalo-bangladesh-ltd.png"
     }
   ],
   "projects": [
