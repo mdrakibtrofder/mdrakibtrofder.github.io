@@ -81,39 +81,12 @@ const Contact = () => {
           ))}
         </div>
         
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-emerald-500/10 to-blue-500/10 rounded-lg p-8 border border-emerald-500/20">
-            <h3 className="text-2xl font-semibold text-emerald-400 mb-4">
-              Let's Build Something Amazing Together
-            </h3>
-            <p className="text-gray-300 mb-6">
-              Whether you're looking for a DevOps engineer, backend developer, or someone passionate 
-              about cloud infrastructure and AI-driven solutions, I'd love to hear from you.
-            </p>
-            <div className="flex justify-center space-x-4">
-              <a
-                href="mailto:bsse1129@iit.du.ac.bd"
-                className="bg-emerald-600 hover:bg-emerald-700 px-8 py-3 rounded-lg font-semibold transition-colors"
-              >
-                Send Email
-              </a>
-              <a
-                href="https://rakib3004.github.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-slate-700 hover:bg-slate-600 px-8 py-3 rounded-lg font-semibold transition-colors"
-              >
-                View Portfolio Site
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
       
       <div className="mt-16 text-center">
         <div className="border-t border-slate-700 pt-8">
           <p className="text-gray-500">
-            © 2024 Md. Rakib Trofder. Built with React, TypeScript, and Tailwind CSS.
+            © 2024 Md. Rakib Trofder
           </p>
         </div>
       </div>
