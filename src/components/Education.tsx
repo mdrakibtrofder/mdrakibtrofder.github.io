@@ -7,6 +7,7 @@ const Education = ({ education }: {
     result?: string;
     cgpa?: string;
     achievements: string[];
+    logo?: string; // Added logo field
   }[];
 }) => {
   return (
@@ -25,7 +26,7 @@ const Education = ({ education }: {
               <div className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
                 <div className="flex-shrink-0">
                   <img
-                    src="/placeholder.svg"
+                    src={edu.logo || "/placeholder.svg"} // Use logo if available, else placeholder
                     alt={`${edu.institute} logo`}
                     className="w-20 h-20 rounded-lg object-contain bg-white/5 p-2 border border-slate-600"
                   />

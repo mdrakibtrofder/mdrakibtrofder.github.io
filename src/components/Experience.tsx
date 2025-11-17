@@ -5,12 +5,14 @@ const Experience = ({ professional, internship }: {
     company: string;
     duration: string;
     responsibilities: string[];
+    logo?: string; // Added logo field
   }[];
   internship: {
     role: string;
     company: string;
     duration: string;
     responsibilities: string[];
+    logo?: string; // Added logo field
   }[];
 }) => {
   const experiences = [...professional, ...internship].map(exp => ({
@@ -20,7 +22,7 @@ const Experience = ({ professional, internship }: {
     period: exp.duration,
     type: professional.includes(exp as any) ? "Full-time" : "Internship",
     achievements: exp.responsibilities,
-    logo: "/placeholder.svg" // This can be added to JSON if needed
+    logo: exp.logo || "/placeholder.svg" // Use logo if available, else placeholder
   }));
 
   return (
