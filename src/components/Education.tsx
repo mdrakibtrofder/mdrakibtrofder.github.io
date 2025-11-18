@@ -24,11 +24,11 @@ const Education = ({ education }: {
               className="bg-slate-800/40 rounded-lg p-6 border border-slate-700 hover:border-slate-600 transition-all duration-300"
             >
               <div className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0 w-20 h-20 flex items-center justify-center rounded-lg bg-white/5 p-2 border border-slate-600">
                   <img
                     src={edu.logo || "/placeholder.svg"} // Use logo if available, else placeholder
                     alt={`${edu.institute} logo`}
-                    className="w-20 h-20 rounded-lg object-contain bg-white/5 p-2 border border-slate-600"
+                    className="max-w-full max-h-full object-contain"
                   />
                 </div>
                 

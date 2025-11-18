@@ -40,11 +40,13 @@ const Experience = ({ professional, internship }: {
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div className="flex items-start space-x-4">
+                <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 p-2">
                   <img
                     src={exp.logo}
                     alt={`${exp.company} logo`}
-                    className="w-12 h-12 rounded-lg object-contain bg-white/10 p-2"
+                    className="max-w-full max-h-full object-contain"
                   />
+                </div>
                   <div>
                     <h3 className="text-xl font-semibold text-emerald-400">{exp.title}</h3>
                     <h4 className="text-lg text-gray-300">{exp.company}</h4>
