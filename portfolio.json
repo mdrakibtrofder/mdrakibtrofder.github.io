@@ -101,20 +101,50 @@
   ],
   "certificates": {
     "AI_ML": [
-      "AI For Everyone (DeepLearning.AI)",
-      "Generative AI with Large Language Models (Coursera)",
-      "Intro to AI Agents and Agentic AI (365 Data Science)",
-      "Machine Learning for All (Coursera)"
+      {
+        "name": "AI For Everyone (DeepLearning.AI)",
+        "url": "https://ai-for-everyone"
+      },
+      {
+        "name": "Generative AI with Large Language Models (Coursera)",
+        "url": "https://generative-ai-with-large-language-models"
+      },
+      {
+        "name": "Intro to AI Agents and Agentic AI (365 Data Science)",
+        "url": "https://intro-to-ai-agents-and-agentic-ai"
+      },
+      {
+        "name": "Machine Learning for All (Coursera)",
+        "url": "https://machine-learning-for-all"
+      }
     ],
     "frameworks": [
-      "MERN Stack with Blog Project (Udemy)",
-      "Learn React (Interactive Care)"
+      {
+        "name": "MERN Stack with Blog Project (Udemy)",
+        "url": "https://mern-stack-with-blog-project"
+      },
+      {
+        "name": "Learn React (Interactive Care)",
+        "url": "https://learn-react"
+      }
     ],
     "devops": [
-      "Google IT Support Certificate (Coursera)",
-      "Fully Automated MLOps (365 Data Science)",
-      "AWS Identity and Access Management (Udemy)",
-      "Amazon ECS (KodeKloud)"
+      {
+        "name": "Google IT Support Certificate (Coursera)",
+        "url": "https://google-it-support-certificate"
+      },
+      {
+        "name": "Fully Automated MLOps (365 Data Science)",
+        "url": "https://fully-automated-mlops"
+      },
+      {
+        "name": "AWS Identity and Access Management (Udemy)",
+        "url": "https://aws-identity-and-access-management"
+      },
+      {
+        "name": "Amazon ECS (KodeKloud)",
+        "url": "https://amazon-ecs"
+      }
     ]
   },
   "links": [

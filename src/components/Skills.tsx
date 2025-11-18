@@ -5,9 +5,9 @@ const Skills = ({ skills, certificates }: {
     tools_technologies: string[];
   };
   certificates: {
-    AI_ML: string[];
-    frameworks: string[];
-    devops: string[];
+    AI_ML: { name: string; url: string }[];
+    frameworks: { name: string; url: string }[];
+    devops: { name: string; url: string }[];
   };
 }) => {
   const skillCategories = [
@@ -72,12 +72,15 @@ const Skills = ({ skills, certificates }: {
           <h3 className="text-2xl font-semibold mb-8 text-muted-foreground">Certifications</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {allCertificates.map((cert) => (
-              <div
-                key={cert}
-                className="bg-secondary/30 border border px-4 py-2 rounded-lg text-emerald-400 font-medium"
+              <a
+                key={cert.name}
+                href={cert.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-secondary/30 border border px-4 py-2 rounded-lg text-emerald-400 font-medium hover:bg-secondary/50 hover:underline transition-colors"
               >
-                {cert}
-              </div>
+                {cert.name}
+              </a>
             ))}
           </div>
         </div>
