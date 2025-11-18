@@ -23,10 +23,11 @@ const Hero = ({ name, title }: { name: string; title: string }) => {
             @ Streams Tech Ltd. • Dhaka, Bangladesh
           </div>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Passionate about DevOps automation, scalable systems, and software reconstruction using AI. 
-            Skilled in cloud infrastructure, scripting, and backend services.
+            Skilled in Machine learning and AI system and modern web development, with experience 
+            building microservice architectures assionate about scalable backend systems, DevOps automation,
+            and cloud-native infrastructure that improves reliability and accelerates deployment.
           </p>
-          
+
           <div className="flex justify-center space-x-6 mb-12">
             <a
               href="https://github.com/rakib3004"

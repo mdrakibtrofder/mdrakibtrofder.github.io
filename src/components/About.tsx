@@ -12,18 +12,14 @@ const About = () => {
             <div className="bg-secondary/50 rounded-lg p-6 border border">
               <h3 className="text-xl font-semibold text-emerald-400 mb-4">Professional Focus</h3>
               <p className="text-muted-foreground leading-relaxed">
-                As an Associate Software Engineer at Streams Tech Ltd., I specialize in DevOps automation, 
-                cloud infrastructure, and scalable system design. My passion lies in creating efficient, 
-                automated solutions that enhance development workflows and system reliability.
+                As an Associate Software Engineer at Streams Tech Ltd., I focus on building ML-integrated web systems, scalable backend architectures, and automated DevOps pipelines. My work spans microservice development, cloud-native infrastructure, and AI-driven solutions that streamline workflows and strengthen system
               </p>
             </div>
             
             <div className="bg-secondary/50 rounded-lg p-6 border border">
               <h3 className="text-xl font-semibold text-emerald-400 mb-4">Research Interest</h3>
               <p className="text-muted-foreground leading-relaxed">
-                I'm deeply interested in software system reconstruction using AI technologies. 
-                My research internship at SEMERU Lab, William & Mary, allowed me to explore 
-                cutting-edge applications of LLMs in software engineering and system analysis.
+                I am particularly interested in AI-based software system reconstruction and automated architecture analysis. During my research internship at SEMERU Lab, William & Mary, I explored the capabilities and limitations of LLMs in software structure recovery, system mapping, and intelligent code-level reasoning.
               </p>
             </div>
           </div>
@@ -34,22 +30,30 @@ const About = () => {
               <ul className="space-y-2 text-muted-foreground">
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                  <span>DevOps Pipeline Optimization</span>
+                  <span>ML-Integrated Web Development</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  <span>Cloud Infrastructure Management</span>
+                  <span>Microservice & Backend Architecture</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                  <span>Containerization & Orchestration</span>
+                  <span>DevOps Pipeline Automation</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
-                  <span>Database Security & Optimization</span>
+                  <span>Cloud and On Premise Infrastructure</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                  <span>Containerization & Orchestration</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                  <span>Geospatial & Large-Scale Data Processing</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-emerald-400 rounded-full"></div>
                   <span>AI-Driven Software Analysis</span>
                 </li>
               </ul>

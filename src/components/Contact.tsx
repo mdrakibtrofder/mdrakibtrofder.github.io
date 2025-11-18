@@ -57,7 +57,8 @@ const Contact = ({ contact, links }: {
         <div className="text-center mb-12">
           <p className="text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
             I'm always interested in discussing new opportunities, innovative projects, 
-            and collaborations in DevOps, cloud infrastructure, and software engineering.
+            and collaborations in DevOps, Machine Learning, AI systems, modern web development,
+            cloud infrastructure, and software engineering.
           </p>
           <p className="text-muted-foreground">
             Feel free to reach out through any of the following channels:
