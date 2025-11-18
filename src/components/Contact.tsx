@@ -55,11 +55,11 @@ const Contact = ({ contact, links }: {
         </h2>
         
         <div className="text-center mb-12">
-          <p className="text-xl text-gray-300 mb-6 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground mb-6 max-w-2xl mx-auto">
             I'm always interested in discussing new opportunities, innovative projects, 
             and collaborations in DevOps, cloud infrastructure, and software engineering.
           </p>
-          <p className="text-gray-400">
+          <p className="text-muted-foreground">
             Feel free to reach out through any of the following channels:
           </p>
         </div>
@@ -71,15 +71,15 @@ const Contact = ({ contact, links }: {
               href={contactItem.href}
               target={contactItem.href.startsWith('http') ? '_blank' : '_self'}
               rel={contactItem.href.startsWith('http') ? 'noopener noreferrer' : ''}
-              className="bg-slate-800/40 rounded-lg p-6 border border-slate-700 hover:border-slate-600 transition-all duration-300 hover:scale-105 group"
+              className="bg-secondary/40 rounded-lg p-6 border border hover:border-primary transition-all duration-300 hover:scale-105 group"
             >
               <div className="flex items-center space-x-4">
                 <div className={`${contactItem.color} group-hover:scale-110 transition-transform`}>
                   {contactItem.icon}
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold">{contactItem.label}</h3>
-                  <p className="text-gray-400 group-hover:text-gray-300 transition-colors">
+                  <h3 className="text-foreground font-semibold">{contactItem.label}</h3>
+                  <p className="text-muted-foreground group-hover:text-muted-foreground transition-colors">
                     {contactItem.value}
                   </p>
                 </div>
@@ -91,8 +91,8 @@ const Contact = ({ contact, links }: {
       </div>
       
       <div className="mt-16 text-center">
-        <div className="border-t border-slate-700 pt-8">
-          <p className="text-gray-500">
+        <div className="border-t border pt-8">
+          <p className="text-muted-foreground">
             © 2024 Md. Rakib Trofder
           </p>
         </div>

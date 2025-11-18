@@ -58,7 +58,7 @@ const Skills = ({ skills, certificates }: {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="bg-slate-800/50 px-3 py-1 rounded-full text-sm text-gray-300 border border-slate-600"
+                    className="bg-secondary/50 px-3 py-1 rounded-full text-sm text-muted-foreground border border"
                   >
                     {skill}
                   </span>
@@ -69,12 +69,12 @@ const Skills = ({ skills, certificates }: {
         </div>
 
         <div className="mt-16 text-center">
-          <h3 className="text-2xl font-semibold mb-8 text-gray-300">Certifications</h3>
+          <h3 className="text-2xl font-semibold mb-8 text-muted-foreground">Certifications</h3>
           <div className="flex flex-wrap justify-center gap-4">
             {allCertificates.map((cert) => (
               <div
                 key={cert}
-                className="bg-slate-800/30 border border-slate-600 px-4 py-2 rounded-lg text-emerald-400 font-medium"
+                className="bg-secondary/30 border border px-4 py-2 rounded-lg text-emerald-400 font-medium"
               >
                 {cert}
               </div>

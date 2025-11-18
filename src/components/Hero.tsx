@@ -16,13 +16,13 @@ const Hero = ({ name, title }: { name: string; title: string }) => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-emerald-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
             {name}
           </h1>
-          <h2 className="text-2xl md:text-3xl text-gray-300 mb-8 font-light">
+          <h2 className="text-2xl md:text-3xl text-muted-foreground mb-8 font-light">
             {title}
           </h2>
           <div className="text-lg md:text-xl text-emerald-400 mb-8">
             @ Streams Tech Ltd. • Dhaka, Bangladesh
           </div>
-          <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
             Passionate about DevOps automation, scalable systems, and software reconstruction using AI. 
             Skilled in cloud infrastructure, scripting, and backend services.
           </p>
@@ -32,7 +32,7 @@ const Hero = ({ name, title }: { name: string; title: string }) => {
               href="https://github.com/rakib3004"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-slate-800 hover:bg-slate-700 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2"
+              className="bg-secondary hover:bg-secondary/80 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2"
             >
               <Github size={20} />
               <span>GitHub</span>

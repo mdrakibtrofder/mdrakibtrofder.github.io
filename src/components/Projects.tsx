@@ -26,16 +26,16 @@ const Projects = ({ projects }: {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-slate-800/40 rounded-lg p-6 border border-slate-700 hover:border-slate-600 transition-all duration-300 hover:scale-105"
+              className="bg-secondary/40 rounded-lg p-6 border border hover:border-primary transition-all duration-300 hover:scale-105"
             >
               <div className="flex justify-between items-start mb-4">
-                <h3 className="text-xl font-semibold text-white">{project.name}</h3>
+                <h3 className="text-xl font-semibold text-foreground">{project.name}</h3>
                 <span className={`bg-gradient-to-r ${getTypeColor("Web Application")} px-3 py-1 rounded-full text-sm font-medium border`}>
                   Project
                 </span>
               </div>
               
-              <p className="text-gray-300 mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed">
                 {project.description}
               </p>
               
@@ -45,7 +45,7 @@ const Projects = ({ projects }: {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-slate-700/50 px-2 py-1 rounded text-xs text-gray-300 border border-slate-600"
+                      className="bg-secondary/50 px-2 py-1 rounded text-xs text-muted-foreground border border"
                     >
                       {tech}
                     </span>

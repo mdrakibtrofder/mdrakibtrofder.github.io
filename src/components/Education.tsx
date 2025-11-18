@@ -11,7 +11,7 @@ const Education = ({ education }: {
   }[];
 }) => {
   return (
-    <div className="py-20 px-4 bg-slate-800/20">
+    <div className="py-20 px-4 bg-secondary/20">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-indigo-400 to-purple-500 bg-clip-text text-transparent">
           Education
@@ -21,7 +21,7 @@ const Education = ({ education }: {
           {education.map((edu, index) => (
             <div
               key={index}
-              className="bg-slate-800/40 rounded-lg p-6 border border-slate-700 hover:border-slate-600 transition-all duration-300"
+              className="bg-secondary/40 rounded-lg p-6 border border hover:border-primary transition-all duration-300"
             >
               <div className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
                 <div className="flex-shrink-0 w-20 h-20 flex items-center justify-center rounded-lg bg-white/5 p-2 border border-slate-600">
@@ -41,7 +41,7 @@ const Education = ({ education }: {
                       <h4 className="text-lg text-white font-medium">
                         {edu.institute}
                       </h4>
-                      <p className="text-gray-400">
+                      <p className="text-muted-foreground">
                         {edu.achievements.join(", ")}
                       </p>
                     </div>
@@ -50,7 +50,7 @@ const Education = ({ education }: {
                       <span className="bg-indigo-400/10 text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">
                         {edu.cgpa ? `CGPA: ${edu.cgpa}`: edu.result}
                       </span>
-                      <p className="text-gray-400 mt-2">{edu.duration}</p>
+                      <p className="text-muted-foreground mt-2">{edu.duration}</p>
                     </div>
                   </div>
                   

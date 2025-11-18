@@ -26,7 +26,7 @@ const Experience = ({ professional, internship }: {
   }));
 
   return (
-    <div className="py-20 px-4 bg-slate-800/20">
+    <div className="py-20 px-4 bg-secondary/20">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
           Work Experience
@@ -36,7 +36,7 @@ const Experience = ({ professional, internship }: {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="bg-slate-800/40 rounded-lg p-6 border border-slate-700 hover:border-slate-600 transition-all duration-300"
+              className="bg-secondary/40 rounded-lg p-6 border border hover:border-primary transition-all duration-300"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div className="flex items-start space-x-4">
@@ -49,21 +49,21 @@ const Experience = ({ professional, internship }: {
                 </div>
                   <div>
                     <h3 className="text-xl font-semibold text-emerald-400">{exp.title}</h3>
-                    <h4 className="text-lg text-gray-300">{exp.company}</h4>
-                    <p className="text-gray-400">{exp.location}</p>
+                    <h4 className="text-lg text-muted-foreground">{exp.company}</h4>
+                    <p className="text-muted-foreground">{exp.location}</p>
                   </div>
                 </div>
                 <div className="mt-2 md:mt-0 text-right">
                   <span className="bg-emerald-400/10 text-emerald-400 px-3 py-1 rounded-full text-sm font-medium">
                     {exp.type}
                   </span>
-                  <p className="text-gray-400 mt-2">{exp.period}</p>
+                  <p className="text-muted-foreground mt-2">{exp.period}</p>
                 </div>
               </div>
               
               <ul className="space-y-2">
                 {exp.achievements.map((achievement, achIndex) => (
-                  <li key={achIndex} className="flex items-start space-x-2 text-gray-300">
+                  <li key={achIndex} className="flex items-start space-x-2 text-muted-foreground">
                     <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full mt-2 flex-shrink-0"></div>
                     <span>{achievement}</span>
                   </li>
