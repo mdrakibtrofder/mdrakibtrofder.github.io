@@ -91,13 +91,6 @@ const Contact = ({ contact, links }: {
         
       </div>
       
-      <div className="mt-16 text-center">
-        <div className="border-t border pt-8">
-          <p className="text-muted-foreground">
-            © 2024 Md. Rakib Trofder
-          </p>
-        </div>
-      </div>
     </div>
   );
 };

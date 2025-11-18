@@ -8,6 +8,7 @@ import Projects from "../components/Projects";
 import Education from "../components/Education";
 import Contact from "../components/Contact";
 import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
 import portfolioData from "../../portfolio.json";
 
 const Index = () => {
@@ -59,6 +60,7 @@ const Index = () => {
           <Contact contact={portfolioData.contact} links={portfolioData.links} />
         </section>
       </main>
+      <Footer />
     </div>
   );
 };
