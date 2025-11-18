@@ -41,7 +41,7 @@ const Skills = ({ skills, certificates }: {
   };
 
   return (
-    <div className="py-20 px-4">
+    <div className="py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
           Technical Skills
