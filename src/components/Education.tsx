@@ -38,7 +38,7 @@ const Education = ({ education }: {
                       <h3 className="text-xl font-semibold text-emerald-400 mb-1">
                         {edu.degree}
                       </h3>
-                      <h4 className="text-lg text-white font-medium">
+                      <h4 className="text-lg text-black font-medium">
                         {edu.institute}
                       </h4>
                       <p className="text-muted-foreground">
@@ -47,7 +47,7 @@ const Education = ({ education }: {
                     </div>
                     
                     <div className="mt-2 md:mt-0 text-left md:text-right">
-                      <span className="bg-indigo-400/10 text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">
+                      <span className="bg-indigo-400/10 text-black px-3 py-1 rounded-full text-sm font-medium">
                         {edu.cgpa ? `CGPA: ${edu.cgpa}`: edu.result}
                       </span>
                       <p className="text-muted-foreground mt-2">{edu.duration}</p>
@@ -57,7 +57,7 @@ const Education = ({ education }: {
                   <div className="bg-gradient-to-r from-emerald-500/10 to-blue-500/10 rounded-lg p-4 border border-emerald-500/20">
                     <div className="flex items-center space-x-2">
                       <span className="text-emerald-400 font-semibold">Academic Performance:</span>
-                      <span className="text-white font-bold text-lg">{edu.cgpa ? edu.cgpa : edu.result}</span>
+                      <span className="text-black font-bold text-lg">{edu.cgpa ? edu.cgpa : edu.result}</span>
                     </div>
                   </div>
                 </div>
