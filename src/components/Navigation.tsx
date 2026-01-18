@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { ModeToggle } from "./theme-toggle";
+
 
 interface NavigationProps {
   activeSection: string;
@@ -51,12 +51,12 @@ const Navigation = ({ activeSection }: NavigationProps) => {
                 {item.label}
               </button>
             ))}
-            <ModeToggle />
+
           </div>
 
           {/* Mobile Navigation Button */}
           <div className="md:hidden flex items-center gap-4">
-            <ModeToggle />
+
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-muted-foreground hover:text-emerald-400"
