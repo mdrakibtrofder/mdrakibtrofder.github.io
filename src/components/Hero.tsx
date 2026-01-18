@@ -20,17 +20,17 @@ const Hero = ({ name, title }: { name: string; title: string }) => {
             {title}
           </h2>
           <div className="text-lg md:text-xl text-emerald-400 mb-8">
-            @ Streams Tech Ltd. • Dhaka, Bangladesh
+            @ Bangladesh Army University of Science and Technology • Saidpur, Nilphamari, Bangladesh
           </div>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
-            Skilled in Machine learning and AI system and modern web development, with experience 
-            building microservice architectures assionate about scalable backend systems, DevOps automation,
-            and cloud-native infrastructure that improves reliability and accelerates deployment.
+            Focused on advancing research in Software Engineering and AI, with a strong background in building
+            scalable microservice architectures and automated DevOps pipelines. Dedicated to bridging the gap
+            between theoretical concepts and practical software development.
           </p>
 
           <div className="flex justify-center space-x-6 mb-12">
             <a
-              href="https://github.com/rakib3004"
+              href="https://github.com/mdrakibtrofder"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-secondary hover:bg-secondary/80 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2"
@@ -39,7 +39,7 @@ const Hero = ({ name, title }: { name: string; title: string }) => {
               <span>GitHub</span>
             </a>
             <a
-              href="https://www.linkedin.com/in/rakib-iit/"
+              href="https://www.linkedin.com/in/mdrakibtrofder/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 flex items-center space-x-2"
