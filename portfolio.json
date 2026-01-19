@@ -31,17 +31,6 @@
   },
   "education": [
     {
-      "degree": "Higher Secondary Certificate (HSC)",
-      "institute": "Notre Dame College, Dhaka",
-      "duration": "July 2016 - June 2018",
-      "result": "GPA 5.00/5.00",
-      "achievements": [
-        "Achivement: Finalist, Bangladesh Chemistry Olympiad, 2017"
-      ],
-      "logo": "/organizations/notre-dame-college-dhaka.png",
-      "link": "https://ndc.edu.bd/"
-    },
-    {
       "degree": "B.Sc, Software Engineering",
       "institute": "IIT, University of Dhaka",
       "duration": "January 2019 - December 2023",
@@ -51,6 +40,17 @@
       ],
       "logo": "/organizations/iit-university-of-dhaka.png",
       "link": "https://www.du.ac.bd/"
+    },
+    {
+      "degree": "Higher Secondary Certificate (HSC)",
+      "institute": "Notre Dame College, Dhaka",
+      "duration": "July 2016 - June 2018",
+      "result": "GPA 5.00/5.00",
+      "achievements": [
+        "Achivement: Finalist, Bangladesh Chemistry Olympiad, 2017"
+      ],
+      "logo": "/organizations/notre-dame-college-dhaka.png",
+      "link": "https://ndc.edu.bd/"
     }
   ],
   "professional_experience": [
