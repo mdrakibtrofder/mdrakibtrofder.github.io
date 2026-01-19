@@ -127,47 +127,57 @@
     "AI_ML": [
       {
         "name": "AI For Everyone (DeepLearning.AI)",
-        "url": "https://www.coursera.org/account/accomplishments/certificate/YNZE5RC8NVUQ"
+        "url": "https://www.coursera.org/account/accomplishments/certificate/YNZE5RC8NVUQ",
+        "tag": "AI & ML"
       },
       {
         "name": "Generative AI with Large Language Models (Coursera)",
-        "url": "https://www.coursera.org/account/accomplishments/certificate/5HHD8UUHCSCF"
+        "url": "https://www.coursera.org/account/accomplishments/certificate/5HHD8UUHCSCF",
+        "tag": "AI & ML"
       },
       {
         "name": "Intro to AI Agents and Agentic AI (365 Data Science)",
-        "url": "https://learn.365datascience.com/certificates/CC-13B8E16B5C/"
+        "url": "https://learn.365datascience.com/certificates/CC-13B8E16B5C/",
+        "tag": "AI & ML"
       },
       {
         "name": "Machine Learning for All (Coursera)",
-        "url": "https://www.coursera.org/account/accomplishments/certificate/XD8QARZQD28E"
+        "url": "https://www.coursera.org/account/accomplishments/certificate/XD8QARZQD28E",
+        "tag": "AI & ML"
       }
     ],
     "frameworks": [
       {
         "name": "MERN Stack with Blog Project (Udemy)",
-        "url": "https://www.udemy.com/certificate/UC-5bd78a8e-03da-415e-bf76-22a3a7a9d838/"
+        "url": "https://www.udemy.com/certificate/UC-5bd78a8e-03da-415e-bf76-22a3a7a9d838/",
+        "tag": "Web Development"
       },
       {
         "name": "Learn React (Interactive Care)",
-        "url": "https://interactivecares-courses.com/?cert_hash=c07e68489228d225"
+        "url": "https://interactivecares-courses.com/?cert_hash=c07e68489228d225",
+        "tag": "Web Development"
       }
     ],
     "devops": [
       {
         "name": "Google IT Support Certificate (Coursera)",
-        "url": "https://www.credly.com/badges/1f4292aa-e6d7-4dce-93b4-ec3795b15339"
+        "url": "https://www.credly.com/badges/1f4292aa-e6d7-4dce-93b4-ec3795b15339",
+        "tag": "DevOps"
       },
       {
         "name": "Fully Automated MLOps (365 Data Science)",
-        "url": "https://learn.365datascience.com/certificates/CC-AC033C8AC7/"
+        "url": "https://learn.365datascience.com/certificates/CC-AC033C8AC7/",
+        "tag": "DevOps"
       },
       {
         "name": "AWS Identity and Access Management (Udemy)",
-        "url": "https://www.udemy.com/certificate/UC-b2deb305-ae1c-45a1-ba41-97b7e23c5bea/"
+        "url": "https://www.udemy.com/certificate/UC-b2deb305-ae1c-45a1-ba41-97b7e23c5bea/",
+        "tag": "DevOps"
       },
       {
         "name": "Amazon ECS (KodeKloud)",
-        "url": "https://learn.kodekloud.com/user/certificate/7f610e6e-8c82-4fe3-84ae-02fd12220d82"
+        "url": "https://learn.kodekloud.com/user/certificate/7f610e6e-8c82-4fe3-84ae-02fd12220d82",
+        "tag": "DevOps"
       }
     ]
   },

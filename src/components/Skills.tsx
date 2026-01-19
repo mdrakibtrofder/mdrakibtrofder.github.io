@@ -1,15 +1,20 @@
 
+import { useState } from "react";
+
 const Skills = ({ skills, certificates }: {
   skills: {
     languages_frameworks: string[];
     tools_technologies: string[];
   };
   certificates: {
-    AI_ML: { name: string; url: string }[];
-    frameworks: { name: string; url: string }[];
-    devops: { name: string; url: string }[];
+    AI_ML: { name: string; url: string; tag: string }[];
+    frameworks: { name: string; url: string; tag: string }[];
+    devops: { name: string; url: string; tag: string }[];
   };
 }) => {
+  const [activeTab, setActiveTab] = useState("All");
+
+  const tabs = ["All", "Web Development", "AI & ML", "DevOps"];
   const skillCategories = [
     {
       title: "Languages & Frameworks",
@@ -29,6 +34,10 @@ const Skills = ({ skills, certificates }: {
     ...certificates.devops,
   ];
 
+  const filteredCertificates = activeTab === "All"
+    ? allCertificates
+    : allCertificates.filter(cert => cert.tag === activeTab);
+
   const getColorClasses = (color: string) => {
     const colors = {
       emerald: "from-emerald-500/20 to-emerald-600/20 border-emerald-500/30 text-emerald-400",
@@ -46,7 +55,7 @@ const Skills = ({ skills, certificates }: {
         <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
           Technical Skills
         </h2>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {skillCategories.map((category) => (
             <div
@@ -70,8 +79,24 @@ const Skills = ({ skills, certificates }: {
 
         <div className="mt-16 text-center">
           <h3 className="text-2xl font-semibold mb-8 text-muted-foreground">Certifications</h3>
+
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            {tabs.map((tab) => (
+              <button
+                key={tab}
+                onClick={() => setActiveTab(tab)}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeTab === tab
+                    ? "bg-emerald-400/20 text-emerald-400 border border-emerald-400/50"
+                    : "bg-secondary/50 text-muted-foreground border border-transparent hover:bg-secondary hover:text-emerald-400"
+                  }`}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
+
           <div className="flex flex-wrap justify-center gap-4">
-            {allCertificates.map((cert) => (
+            {filteredCertificates.map((cert) => (
               <a
                 key={cert.name}
                 href={cert.url}
