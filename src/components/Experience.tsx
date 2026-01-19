@@ -6,6 +6,7 @@ const Experience = ({ professional, internship }: {
     duration: string;
     responsibilities: string[];
     logo?: string; // Added logo field
+    link?: string;
   }[];
   internship: {
     role: string;
@@ -13,6 +14,7 @@ const Experience = ({ professional, internship }: {
     duration: string;
     responsibilities: string[];
     logo?: string; // Added logo field
+    link?: string;
   }[];
 }) => {
   const experiences = [...professional, ...internship].map(exp => ({
@@ -22,7 +24,8 @@ const Experience = ({ professional, internship }: {
     period: exp.duration,
     type: professional.includes(exp as any) ? "Full-time" : "Internship",
     achievements: exp.responsibilities,
-    logo: exp.logo || "/placeholder.svg" // Use logo if available, else placeholder
+    logo: exp.logo || "/placeholder.svg", // Use logo if available, else placeholder
+    link: exp.link
   }));
 
   return (
@@ -31,7 +34,7 @@ const Experience = ({ professional, internship }: {
         <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
           Work Experience
         </h2>
-        
+
         <div className="space-y-8">
           {experiences.map((exp, index) => (
             <div
@@ -40,16 +43,32 @@ const Experience = ({ professional, internship }: {
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 p-2">
-                  <img
-                    src={exp.logo}
-                    alt={`${exp.company} logo`}
-                    className="max-w-full max-h-full object-contain"
-                  />
-                </div>
+                  <div className="w-12 h-12 flex items-center justify-center rounded-lg bg-white/10 p-2">
+                    {exp.link ? (
+                      <a href={exp.link} target="_blank" rel="noopener noreferrer">
+                        <img
+                          src={exp.logo}
+                          alt={`${exp.company} logo`}
+                          className="max-w-full max-h-full object-contain hover:opacity-80 transition-opacity"
+                        />
+                      </a>
+                    ) : (
+                      <img
+                        src={exp.logo}
+                        alt={`${exp.company} logo`}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    )}
+                  </div>
                   <div>
                     <h3 className="text-xl font-semibold text-emerald-400">{exp.title}</h3>
-                    <h4 className="text-lg text-muted-foreground">{exp.company}</h4>
+                    {exp.link ? (
+                      <a href={exp.link} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
+                        <h4 className="text-lg text-muted-foreground">{exp.company}</h4>
+                      </a>
+                    ) : (
+                      <h4 className="text-lg text-muted-foreground">{exp.company}</h4>
+                    )}
                     <p className="text-muted-foreground">{exp.location}</p>
                   </div>
                 </div>
@@ -60,7 +79,7 @@ const Experience = ({ professional, internship }: {
                   <p className="text-muted-foreground mt-2">{exp.period}</p>
                 </div>
               </div>
-              
+
               <ul className="space-y-2">
                 {exp.achievements.map((achievement, achIndex) => (
                   <li key={achIndex} className="flex items-start space-x-2 text-muted-foreground">
