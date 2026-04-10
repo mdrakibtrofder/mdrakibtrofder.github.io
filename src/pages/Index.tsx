@@ -9,6 +9,7 @@ import Education from "../components/Education";
 import Contact from "../components/Contact";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import Certificates from "../components/Certificates";
 import portfolioData from "../../portfolio.json";
 
 const Index = () => {
@@ -16,7 +17,7 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "experience", "projects", "education", "contact"];
+      const sections = ["home", "about", "skills", "certificates", "experience", "projects", "education", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       sections.forEach((section) => {
@@ -47,6 +48,7 @@ const Index = () => {
         <section id="skills">
           <Skills skills={portfolioData.technical_skills} certificates={portfolioData.certificates} />
         </section>
+        <Certificates />
         <section id="experience">
           <Experience professional={portfolioData.professional_experience} internship={portfolioData.internship_experience} />
         </section>
