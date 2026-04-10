@@ -56,7 +56,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       "Organization Portfolio Project": "from-emerald-500/20 to-teal-500/20 border-emerald-500/30 text-emerald-400 shadow-emerald-500/10",
       "Course Materials Oriented Project": "from-blue-600/20 to-indigo-600/20 border-blue-600/30 text-blue-400 shadow-blue-600/10",
       "Research Oriented Project": "from-indigo-500/20 to-violet-500/20 border-indigo-500/30 text-indigo-400 shadow-indigo-500/10",
-      "Advance Engineering Project": "from-slate-500/20 to-zinc-500/20 border-slate-500/30 text-slate-300 shadow-slate-500/10"
+      "Advance Engineering Project": "from-yellow-400/30 via-amber-500/20 to-orange-600/30 border-yellow-500/50 text-yellow-500 shadow-[0_0_20px_rgba(234,179,8,0.15)] animate-pulse-slow"
     };
     return styles[type as keyof typeof styles] || "from-blue-500/20 to-cyan-500/20 border-blue-500/30 text-blue-400";
   };
@@ -83,22 +83,27 @@ const Projects = ({ projects }: { projects: Project[] }) => {
 
         {/* Category Filter Tabs */}
         <div className="flex flex-wrap justify-center gap-3 mb-16">
-          {categories.map((cat) => (
-            <button
-              key={cat}
-              onClick={() => setActiveTab(cat)}
-              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 border backdrop-blur-md ${
-                activeTab === cat
-                  ? "bg-primary/20 border-primary text-primary shadow-[0_0_20px_rgba(var(--primary),0.3)]"
-                  : "bg-secondary/20 border-border/50 text-muted-foreground hover:border-primary/50 hover:bg-secondary/40"
-              }`}
-            >
-              <div className="flex items-center gap-2">
-                {cat !== "All" && getCategoryIcon(cat)}
-                {cat === "All" ? "Show All Projects" : cat}
-              </div>
-            </button>
-          ))}
+          {categories.map((cat) => {
+            const isActive = activeTab === cat;
+            const catStyle = cat === "All" ? "from-cyan-500/20 to-blue-500/20 border-cyan-500/30 text-cyan-400" : getTypeStyles(cat);
+            
+            return (
+              <button
+                key={cat}
+                onClick={() => setActiveTab(cat)}
+                className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-500 border backdrop-blur-md ${
+                  isActive
+                    ? `bg-gradient-to-r ${catStyle} shadow-[0_0_25px_rgba(0,0,0,0.2)]`
+                    : "bg-secondary/20 border-border/10 text-muted-foreground hover:border-white/20 hover:bg-secondary/40"
+                }`}
+              >
+                <div className="flex items-center gap-2">
+                  {cat !== "All" && getCategoryIcon(cat)}
+                  {cat === "All" ? "All Projects" : cat}
+                </div>
+              </button>
+            );
+          })}
         </div>
         
         {/* Projects Grid */}
