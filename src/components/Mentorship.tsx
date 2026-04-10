@@ -1,130 +1,137 @@
 
-import { Users, GraduationCap, Map, Cpu, Activity, LayoutDashboard, Binary, Trees, Waves } from "lucide-react";
+import { GraduationCap, Users, Calendar, CheckCircle2, Building2, MapPin } from "lucide-react";
 import { Badge } from "./ui/badge";
-import { Card, CardContent } from "./ui/card";
 
-const mentorshipData = [
+const mentorships = [
   {
     institution: "IIT, University of Dhaka",
-    students: 3,
+    role: "Internship Supervisor @ Streams Tech Ltd.",
     period: "October 2025 - January 2026",
-    role: "Industry Mentor @ Streams Tech Ltd.",
+    studentCount: "3 Students",
+    location: "In-house Projects",
     projects: [
-      {
-        title: "Meeting Summarizer",
-        description: "AI-driven transcription and summarization platform for corporate meetings.",
-        icon: Binary
-      },
-      {
-        title: "Call Center AI Agents",
-        description: "Intelligent voice and text agents for automated customer support workflows.",
-        icon: Cpu
-      },
-      {
-        title: "CCTV Anomaly Detection",
-        description: "Real-time person detection and anomaly identification from surveillance footage.",
-        icon: Activity
-      },
-      {
-        title: "Cattle Detection System",
-        description: "Computer vision based livestock management and health monitoring system.",
-        icon: Binary
-      },
-      {
-        title: "Election Analytics Dashboard",
-        description: "Data visualization for EC vote casting patterns and real-time analytics.",
-        icon: LayoutDashboard
-      }
-    ]
+      "Meeting Summarizer (AI Transcription)",
+      "Call Center AI Agents",
+      "CCTV Attendance & Anomaly Detection",
+      "Cattle Management Detection System",
+      "Election Commission Analytics Dashboard"
+    ],
+    color: "blue"
   },
   {
-    institution: "CSE, Bangladesh University of Engineering and Technology (BUET)",
-    students: 5,
+    institution: "CSE, BUET",
+    role: "Industry Mentor @ Streams Tech Ltd.",
     period: "December 2025 - January 2026",
-    role: "Project Mentor",
+    studentCount: "5 Students",
+    location: "Ecological Monitoring",
     projects: [
-      {
-        title: "Deforestation & River Bank Erosion Analysis",
-        description: "Leveraging multi-spectral satellite imagery to analyze deforestation patterns and river bank land-cover changes.",
-        icon: Map,
-        tags: ["Satellite Imagery", "Remote Sensing", "Environmental Analysis"]
-      }
-    ]
+      "Satellite Imagery Analysis for Deforestation",
+      "River Bank Erosion & Delta Land-cover Tracking",
+      "Multi-spectral Data Processing Workflows"
+    ],
+    color: "emerald"
   }
 ];
 
 const Mentorship = () => {
   return (
-    <section id="mentorship" className="py-24 px-4 bg-background relative overflow-hidden">
-      {/* Decorative background */}
-      <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500/20 to-transparent -translate-y-1/2" />
+    <section id="mentorship" className="py-24 px-4 bg-slate-50/50 dark:bg-slate-900/20 relative overflow-hidden">
+      {/* Design elements */}
+      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       
-      <div className="max-w-6xl mx-auto relative">
-        <div className="flex flex-col items-center mb-16 space-y-4 text-center">
-          <Badge variant="outline" className="px-4 py-1 border-blue-500/30 text-blue-500 bg-blue-500/5">
-            Guidance & Leadership
-          </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-            Mentorship <span className="text-blue-500">& Coaching</span>
-          </h2>
-          <p className="text-muted-foreground max-w-2xl">
-            Guiding undergraduate students through complex industrial projects, bridging the gap between academic theory and real-world engineering challenges.
-          </p>
+      <div className="max-w-5xl mx-auto">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+          <div className="space-y-4">
+            <Badge className="bg-blue-500/10 text-blue-500 hover:bg-blue-500/20 border-none px-4 mb-2">
+              Mentorship & Guidance
+            </Badge>
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+              Nurturing <span className="text-blue-500 italic">Future Engineers</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-xl">
+              I am dedicated to mentoring the next generation of software engineers through hands-on industrial projects and academic collaboration.
+            </p>
+          </div>
+          <div className="hidden lg:block">
+            <div className="p-4 bg-background rounded-2xl border border-border/50 shadow-sm flex items-center gap-4">
+              <div className="h-10 w-10 rounded-full bg-blue-500/10 flex items-center justify-center">
+                 <Users className="h-5 w-5 text-blue-500" />
+              </div>
+              <p className="text-sm font-bold truncate">8+ Active Mentees</p>
+            </div>
+          </div>
         </div>
 
-        <div className="space-y-12">
-          {mentorshipData.map((item, idx) => (
-            <div key={idx} className="relative">
-              <div className="flex flex-col md:flex-row gap-8 items-start">
-                <div className="md:w-1/3 sticky top-32">
-                  <div className="space-y-4">
-                    <div className="h-12 w-12 rounded-2xl bg-blue-500/10 flex items-center justify-center">
-                       <GraduationCap className="h-6 w-6 text-blue-500" />
-                    </div>
-                    <h3 className="text-2xl font-bold leading-tight">{item.institution}</h3>
-                    <div className="space-y-2">
-                       <p className="text-sm font-medium text-muted-foreground flex items-center gap-2">
-                         <Users className="h-4 w-4" /> {item.students} Students
-                       </p>
-                       <p className="text-xs uppercase font-bold tracking-widest text-blue-500/70">{item.period}</p>
-                       <Badge className="bg-blue-500/10 text-blue-500 hover:bg-blue-500/20 border-none">
-                         {item.role}
-                       </Badge>
-                    </div>
+        <div className="grid grid-cols-1 gap-12">
+          {mentorships.map((mentor, index) => (
+            <div 
+              key={index} 
+              className="group relative flex flex-col md:flex-row gap-8 md:gap-16 p-8 rounded-[2rem] bg-background border border-border/40 hover:border-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500"
+            >
+              {/* Vertical accent */}
+              <div className={`absolute left-0 top-12 bottom-12 w-1.5 rounded-r-full transition-all duration-500 ${
+                mentor.color === 'blue' ? 'bg-blue-500' : 'bg-emerald-500'
+              } opacity-50 group-hover:opacity-100 group-hover:w-2`} />
+
+              <div className="md:w-1/3 space-y-6">
+                <div className="space-y-2">
+                  <div className="flex items-center gap-2 text-xs font-bold text-blue-500 uppercase tracking-widest">
+                    <Calendar className="h-3.5 w-3.5" />
+                    {mentor.period}
                   </div>
+                  <h3 className="text-2xl font-bold leading-tight group-hover:text-blue-500 transition-colors">
+                    {mentor.institution}
+                  </h3>
+                  <p className="text-lg font-medium text-foreground/80 lowercase italic font-serif">
+                    {mentor.role}
+                  </p>
                 </div>
 
-                <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {item.projects.map((proj, pIdx) => {
-                    const ProjIcon = proj.icon;
-                    return (
-                      <Card key={pIdx} className="border-none bg-secondary/30 backdrop-blur-sm hover:bg-secondary/50 transition-all duration-300 group">
-                        <CardContent className="p-6">
-                          <div className="mb-4 p-2 rounded-lg bg-background w-fit group-hover:scale-110 transition-transform">
-                            <ProjIcon className="h-5 w-5 text-blue-500" />
-                          </div>
-                          <h4 className="font-bold text-lg mb-2">{proj.title}</h4>
-                          <p className="text-sm text-muted-foreground leading-relaxed">
-                            {proj.description}
-                          </p>
-                          {proj.tags && (
-                            <div className="flex flex-wrap gap-2 mt-4">
-                              {proj.tags.map(tag => (
-                                <span key={tag} className="text-[10px] px-2 py-0.5 rounded-full bg-blue-500/5 text-blue-500/70 font-semibold border border-blue-500/10">
-                                  {tag}
-                                </span>
-                              ))}
-                            </div>
-                          )}
-                        </CardContent>
-                      </Card>
-                    );
-                  })}
+                <div className="flex flex-wrap gap-3">
+                   <div className="flex items-center gap-1.5 px-3 py-1 transparent rounded-full bg-secondary/80 text-xs font-semibold text-muted-foreground">
+                     <Users className="h-3.5 w-3.5" /> {mentor.studentCount}
+                   </div>
+                   <div className="flex items-center gap-1.5 px-3 py-1 transparent rounded-full bg-secondary/80 text-xs font-semibold text-muted-foreground">
+                     <MapPin className="h-3.5 w-3.5" /> {mentor.location}
+                   </div>
                 </div>
               </div>
-              {idx === 0 && <div className="hidden md:block absolute -bottom-6 left-0 w-full border-b border-dashed border-border/50" />}
+
+              <div className="md:w-2/3">
+                <div className="bg-secondary/20 rounded-2xl p-6 md:p-8 relative overflow-hidden">
+                  <div className="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-500">
+                    <Building2 className="h-32 w-32 -rotate-12" />
+                  </div>
+                  
+                  <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-6 flex items-center gap-2">
+                    <CheckCircle2 className="h-4 w-4 text-blue-500" />
+                    Core Project Contributions
+                  </h4>
+                  
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+                    {mentor.projects.map((proj, pIdx) => (
+                      <li key={pIdx} className="flex items-start gap-3 group/item">
+                        <div className="h-5 w-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0 mt-0.5 group-hover/item:bg-blue-500 group-hover/item:text-white transition-all">
+                           <div className="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover/item:bg-white" />
+                        </div>
+                        <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors leading-relaxed">
+                          {proj}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </div>
           ))}
+        </div>
+
+        {/* Closing statement */}
+        <div className="mt-20 text-center">
+            <p className="text-muted-foreground text-sm flex items-center justify-center gap-2 font-medium">
+              <GraduationCap className="h-5 w-5 text-blue-500" />
+              Empowering engineers through applied industrial challenges
+            </p>
         </div>
       </div>
     </section>
