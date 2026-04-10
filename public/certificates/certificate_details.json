@@ -7,7 +7,8 @@
     "course_name": "Quiz Competition (1st IIT Debate Fest 2019)",
     "signed_by": "Md. Saeed Siddik (Moderator), Dr. Md. Shariful Islam (Director)",
     "issued_date": "2019",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_2",
@@ -17,7 +18,8 @@
     "course_name": "Barowari Debate (1st IIT Debate Fest 2019)",
     "signed_by": "Md. Saeed Siddik (Moderator), Dr. Md. Shariful Islam (Director)",
     "issued_date": "2019",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_3",
@@ -27,7 +29,8 @@
     "course_name": "Parliamentary Debate Competition (1st IIT Debate Fest 2019)",
     "signed_by": "Md. Saeed Siddik (Moderator), Dr. Md. Shariful Islam (Director)",
     "issued_date": "2019",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_4",
@@ -37,7 +40,8 @@
     "course_name": "Quiz Competition (Independence Cup 2019)",
     "signed_by": "Shihab (President), Dr. Md. Shariful Islam (Director)",
     "issued_date": "April 4, 2019",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_5",
@@ -47,7 +51,8 @@
     "course_name": "ICT OLYMPIAD (UNIVERSITY) - BUP TECHSURGENCE-2019",
     "signed_by": "Mehrin Anannya (Moderator), Nandita Barman (Mentor), Lt Col Md Lutfar Rahman Bokshi (Chairman)",
     "issued_date": "6th April, 2019",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_6",
@@ -57,7 +62,8 @@
     "course_name": "Higher Secondary Certificate (HSC) Examination, 2018 (Science Group)",
     "signed_by": "Controller of Examinations",
     "issued_date": "19 July, 2018",
-    "credential_id": "Roll: 110965, Reg: 1310551917/2016"
+    "credential_id": "Roll: 110965, Reg: 1310551917/2016",
+    "is_sensitive_certificate": true
   },
   {
     "id": "Certificate_7",
@@ -67,7 +73,8 @@
     "course_name": "Bhasha Protijog 2018 (Regional Level)",
     "signed_by": "Anisuzzaman (President, Bhasha Protijog Parishad)",
     "issued_date": "4 May, 2018",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_8",
@@ -77,7 +84,8 @@
     "course_name": "16th Bangladesh Mathematical Olympiad (Regional 2018)",
     "signed_by": "Munir Hasan (General Secretary), Dr. Jamilur Reza Choudhury (President)",
     "issued_date": "19 JAN 2018",
-    "credential_id": "33316"
+    "credential_id": "33316",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_9",
@@ -87,7 +95,8 @@
     "course_name": "8th Bangladesh Physics Olympiad 2018 (Regional Round)",
     "signed_by": "Professor Khorshed Ahmad Kabir (Chairman), Fayez Ahmed Jahangir Masud (General Secretary)",
     "issued_date": "2018",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_10",
@@ -97,7 +106,8 @@
     "course_name": "Jatiya Abritti Utsob - 2017",
     "signed_by": "Saimun Rahman (President), Moderator, Principal",
     "issued_date": "18/08/17",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_11",
@@ -107,7 +117,8 @@
     "course_name": "Intra College English Workshop - 2017 on \"Phonetics\"",
     "signed_by": "Principal (Notre Dame College), Moderator (Notre Dame English Club)",
     "issued_date": "2017",
-    "credential_id": "Roll: 11803004"
+    "credential_id": "Roll: 11803004",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_12",
@@ -117,7 +128,8 @@
     "course_name": "38th Science and Technology Week-2017 (District Level)",
     "signed_by": "Mohammad Salahuddin (DC, Dhaka), Md. Abdul Khalek (Principal), Md. Rezaul Haque",
     "issued_date": "April 25-27, 2017",
-    "credential_id": "Roll: 11803004"
+    "credential_id": "Roll: 11803004",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_13",
@@ -127,7 +139,8 @@
     "course_name": "OBAC National Adventure Festival'17",
     "signed_by": "Dr. Fr. Hemanto Pius Rozario, CSC, Dr. Fr. Leonard Shankar Rozario, CSC, Stephen Don Sarkar",
     "issued_date": "March 23, 24 & 27, 2017",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_14",
@@ -137,7 +150,8 @@
     "course_name": "Final Round of the 7th Bangladesh Chemistry Olympiad 2016",
     "signed_by": "Professor Dr. Mohammad Shoeb (Convener), Abul Basher Miah (President Acting)",
     "issued_date": "17 February 2017",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_15",
@@ -147,7 +161,8 @@
     "course_name": "Preliminary Round of the 7th Bangladesh Chemistry Olympiad 2016",
     "signed_by": "Professor Dr. Md. Abul Hashem, Professor Dr. Mohammad Shoeb, Professor Dr. Md Wahab Khan, Abul Basher Miah",
     "issued_date": "13 January 2017",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_16",
@@ -157,7 +172,8 @@
     "course_name": "CBA Inter Collegiate Talent Hunt",
     "signed_by": "Tanvir H Dewan (Director of CBA)",
     "issued_date": "Nov 20, 2016",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_17",
@@ -167,7 +183,8 @@
     "course_name": "Secondary School Certificate (SSC) Examination, 2016 (Science Group)",
     "signed_by": "Controller of Examinations",
     "issued_date": "May 11, 2016",
-    "credential_id": "Roll: 111970, Reg: 1310551917/2014"
+    "credential_id": "Roll: 111970, Reg: 1310551917/2014",
+    "is_sensitive_certificate": true
   },
   {
     "id": "Certificate_18",
@@ -177,7 +194,8 @@
     "course_name": "Bhasha Protijog 2016 (Regional Level)",
     "signed_by": "Anisuzzaman (President)",
     "issued_date": "22-04-2016",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_19",
@@ -187,7 +205,8 @@
     "course_name": "Srijonshil Medha Onneshon 2015 (Best Talent of the Year, Dhaka City Education Zone)",
     "signed_by": "Member Secretary, Convener",
     "issued_date": "09/03/2015",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_20",
@@ -197,7 +216,8 @@
     "course_name": "Srijonshil Medha Onneshon 2014 (National Level Final Round)",
     "signed_by": "Professor Md. Didarul Alam, Dr. Mohammad Sadik (Secretary)",
     "issued_date": "2014",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_21",
@@ -207,7 +227,8 @@
     "course_name": "Srijonshil Medha Onneshon 2014 (Best Talent of the Year, Dhaka City Education Zone)",
     "signed_by": "Member Secretary, Convener",
     "issued_date": "24/05/2014",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_22",
@@ -217,7 +238,8 @@
     "course_name": "Srijonshil Medha Onneshon 2014 (Best Talent of the Year, Dhaka Metropolitan Level)",
     "signed_by": "Member Secretary, Convener",
     "issued_date": "15/05/2014",
-    "credential_id": null
+    "credential_id": null,
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_23",
@@ -227,7 +249,8 @@
     "course_name": "Junior School Certificate (JSC) Examination, 2013",
     "signed_by": "Controller of Examinations",
     "issued_date": "December 29, 2013",
-    "credential_id": "Roll: Dhaka 13 17 13, Reg: 1310551917 / 2013"
+    "credential_id": "Roll: Dhaka 13 17 13, Reg: 1310551917 / 2013",
+    "is_sensitive_certificate": true
   },
   {
     "id": "Certificate_24",
@@ -237,7 +260,8 @@
     "course_name": "Primary Education Completion Examination 2010",
     "signed_by": "Shyamal Kanti Ghosh (Director General)",
     "issued_date": "31.03.2011",
-    "credential_id": "Serial: 4100264, Roll: 7736"
+    "credential_id": "Serial: 4100264, Roll: 7736",
+    "is_sensitive_certificate": true
   },
   {
     "id": "Certificate_25",
@@ -247,7 +271,8 @@
     "course_name": "13th Bangladesh Mathematical Olympiad 2015 (Regional Level)",
     "signed_by": "Munir Hasan, Dr. Jamilur Reza Choudhury",
     "issued_date": "16 January 2015",
-    "credential_id": "Reg: 132294"
+    "credential_id": "Reg: 132294",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_26",
@@ -257,7 +282,8 @@
     "course_name": "Introduction to Artificial Intelligence (AI)",
     "signed_by": "Rav Ahuja (IBM Skills Network)",
     "issued_date": "Aug 23, 2020",
-    "credential_id": "VUN2XANJMX8Z"
+    "credential_id": "VUN2XANJMX8Z",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_27",
@@ -267,7 +293,8 @@
     "course_name": "Introduction to HTML5",
     "signed_by": "Colleen van Lent, Ph.D., Charles Severance",
     "issued_date": "Sep 17, 2020",
-    "credential_id": "8JYE4B96UP8N"
+    "credential_id": "8JYE4B96UP8N",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_28",
@@ -277,7 +304,8 @@
     "course_name": "Google Cloud Product Fundamentals",
     "signed_by": "Google Cloud Training",
     "issued_date": "Sep 30, 2020",
-    "credential_id": "EHZXDN7CGYXZ"
+    "credential_id": "EHZXDN7CGYXZ",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_29",
@@ -287,7 +315,8 @@
     "course_name": "Object-Oriented Programming with Java",
     "signed_by": "Harrison Kong",
     "issued_date": "Oct 1, 2020",
-    "credential_id": "J9ADV5GJPMTF"
+    "credential_id": "J9ADV5GJPMTF",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_30",
@@ -297,7 +326,8 @@
     "course_name": "Programming for Everybody (Getting Started with Python)",
     "signed_by": "Charles Severance",
     "issued_date": "Nov 25, 2020",
-    "credential_id": "FDZX83TDLY63"
+    "credential_id": "FDZX83TDLY63",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_31",
@@ -307,7 +337,8 @@
     "course_name": "Hackathon \"HackTheVerse\"",
     "signed_by": "Dr. Mohammed Shafiul Alam Khan, Md. Rakibul Islam",
     "issued_date": "N/A",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_32",
@@ -317,7 +348,8 @@
     "course_name": "Competitive Programming Contest \"Emerging Cup\"",
     "signed_by": "Dr. Mohammed Shafiul Alam Khan, Md. Rakibul Islam",
     "issued_date": "N/A",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_33",
@@ -327,7 +359,8 @@
     "course_name": "What is Your Life Goal?",
     "signed_by": "Shalini Gopalkrishnan",
     "issued_date": "Nov 30, 2020",
-    "credential_id": "YFCZFAXRQRGL"
+    "credential_id": "YFCZFAXRQRGL",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_34",
@@ -337,7 +370,8 @@
     "course_name": "Introduction to Bash Shell Scripting",
     "signed_by": "Kerri-Leigh Grady",
     "issued_date": "Dec 1, 2020",
-    "credential_id": "MSWF4EUD4M3P"
+    "credential_id": "MSWF4EUD4M3P",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_35",
@@ -347,7 +381,8 @@
     "course_name": "Python Data Structures",
     "signed_by": "Charles Severance",
     "issued_date": "Dec 11, 2020",
-    "credential_id": "5BVKAN4NWRSY"
+    "credential_id": "5BVKAN4NWRSY",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_36",
@@ -357,7 +392,8 @@
     "course_name": "Python Data Structures",
     "signed_by": "David Dalsveen",
     "issued_date": "Dec 11, 2020",
-    "credential_id": "4D27SFW8FM65"
+    "credential_id": "4D27SFW8FM65",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_37",
@@ -367,7 +403,8 @@
     "course_name": "Satellite Imagery Analysis in Python",
     "signed_by": "Abdishakur Hassan",
     "issued_date": "Dec 12, 2020",
-    "credential_id": "C5N734H9PSFE"
+    "credential_id": "C5N734H9PSFE",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_38",
@@ -377,7 +414,8 @@
     "course_name": "Telenor Child Online Safety Curriculum",
     "signed_by": "N/A",
     "issued_date": "12/13/2020",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_39",
@@ -387,7 +425,8 @@
     "course_name": "Design Thinking for Innovation",
     "signed_by": "Jeanne M. Liedtka",
     "issued_date": "Dec 15, 2020",
-    "credential_id": "9877E23KVR54"
+    "credential_id": "9877E23KVR54",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_40",
@@ -397,7 +436,8 @@
     "course_name": "Initiating and Planning Projects",
     "signed_by": "Margaret Meloni",
     "issued_date": "Jan 23, 2021",
-    "credential_id": "DTZPGKLVNRAQ"
+    "credential_id": "DTZPGKLVNRAQ",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_41",
@@ -407,7 +447,8 @@
     "course_name": "Managing Project Risks and Changes",
     "signed_by": "Margaret Meloni, MBA, PMP (Instructor, University of California, Irvine Division of Continuing Education)",
     "issued_date": "Jan 24, 2021",
-    "credential_id": "4TL8268Z5NMK"
+    "credential_id": "4TL8268Z5NMK",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_42",
@@ -417,7 +458,8 @@
     "course_name": "AI For Everyone",
     "signed_by": "Andrew Ng (Founder, DeepLearning.AI; Co-founder, Coursera)",
     "issued_date": "Jan 26, 2021",
-    "credential_id": "YNZE5RC8NVUQ"
+    "credential_id": "YNZE5RC8NVUQ",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_43",
@@ -427,7 +469,8 @@
     "course_name": "Participation at the writing competition on \"What Liberation means to me?\"",
     "signed_by": "Osama Bin Noor (Co-founder & Chief Operating Officer, Youth Opportunities), H.E. Vikram K. Doraiswami (High Commissioner, High Commission of India to Bangladesh)",
     "issued_date": "January 24, 2021",
-    "credential_id": "WLMTM 2983 (Participant ID)"
+    "credential_id": "WLMTM 2983 (Participant ID)",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_44",
@@ -437,7 +480,8 @@
     "course_name": "High-Impact Business Writing",
     "signed_by": "Sue Robins, M.S. Ed.",
     "issued_date": "Jan 31, 2021",
-    "credential_id": "THRKNKG3YW3G"
+    "credential_id": "THRKNKG3YW3G",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_45",
@@ -447,7 +491,8 @@
     "course_name": "Using Python to Access Web Data",
     "signed_by": "Charles Severance",
     "issued_date": "Feb 5, 2021",
-    "credential_id": "SWBMRZRMNTJH"
+    "credential_id": "SWBMRZRMNTJH",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_46",
@@ -457,7 +502,8 @@
     "course_name": "Getting Started with Google Classroom",
     "signed_by": "Rachel Lindsay",
     "issued_date": "Feb 10, 2021",
-    "credential_id": "HKTH6T2BPKPE"
+    "credential_id": "HKTH6T2BPKPE",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_47",
@@ -467,7 +513,8 @@
     "course_name": "Use Commands and Create a Remote Git Repository",
     "signed_by": "David Dalsveen (Subject Matter Expert, Freedom Learning Group)",
     "issued_date": "Feb 10, 2021",
-    "credential_id": "MMZEWF2Q6TVF"
+    "credential_id": "MMZEWF2Q6TVF",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_48",
@@ -477,7 +524,8 @@
     "course_name": "Introduction to TCP/IP",
     "signed_by": "Jong-Moon Chung (Professor, School of Electrical & Electronic Engineering)",
     "issued_date": "Feb 21, 2021",
-    "credential_id": "Q85LBQ6J2EX7"
+    "credential_id": "Q85LBQ6J2EX7",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_49",
@@ -487,7 +535,8 @@
     "course_name": "Java Built in Data Structures",
     "signed_by": "David Dalsveen (Subject Matter Expert, Freedom Learning Group)",
     "issued_date": "Feb 21, 2021",
-    "credential_id": "NRTVHW3HLMFF"
+    "credential_id": "NRTVHW3HLMFF",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_50",
@@ -497,7 +546,8 @@
     "course_name": "Using Google Forms for Student Success",
     "signed_by": "Rachel Lindsay (Educator, Arts & Humanities)",
     "issued_date": "Feb 23, 2021",
-    "credential_id": "YCLYU8BRD68Z"
+    "credential_id": "YCLYU8BRD68Z",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_51",
@@ -507,7 +557,8 @@
     "course_name": "Technical Support Fundamentals",
     "signed_by": "Google",
     "issued_date": "Mar 13, 2021",
-    "credential_id": "F59TU9NZTD9W"
+    "credential_id": "F59TU9NZTD9W",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_52",
@@ -517,7 +568,8 @@
     "course_name": "Psychological First Aid",
     "signed_by": "George S. Everly, Jr.",
     "issued_date": "Mar 3, 2021",
-    "credential_id": "GE7Q2B4DR93T"
+    "credential_id": "GE7Q2B4DR93T",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_53",
@@ -527,7 +579,8 @@
     "course_name": "The Art of Negotiation",
     "signed_by": "Sue Robins",
     "issued_date": "Mar 10, 2021",
-    "credential_id": "NTY5BLCGAMT3"
+    "credential_id": "NTY5BLCGAMT3",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_54",
@@ -537,7 +590,8 @@
     "course_name": "Foundations of Everyday Leadership",
     "signed_by": "Gregory Northcraft, Jack Goncalo, Jeffrey Loewenstein",
     "issued_date": "Mar 15, 2021",
-    "credential_id": "LX4LVWVM6XME"
+    "credential_id": "LX4LVWVM6XME",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_55",
@@ -547,7 +601,8 @@
     "course_name": "Create Class Rewards with Google Slides",
     "signed_by": "Rachel Lindsay",
     "issued_date": "Mar 15, 2021",
-    "credential_id": "RNNDEMASGDV6"
+    "credential_id": "RNNDEMASGDV6",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_56",
@@ -557,7 +612,8 @@
     "course_name": "Introduction to Python",
     "signed_by": "David Dalsveen",
     "issued_date": "Mar 16, 2021",
-    "credential_id": "F2NTEQU46GML"
+    "credential_id": "F2NTEQU46GML",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_57",
@@ -567,7 +623,8 @@
     "course_name": "Introduction to Software Product Management",
     "signed_by": "Kenny Wong (Associate Professor, Computing Science, Faculty of Science)",
     "issued_date": "March 19, 2021",
-    "credential_id": "PE9BF5SRA29W"
+    "credential_id": "PE9BF5SRA29W",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_58",
@@ -577,7 +634,8 @@
     "course_name": "Introduction to Git and GitHub",
     "signed_by": "Google",
     "issued_date": "March 22, 2021",
-    "credential_id": "9T3G54J4QPBD"
+    "credential_id": "9T3G54J4QPBD",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_59",
@@ -587,7 +645,8 @@
     "course_name": "Effective Problem-Solving and Decision-Making",
     "signed_by": "Rob Stone, PMP, M.Ed. (Instructor, UCI Extension)",
     "issued_date": "March 27, 2021",
-    "credential_id": "SAL788YGVNPZ"
+    "credential_id": "SAL788YGVNPZ",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_60",
@@ -597,7 +656,8 @@
     "course_name": "Git for Developers Using Github",
     "signed_by": "Kerri-Leigh Grady (Subject Matter Expert, Freedom Learning Group)",
     "issued_date": "March 28, 2021",
-    "credential_id": "WQTKBKCHQ9WE"
+    "credential_id": "WQTKBKCHQ9WE",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_61",
@@ -607,7 +667,8 @@
     "course_name": "RTZ Presents Independence Day General Knowledge Carnival powered by Farabi's Anecdotes",
     "signed_by": "Abid Shahriyar Khan (President), Mimosa Ahmed (Vice President)",
     "issued_date": "N/A",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_62",
@@ -617,7 +678,8 @@
     "course_name": "Software Processes and Agile Practices",
     "signed_by": "Kenny Wong (Associate Professor, Computing Science, Faculty of Science)",
     "issued_date": "Mar 29, 2021",
-    "credential_id": "8LDCTTADLTQC"
+    "credential_id": "8LDCTTADLTQC",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_63",
@@ -627,7 +689,8 @@
     "course_name": "Analytical Olympiad at জয়যাত্রা'৫০ Techfest, 2021",
     "signed_by": "Md. Khalilur Rhaman (Advisor), Shemonto Das (President)",
     "issued_date": "2021",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_64",
@@ -637,7 +700,8 @@
     "course_name": "Linux for Developers",
     "signed_by": "Jerry Cooperstein (Director of Training)",
     "issued_date": "May 3, 2021",
-    "credential_id": "P4TJM3Q2KY9E"
+    "credential_id": "P4TJM3Q2KY9E",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_65",
@@ -647,7 +711,8 @@
     "course_name": "Java (Basic)",
     "signed_by": "Harishankaran K (CTO, HackerRank)",
     "issued_date": "09 May, 2021",
-    "credential_id": "A8087B358C61"
+    "credential_id": "A8087B358C61",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_66",
@@ -657,7 +722,8 @@
     "course_name": "The Science of Well-Being",
     "signed_by": "Laurie Santos (Professor, Psychology)",
     "issued_date": "May 11, 2021",
-    "credential_id": "QUQHBHUPRS2Z"
+    "credential_id": "QUQHBHUPRS2Z",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_67",
@@ -667,7 +733,8 @@
     "course_name": "The Bits and Bytes of Computer Networking",
     "signed_by": "Google",
     "issued_date": "May 13, 2021",
-    "credential_id": "ANFH2WVE3ZV4"
+    "credential_id": "ANFH2WVE3ZV4",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_68",
@@ -677,7 +744,8 @@
     "course_name": "Python (Basic)",
     "signed_by": "Harishankaran K",
     "issued_date": "13 May, 2021",
-    "credential_id": "DB61F6BD3EFE"
+    "credential_id": "DB61F6BD3EFE",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_69",
@@ -687,7 +755,8 @@
     "course_name": "Crash Course on Python",
     "signed_by": "Google",
     "issued_date": "May 17, 2021",
-    "credential_id": "5SNQUJX62R54"
+    "credential_id": "5SNQUJX62R54",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_70",
@@ -697,7 +766,8 @@
     "course_name": "Programming Foundations with JavaScript, HTML and CSS",
     "signed_by": "Susan H. Rodger, Robert Duvall, Owen Astrachan, Andrew D. Hilton",
     "issued_date": "May 25, 2021",
-    "credential_id": "DX5PGDYJLDR2"
+    "credential_id": "DX5PGDYJLDR2",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_71",
@@ -707,7 +777,8 @@
     "course_name": "Agile Software Development",
     "signed_by": "Praveen Mittal (Adjunct Professor, College of Science and Engineering)",
     "issued_date": "Apr 15, 2021",
-    "credential_id": "KVXEG3STZZKT"
+    "credential_id": "KVXEG3STZZKT",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_72",
@@ -717,7 +788,8 @@
     "course_name": "General Knowledge Olympiad (Science Quiz) 2.0 (2021)",
     "signed_by": "Zeniya Zain",
     "issued_date": "06 May, 2021",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_73",
@@ -727,7 +799,8 @@
     "course_name": "General Knowledge Olympiad (Math Quiz) 2.0 (2021)",
     "signed_by": "Zeniya Zain",
     "issued_date": "06 May, 2021",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_74",
@@ -737,7 +810,8 @@
     "course_name": "Operating Systems and You: Becoming a Power User",
     "signed_by": "Google",
     "issued_date": "June 3, 2021",
-    "credential_id": "T36LYK92WH6M"
+    "credential_id": "T36LYK92WH6M",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_75",
@@ -747,7 +821,8 @@
     "course_name": "Capstone: Retrieving, Processing, and Visualizing Data with Python",
     "signed_by": "Charles Severance",
     "issued_date": "May 18, 2021",
-    "credential_id": "JNFD23EY79WT"
+    "credential_id": "JNFD23EY79WT",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_76",
@@ -757,7 +832,8 @@
     "course_name": "System Administration and IT Infrastructure Services",
     "signed_by": "Google",
     "issued_date": "June 15, 2021",
-    "credential_id": "Q3URKRN87B3L"
+    "credential_id": "Q3URKRN87B3L",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_77",
@@ -767,7 +843,8 @@
     "course_name": "IT Security: Defense against the digital dark arts",
     "signed_by": "Google",
     "issued_date": "June 19, 2021",
-    "credential_id": "4B5ATYZWP9Y5"
+    "credential_id": "4B5ATYZWP9Y5",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_78",
@@ -777,7 +854,8 @@
     "course_name": "DAWAH TRAINING COURSE",
     "signed_by": "Sh. Abdurraheem Green (iERA Chairman & Founder)",
     "issued_date": "June 29, 2021",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_79",
@@ -787,7 +865,8 @@
     "course_name": "NEW MUSLIM MENTORSHIP COURSE",
     "signed_by": "Sh. Abdurraheem Green (iERA Chairman & Founder)",
     "issued_date": "June 30, 2021",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_80",
@@ -797,7 +876,8 @@
     "course_name": "Use Canva to Design Digital Course Collateral",
     "signed_by": "Stacey Shanklin-Langford (Subject Matter Expert, Freedom Learning Group)",
     "issued_date": "July 4, 2021",
-    "credential_id": "YPW8HZXVD4W2"
+    "credential_id": "YPW8HZXVD4W2",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_81",
@@ -807,7 +887,8 @@
     "course_name": "Troubleshooting and Debugging Techniques",
     "signed_by": "Google",
     "issued_date": "Jul 9, 2021",
-    "credential_id": "U3KXWB7TWEBX"
+    "credential_id": "U3KXWB7TWEBX",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_82",
@@ -817,7 +898,8 @@
     "course_name": "Configuration Management and the Cloud",
     "signed_by": "Google",
     "issued_date": "Jul 14, 2021",
-    "credential_id": "NCCNJPXQS6YT"
+    "credential_id": "NCCNJPXQS6YT",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_83",
@@ -827,7 +909,8 @@
     "course_name": "11th Anniversary Quiz Competition 2021 (Question Setter)",
     "signed_by": "SARDAR PANNA (President, Khilkhet Pathagar), YASIR ARAFAT (General Secretary, Khilkhet Pathagar)",
     "issued_date": "30 JULY, 2021",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_84",
@@ -837,7 +920,8 @@
     "course_name": "The Blockchain",
     "signed_by": "Stefano M. Stefan (University of California, Irvine)",
     "issued_date": "Aug 7, 2021",
-    "credential_id": "8JBDWLHPXCDX"
+    "credential_id": "8JBDWLHPXCDX",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_85",
@@ -847,7 +931,8 @@
     "course_name": "Use of Zoom in Facilitating Online Class/ Meeting",
     "signed_by": "Dr. Md. Abdul Mannan, PAA (Project Director, Additional Secretary)",
     "issued_date": "N/A",
-    "credential_id": "MC-P364891R30314350291W"
+    "credential_id": "MC-P364891R30314350291W",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_86",
@@ -857,7 +942,8 @@
     "course_name": "LinkedIn",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi-10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, Additional Secretary)",
     "issued_date": "N/A",
-    "credential_id": "MC-L364891M3031606J190D"
+    "credential_id": "MC-L364891M3031606J190D",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_87",
@@ -867,7 +953,8 @@
     "course_name": "YouTubing",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi- 10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, a2i)",
     "issued_date": "N/A",
-    "credential_id": "MC-D364891A3033216X199G"
+    "credential_id": "MC-D364891A3033216X199G",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_88",
@@ -877,7 +964,8 @@
     "course_name": "Presentation Skills",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi- 10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, a2i)",
     "issued_date": "N/A",
-    "credential_id": "MC-D364891F3038332S132R"
+    "credential_id": "MC-D364891F3038332S132R",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_89",
@@ -887,7 +975,8 @@
     "course_name": "Digital Security Essentials",
     "signed_by": "Dr. Md. Abdul Mannan, PAA (Project Director, a2i), Md. Rezaul Karim, NDC (Director General, Digital Security Agency)",
     "issued_date": "19th August, 2021",
-    "credential_id": "MC-U364891L3036777J106P"
+    "credential_id": "MC-U364891L3036777J106P",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_90",
@@ -897,7 +986,8 @@
     "course_name": "Interview Skills",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi- 10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, a2i)",
     "issued_date": "N/A",
-    "credential_id": "MC-X364891G3044305J149Z"
+    "credential_id": "MC-X364891G3044305J149Z",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_91",
@@ -907,7 +997,8 @@
     "course_name": "Foundations of User Experience (UX) Design",
     "signed_by": "Google",
     "issued_date": "September 3, 2021",
-    "credential_id": "V6QGWGEC8XHX"
+    "credential_id": "V6QGWGEC8XHX",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_92",
@@ -917,7 +1008,8 @@
     "course_name": "Microsoft Powerpoint Basics",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi- 10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, a2i Programme, ICT Division)",
     "issued_date": "N/A",
-    "credential_id": "MC-C364891A561749R151R"
+    "credential_id": "MC-C364891A561749R151R",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_93",
@@ -927,7 +1019,8 @@
     "course_name": "Email Etiquette",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi- 10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, a2i Programme, ICT Division)",
     "issued_date": "N/A",
-    "credential_id": "MC-K364891S3077446I181L"
+    "credential_id": "MC-K364891S3077446I181L",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_94",
@@ -937,7 +1030,8 @@
     "course_name": "\"Amar Ghor, Amar Bagan\" competition on World Environment Day 2021",
     "signed_by": "Osama Bin Noor (Co-founder & Chief Operating Officer, Youth Opportunities), Mominul Islam (CEO & Managing Director, IPDC Finance)",
     "issued_date": "September 14, 2021",
-    "credential_id": "AGAB 4775"
+    "credential_id": "AGAB 4775",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_95",
@@ -947,7 +1041,8 @@
     "course_name": "Project Management",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi-10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, Additional Secretary, a2i)",
     "issued_date": "N/A",
-    "credential_id": "MC-G364891M3085058Q192T"
+    "credential_id": "MC-G364891M3085058Q192T",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_96",
@@ -957,7 +1052,8 @@
     "course_name": "DevOps Fundamentals",
     "signed_by": "EdYoda Digital University, Ashish Pandey",
     "issued_date": "Sept. 22, 2021",
-    "credential_id": "UC-3a9db36b-aa16-4422-8888-8fffc83d514f"
+    "credential_id": "UC-3a9db36b-aa16-4422-8888-8fffc83d514f",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_97",
@@ -967,7 +1063,8 @@
     "course_name": "The Ultimate MySQL Crash Course 2021",
     "signed_by": "Web Coding",
     "issued_date": "Sept. 23, 2021",
-    "credential_id": "UC-fa81091e-5c49-4f0b-bcc3-a3cb5c7f7afa"
+    "credential_id": "UC-fa81091e-5c49-4f0b-bcc3-a3cb5c7f7afa",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_98",
@@ -977,7 +1074,8 @@
     "course_name": "Photography Basics",
     "signed_by": "Ayman Sadiq, Dr. Md. Abdul Mannan, PAA",
     "issued_date": "N/A",
-    "credential_id": "MC-A364891L3099553M184D"
+    "credential_id": "MC-A364891L3099553M184D",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_99",
@@ -987,7 +1085,8 @@
     "course_name": "Foundations: Data, Data, Everywhere",
     "signed_by": "Google",
     "issued_date": "Sep 26, 2021",
-    "credential_id": "3KUMRVNMUC PG"
+    "credential_id": "3KUMRVNMUC PG",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_100",
@@ -997,7 +1096,8 @@
     "course_name": "Public Speaking Fundamentals",
     "signed_by": "Ayman Sadiq, Dr. Md. Abdul Mannan, PAA",
     "issued_date": "N/A",
-    "credential_id": "MC-I364891N3100359I204D"
+    "credential_id": "MC-I364891N3100359I204D",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_101",
@@ -1007,7 +1107,8 @@
     "course_name": "COVID-19 Awareness and Prevention",
     "signed_by": "DR. MD. ABDUL MANNAN, PAA (Project Director, a2i); ASIF SALEH (Executive Director, BRAC)",
     "issued_date": "N/A",
-    "credential_id": "MC-A36489103107951J238U"
+    "credential_id": "MC-A36489103107951J238U",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_102",
@@ -1017,7 +1118,8 @@
     "course_name": "Foundations of Project Management",
     "signed_by": "Google",
     "issued_date": "Oct 14, 2021",
-    "credential_id": "DAH8BUVHV79T"
+    "credential_id": "DAH8BUVHV79T",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_103",
@@ -1027,7 +1129,8 @@
     "course_name": "Troubleshooting in Operating System",
     "signed_by": "Faruque Ahmed (Professor Faruque Ahmed, e-Learning Specialist, a2i, ICT Division)",
     "issued_date": "N/A",
-    "credential_id": "MC-R364891H3122089I1210"
+    "credential_id": "MC-R364891H3122089I1210",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_104",
@@ -1037,7 +1140,8 @@
     "course_name": "Troubleshooting in File Processing and Sharing",
     "signed_by": "Professor Faruque Ahmed",
     "issued_date": "N/A",
-    "credential_id": "MC-L364891C3122342M120G"
+    "credential_id": "MC-L364891C3122342M120G",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_105",
@@ -1047,7 +1151,8 @@
     "course_name": "Troubleshooting in Computer Security",
     "signed_by": "Professor Faruque Ahmed",
     "issued_date": "N/A",
-    "credential_id": "MC-A364891P3126743M119Q"
+    "credential_id": "MC-A364891P3126743M119Q",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_106",
@@ -1057,7 +1162,8 @@
     "course_name": "Troubleshooting in Internet Connection",
     "signed_by": "Professor Faruque Ahmed",
     "issued_date": "N/A",
-    "credential_id": "MC-Q364891W3127506A118Z"
+    "credential_id": "MC-Q364891W3127506A118Z",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_107",
@@ -1067,7 +1173,8 @@
     "course_name": "Troubleshooting in Multimedia Projector",
     "signed_by": "Professor Faruque Ahmed (e-Learning Specialist, a2i, ICT Division)",
     "issued_date": "N/A",
-    "credential_id": "MC-N364891B3127509H117W"
+    "credential_id": "MC-N364891B3127509H117W",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_108",
@@ -1077,7 +1184,8 @@
     "course_name": "Machine Learning for All",
     "signed_by": "Dr Marco Gillies (Computing Department, Goldsmiths, University of London)",
     "issued_date": "Nov 1, 2021",
-    "credential_id": "XD8QARZQD28E"
+    "credential_id": "XD8QARZQD28E",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_109",
@@ -1087,7 +1195,8 @@
     "course_name": "MS Excel Basics for Beginners",
     "signed_by": "Yanur Islam Piash (Co-Founder & CEO, Bohubrihi)",
     "issued_date": "November 3, 2021",
-    "credential_id": "102733-163-588-4506"
+    "credential_id": "102733-163-588-4506",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_110",
@@ -1097,7 +1206,8 @@
     "course_name": "Google Workspace Essential Training",
     "signed_by": "Yanur Islam Piash (Co-Founder & CEO, Bohubrihi)",
     "issued_date": "November 5, 2021",
-    "credential_id": "102733-163-611-6403"
+    "credential_id": "102733-163-611-6403",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_111",
@@ -1107,7 +1217,8 @@
     "course_name": "Introduction to Personal Finance",
     "signed_by": "Yanur Islam Piash (Co-Founder & CEO, Bohubrihi)",
     "issued_date": "November 6, 2021",
-    "credential_id": "102733-163-618-9675"
+    "credential_id": "102733-163-618-9675",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_112",
@@ -1117,7 +1228,8 @@
     "course_name": "Welcome to the World of Digital Marketing",
     "signed_by": "Yanur Islam Piash (Co-Founder & CEO, Bohubrihi)",
     "issued_date": "November 8, 2021",
-    "credential_id": "102733-163-635-4299"
+    "credential_id": "102733-163-635-4299",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_113",
@@ -1127,7 +1239,8 @@
     "course_name": "Digital Marketing: Campaign Planning",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi- 10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, a2i Programme)",
     "issued_date": "N/A",
-    "credential_id": "MC-1364891D3137837Q185S"
+    "credential_id": "MC-1364891D3137837Q185S",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_114",
@@ -1137,7 +1250,8 @@
     "course_name": "Bond vs Stock: The Crash Course",
     "signed_by": "Yanur Islam Piash",
     "issued_date": "November 8, 2021",
-    "credential_id": "102733-163-639-1705"
+    "credential_id": "102733-163-639-1705",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_115",
@@ -1147,7 +1261,8 @@
     "course_name": "Career Planning",
     "signed_by": "Ayman Sadiq, Dr. Md. Abdul Mannan",
     "issued_date": "N/A",
-    "credential_id": "MC-Y364891U3140041G196A"
+    "credential_id": "MC-Y364891U3140041G196A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_116",
@@ -1157,7 +1272,8 @@
     "course_name": "Project Initiation: Starting a Successful Project",
     "signed_by": "Google",
     "issued_date": "Nov 10, 2021",
-    "credential_id": "XGHYF8HJ3U6W"
+    "credential_id": "XGHYF8HJ3U6W",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_117",
@@ -1167,7 +1283,8 @@
     "course_name": "Introduction to IoT",
     "signed_by": "Krishna Kumar (CEO)",
     "issued_date": "12th Nov 2021",
-    "credential_id": "3008427"
+    "credential_id": "3008427",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_118",
@@ -1177,7 +1294,8 @@
     "course_name": "Startup & Entrepreneurship",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi- 10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, a2i Programme, ICT Division)",
     "issued_date": "N/A",
-    "credential_id": "MC-W364891U3140124F182L"
+    "credential_id": "MC-W364891U3140124F182L",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_119",
@@ -1187,7 +1305,8 @@
     "course_name": "Learn React",
     "signed_by": "Rare Al Samir (CEO)",
     "issued_date": "November 10, 2021",
-    "credential_id": "c07e68489228d225"
+    "credential_id": "c07e68489228d225",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_120",
@@ -1197,7 +1316,8 @@
     "course_name": "Introduction to Robotic Process Automation (RPA)",
     "signed_by": "Krishna Kumar (CEO)",
     "issued_date": "16th Nov 2021",
-    "credential_id": "3013553"
+    "credential_id": "3013553",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_121",
@@ -1207,7 +1327,8 @@
     "course_name": "Google Analytics",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi-10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, Access to Information (a2i) Programme)",
     "issued_date": "N/A",
-    "credential_id": "MC-D364891S3147771F189B"
+    "credential_id": "MC-D364891S3147771F189B",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_122",
@@ -1217,7 +1338,8 @@
     "course_name": "Introduction to Golang - Basic Concepts",
     "signed_by": "Emma Martin (Subject Matter Expert, Coursera Project Network)",
     "issued_date": "Nov 16, 2021",
-    "credential_id": "P4JG9GC9QQMZ"
+    "credential_id": "P4JG9GC9QQMZ",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_123",
@@ -1227,7 +1349,8 @@
     "course_name": "Ethical Hacking for Beginners",
     "signed_by": "Krishna Kumar (CEO)",
     "issued_date": "19th Nov 2021",
-    "credential_id": "3036098"
+    "credential_id": "3036098",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_124",
@@ -1237,7 +1360,8 @@
     "course_name": "Introduction to Project Management with ClickUp",
     "signed_by": "Abby Saey (Subject Matter Expert, Freedom Learning Group)",
     "issued_date": "Nov 20, 2021",
-    "credential_id": "4MK7DQJJ379P"
+    "credential_id": "4MK7DQJJ379P",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_125",
@@ -1247,7 +1371,8 @@
     "course_name": "Getting Started in Google Analytics",
     "signed_by": "Carma Baughman (Subject Matter Expert, Freedom Learning Group)",
     "issued_date": "Nov 20, 2021",
-    "credential_id": "Z9VBLN8T8UEU"
+    "credential_id": "Z9VBLN8T8UEU",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_126",
@@ -1257,7 +1382,8 @@
     "course_name": "Online Class Techniques course",
     "signed_by": "Jasmine Amin",
     "issued_date": "15-December-2021",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_127",
@@ -1267,7 +1393,8 @@
     "course_name": "A Complete Guide to Create necessary graphic without adobe Photoshop and illustrator",
     "signed_by": "Authorized Signature",
     "issued_date": "16-December-2021",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_128",
@@ -1277,7 +1404,8 @@
     "course_name": "Building Android Widgets from Scratch ( Learn 8 Widgets)",
     "signed_by": "EdYoda Digital University, Qaifi Khan",
     "issued_date": "Dec. 19, 2021",
-    "credential_id": "UC-54e80ecb-29bb-45be-8db8-57f4acba4957"
+    "credential_id": "UC-54e80ecb-29bb-45be-8db8-57f4acba4957",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_129",
@@ -1287,7 +1415,8 @@
     "course_name": "Starting Your Company",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi-10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, Additional Secretary, Access to Information (a2i) Programme, ICT Division)",
     "issued_date": "N/A",
-    "credential_id": "MC-K364891B3183935G188L"
+    "credential_id": "MC-K364891B3183935G188L",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_130",
@@ -1297,7 +1426,8 @@
     "course_name": "Docker Course for Beginners",
     "signed_by": "EdYoda Digital University",
     "issued_date": "Jan. 7, 2022",
-    "credential_id": "UC-0f7fb435-9b17-4c1b-b8a8-322d5aceab0c"
+    "credential_id": "UC-0f7fb435-9b17-4c1b-b8a8-322d5aceab0c",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_131",
@@ -1307,7 +1437,8 @@
     "course_name": "Library Management and Reading Hour Activity",
     "signed_by": "Dr. Dewan Muhammad Humayun Kabir (Project Director, a2i); Rakhi Sarker (Country Director, Room to Read Bangladesh)",
     "issued_date": "N/A",
-    "credential_id": "MC-E364891K3205114C705V"
+    "credential_id": "MC-E364891K3205114C705V",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_132",
@@ -1317,7 +1448,8 @@
     "course_name": "Coding Fundamentals",
     "signed_by": "Laura Holmes (Grasshopper Founder & CEO)",
     "issued_date": "N/A",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_133",
@@ -1327,7 +1459,8 @@
     "course_name": "React JS- Complete Guide for Frontend Web Development [2021]",
     "signed_by": "EdYoda Digital University, Qaifi Khan, Mavludin Abdulkadirov",
     "issued_date": "Jan. 29, 2022",
-    "credential_id": "UC-aefe120f-84af-40f4-b213-7ee363228659"
+    "credential_id": "UC-aefe120f-84af-40f4-b213-7ee363228659",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_134",
@@ -1337,7 +1470,8 @@
     "course_name": "Introduction to Cyber Security",
     "signed_by": "Krishna Kumar (CEO)",
     "issued_date": "29th Jan 2022",
-    "credential_id": "3213248"
+    "credential_id": "3213248",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_135",
@@ -1347,7 +1481,8 @@
     "course_name": "Management Learning",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi-10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, Additional Secretary, a2i)",
     "issued_date": "N/A",
-    "credential_id": "MC-W364891A3233939M195Y"
+    "credential_id": "MC-W364891A3233939M195Y",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_136",
@@ -1357,7 +1492,8 @@
     "course_name": "Business English",
     "signed_by": "Ayman Sadiq (Founder and CEO, Robi-10 Minute School), Dr. Md. Abdul Mannan, PAA (Project Director, Additional Secretary, a2i)",
     "issued_date": "N/A",
-    "credential_id": "MC-D364891H3246262I191W"
+    "credential_id": "MC-D364891H3246262I191W",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_137",
@@ -1367,7 +1503,8 @@
     "course_name": "English grammar tenses made easy",
     "signed_by": "Grammarly-Grammar Made Easy (Instructors)",
     "issued_date": "Feb. 21, 2022",
-    "credential_id": "UC-71cffa6a-1b23-46a8-ac14-b62b01f91ab9"
+    "credential_id": "UC-71cffa6a-1b23-46a8-ac14-b62b01f91ab9",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_138",
@@ -1377,7 +1514,8 @@
     "course_name": "Basics of Artificial Intelligence",
     "signed_by": "N/A",
     "issued_date": "2022-02-23 19:18:30",
-    "credential_id": "621634264e6ae"
+    "credential_id": "621634264e6ae",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_139",
@@ -1387,7 +1525,8 @@
     "course_name": "Higher Study in USA",
     "signed_by": "Ayman Sadiq (CEO, 10 Minute School)",
     "issued_date": "2022-03-02 23:58:19",
-    "credential_id": "621fb03b9a6c5"
+    "credential_id": "621fb03b9a6c5",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_140",
@@ -1397,7 +1536,8 @@
     "course_name": "Quiz Challenge",
     "signed_by": "Md Masud (Founder, SkillAid Bangladesh), Ridhwanul Haq, PhD (Judge, Quiz Challenge)",
     "issued_date": "March /2022",
-    "credential_id": "Q100"
+    "credential_id": "Q100",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_141",
@@ -1407,7 +1547,8 @@
     "course_name": "Promotion of Safe Migration & Prevention of Human Trafficking",
     "signed_by": "Leisbeth Zonneveld (Chief of Party, BC/TIP, Winrock International)",
     "issued_date": "N/A",
-    "credential_id": "MC-V364891R1233949B3C9H"
+    "credential_id": "MC-V364891R1233949B3C9H",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_142",
@@ -1417,7 +1558,8 @@
     "course_name": "ITVerse (as an Organizer)",
     "signed_by": "Dr. Mohammed Shafiul Alam Khan (Director, IIT, DU), Md. Rakibul Islam (President, IITSEC)",
     "issued_date": "N/A",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_143",
@@ -1427,7 +1569,8 @@
     "course_name": "Ask Questions to Make Data-Driven Decisions",
     "signed_by": "Amanda Brophy (Global Director of Google Career Certificates)",
     "issued_date": "May 29, 2022",
-    "credential_id": "556S74NRNUAG"
+    "credential_id": "556S74NRNUAG",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_144",
@@ -1437,7 +1580,8 @@
     "course_name": "Artificial Intelligence Presentation Creation (2022 Edition)",
     "signed_by": "Srinidhi Ranganathan",
     "issued_date": "June 21, 2022",
-    "credential_id": "UC-7bb277f7-ec43-4211-a4c8-7477ccdf2746"
+    "credential_id": "UC-7bb277f7-ec43-4211-a4c8-7477ccdf2746",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_145",
@@ -1447,7 +1591,8 @@
     "course_name": "Intro to Programming",
     "signed_by": "Alexis Cook, Head of Kaggle Learn",
     "issued_date": "July 6, 2022",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_146",
@@ -1457,7 +1602,8 @@
     "course_name": "Python",
     "signed_by": "Colin Morris (Kaggle Instructor), Alexis Cook (Head of Kaggle Learn)",
     "issued_date": "July 6, 2022",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_147",
@@ -1467,7 +1613,8 @@
     "course_name": "Fire Safety Awareness",
     "signed_by": "Ayman Sadiq (CEO, 10 Minute School), Omar Faruk (Course Instructor)",
     "issued_date": "2022-07-06 17:06:28",
-    "credential_id": "62c56cb4d052e"
+    "credential_id": "62c56cb4d052e",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_148",
@@ -1477,7 +1624,8 @@
     "course_name": "Money Management 101- Personal Finance Skills for Millennials",
     "signed_by": "eGukulhub Learning (Instructors)",
     "issued_date": "July 16, 2022",
-    "credential_id": "UC-a420b58a-2f04-4f44-bc51-60503003c0ab"
+    "credential_id": "UC-a420b58a-2f04-4f44-bc51-60503003c0ab",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_149",
@@ -1487,7 +1635,8 @@
     "course_name": "English Grammar Fundamentals",
     "signed_by": "Ayman Sadiq (CEO, 10 Minute School)",
     "issued_date": "2022-07-17 11:49:31",
-    "credential_id": "62d3a2eb638a6"
+    "credential_id": "62d3a2eb638a6",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_150",
@@ -1497,7 +1646,8 @@
     "course_name": "Project Management: Deliver on Time + Scrum Project Delivery",
     "signed_by": "Paul Ashun (Instructors)",
     "issued_date": "July 17, 2022",
-    "credential_id": "UC-9433c654-eec4-4329-a2ca-e8c67aed4096"
+    "credential_id": "UC-9433c654-eec4-4329-a2ca-e8c67aed4096",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_151",
@@ -1507,7 +1657,8 @@
     "course_name": "Trello for Beginners",
     "signed_by": "Heidi Barker (Subject Matter Expert, Freedom Learning Group)",
     "issued_date": "July 18, 2022",
-    "credential_id": "6WTG8QL9BWGA"
+    "credential_id": "6WTG8QL9BWGA",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_152",
@@ -1517,7 +1668,8 @@
     "course_name": "Intro to Machine Learning",
     "signed_by": "Dan Becker (Kaggle Instructor), Alexis Cook (Head of Kaggle Learn)",
     "issued_date": "July 19, 2022",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_153",
@@ -1527,7 +1679,8 @@
     "course_name": "Business Case Solving",
     "signed_by": "Ayman Sadiq (Course Instructor & CEO, 10 Minute School)",
     "issued_date": "2022-12-05 21:02:59",
-    "credential_id": "638e08237b032"
+    "credential_id": "638e08237b032",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_154",
@@ -1537,7 +1690,8 @@
     "course_name": "Idioms and Phrases",
     "signed_by": "Ayman Sadiq (CEO & Course Instructor)",
     "issued_date": "2022-12-06",
-    "credential_id": "638e3824c7117"
+    "credential_id": "638e3824c7117",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_155",
@@ -1547,7 +1701,8 @@
     "course_name": "Intro to AI Ethics",
     "signed_by": "Var Shankar (Kaggle Instructor), Alexis Cook (Head of Kaggle Learn)",
     "issued_date": "December 11, 2022",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_156",
@@ -1557,7 +1712,8 @@
     "course_name": "Pandas",
     "signed_by": "Aleksey Bilogur (Kaggle Instructor), Alexis Cook (Head of Kaggle Learn)",
     "issued_date": "January 26, 2023",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_157",
@@ -1567,7 +1723,8 @@
     "course_name": "Personal Finance",
     "signed_by": "Ayman Sadiq (CEO, 10 Minute School), Sadman Sadik (Course Instructor), Sakib Bin Rashid (Course Instructor)",
     "issued_date": "2023-01-27 00:03:31",
-    "credential_id": "63d2c0737bad8"
+    "credential_id": "63d2c0737bad8",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_158",
@@ -1577,7 +1734,8 @@
     "course_name": "লেখালেখির হাতেখড়ি (Lekhalekhir Hatekhodi)",
     "signed_by": "Ayman Sadiq (CEO, 10 Minute School)",
     "issued_date": "2023-01-27 15:04:11",
-    "credential_id": "63d3938b7ec7e"
+    "credential_id": "63d3938b7ec7e",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_159",
@@ -1587,7 +1745,8 @@
     "course_name": "MERN Stack with Blog Project",
     "signed_by": "Tech Academy (Instructors)",
     "issued_date": "Feb. 10, 2023",
-    "credential_id": "UC-5bd78a8e-03da-415e-bf76-22a3a7a9d838"
+    "credential_id": "UC-5bd78a8e-03da-415e-bf76-22a3a7a9d838",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_160",
@@ -1597,7 +1756,8 @@
     "course_name": "Mujib's Bangladesh Biman Half Marathon (7.5 KMS RUN)",
     "signed_by": "Shahin Meraj (Race Director)",
     "issued_date": "3rd February, 2023",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_161",
@@ -1607,7 +1767,8 @@
     "course_name": "বাংলা বিতর্ক (Bangla Bitorko)",
     "signed_by": "Ayman Sadiq (Course Instructor & CEO, 10 Minute School)",
     "issued_date": "2023-02-15 15:57:49",
-    "credential_id": "63ecac9dcc7a3"
+    "credential_id": "63ecac9dcc7a3",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_162",
@@ -1617,7 +1778,8 @@
     "course_name": "Facebook Marketing Tools (Organic)",
     "signed_by": "Yanur Islam Piash (Head of Bohubrihi)",
     "issued_date": "April 20, 2023, 11:18 am",
-    "credential_id": "102733-168-196-7887"
+    "credential_id": "102733-168-196-7887",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_163",
@@ -1627,7 +1789,8 @@
     "course_name": "YouTube Marketing for Organic Reach",
     "signed_by": "Yanur Islam Piash (Head of Bohubrihi)",
     "issued_date": "April 20, 2023, 4:35 pm",
-    "credential_id": "102733-168-198-6919"
+    "credential_id": "102733-168-198-6919",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_164",
@@ -1637,7 +1800,8 @@
     "course_name": "Master Git and Github - Beginner to Expert",
     "signed_by": "Anisul Islam",
     "issued_date": "May 12, 2023",
-    "credential_id": "UC-68fb01db-f588-470d-ba22-d4f9a85c7143"
+    "credential_id": "UC-68fb01db-f588-470d-ba22-d4f9a85c7143",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_165",
@@ -1647,7 +1811,8 @@
     "course_name": "Pronunciation Mistakes",
     "signed_by": "Ayman Sadiq, Munzereen Shahid, Sakib Bin Rashid, Mehzabeen Ahmad",
     "issued_date": "2023-05-24",
-    "credential_id": "646cff2ed29f9"
+    "credential_id": "646cff2ed29f9",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_166",
@@ -1657,7 +1822,8 @@
     "course_name": "Information Security Fundamentals",
     "signed_by": "Cyber Quince",
     "issued_date": "May 25, 2023",
-    "credential_id": "UC-27238444-4dff-4be2-b73b-fdfbed666abd"
+    "credential_id": "UC-27238444-4dff-4be2-b73b-fdfbed666abd",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_167",
@@ -1667,7 +1833,8 @@
     "course_name": "Flutter Frenzy",
     "signed_by": "N/A",
     "issued_date": "May 20, 2023",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_168",
@@ -1677,7 +1844,8 @@
     "course_name": "AWS Identity and Access Management (IAM) Foundations",
     "signed_by": "YouAccel Training (Instructors)",
     "issued_date": "May 31, 2023",
-    "credential_id": "UC-b2deb305-ae1c-45a1-ba41-97b7e23c5bea"
+    "credential_id": "UC-b2deb305-ae1c-45a1-ba41-97b7e23c5bea",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_169",
@@ -1687,7 +1855,8 @@
     "course_name": "Generative AI with Large Language Models",
     "signed_by": "Antje Barth, Chris Fregly, Shelbee Eigenbrode, Mike Chambers",
     "issued_date": "Nov 15, 2023",
-    "credential_id": "5HHD8UUHCSCF"
+    "credential_id": "5HHD8UUHCSCF",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_170",
@@ -1697,7 +1866,8 @@
     "course_name": "Pathway to Software Engineering",
     "signed_by": "Yanur Islam Piash (Founder and CEO - Bohubrihi)",
     "issued_date": "March 29, 2024",
-    "credential_id": "66065c0c70ba638bb61400b6"
+    "credential_id": "66065c0c70ba638bb61400b6",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_171",
@@ -1707,7 +1877,8 @@
     "course_name": "Introduction to Data Analytics",
     "signed_by": "Yanur Islam Piash (Founder and CEO - Bohubrihi)",
     "issued_date": "March 30, 2024, 11:38 am",
-    "credential_id": "6607a5522958c1e34240e4e8"
+    "credential_id": "6607a5522958c1e34240e4e8",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_172",
@@ -1717,7 +1888,8 @@
     "course_name": "Generative AI: The Evolution of Thoughtful Online Search",
     "signed_by": "Dan Brodnitz (Head of Content Strategy, Learning)",
     "issued_date": "Dec 25, 2023 at 01:07PM UTC",
-    "credential_id": "b78e669c2228ab4a2a78554bf0f4c80f20d11c8a271289c24104076d8a43d377"
+    "credential_id": "b78e669c2228ab4a2a78554bf0f4c80f20d11c8a271289c24104076d8a43d377",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_173",
@@ -1727,7 +1899,8 @@
     "course_name": "Module 1: Personal and Professional Development of the 2024 Aspire Leaders Program",
     "signed_by": "N/A",
     "issued_date": "2024",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_174",
@@ -1737,7 +1910,8 @@
     "course_name": "Module 2: World-Class, Educator led Masterclasses of the 2024 Aspire Leaders Program",
     "signed_by": "N/A",
     "issued_date": "2024",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_175",
@@ -1747,7 +1921,8 @@
     "course_name": "Docker Training Course for the Absolute Beginner",
     "signed_by": "Mumshad Mannambeth (Founder & Trainer, KodeKloud)",
     "issued_date": "August 12, 2024",
-    "credential_id": "acff2544-4ab9-40bc-bb53-020b290b4d69"
+    "credential_id": "acff2544-4ab9-40bc-bb53-020b290b4d69",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_176",
@@ -1757,7 +1932,8 @@
     "course_name": "Module 3: Aspire Horizons Course of the 2024 Aspire Leaders Program",
     "signed_by": "N/A",
     "issued_date": "2024",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_177",
@@ -1767,7 +1943,8 @@
     "course_name": "2024 Aspire Leaders Program",
     "signed_by": "Tarun Khanna (Co-Founder, Aspire Institute), Karim Lakhani (Co-Founder, Aspire Institute)",
     "issued_date": "August 2024",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_178",
@@ -1777,7 +1954,8 @@
     "course_name": "Project Management & Other Tools for Career Development",
     "signed_by": "Margaret Meloni (Instructor), Sue Robins (Instructor), Diane Spiegel (Executive Coach)",
     "issued_date": "Sep 28, 2022",
-    "credential_id": "Q9TSEDFDF6PP"
+    "credential_id": "Q9TSEDFDF6PP",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_179",
@@ -1787,7 +1965,8 @@
     "course_name": "কোরআন বোঝার হাতেখড়ি (Introduction to Understanding the Quran)",
     "signed_by": "Ayman Sadiq (CEO, 10 Minute School), Hafiz Mawlana Muhammad Muhsin Mashkur (Course Instructor)",
     "issued_date": "8 Jul, 2025",
-    "credential_id": "686c2974f14ff"
+    "credential_id": "686c2974f14ff",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_180",
@@ -1797,7 +1976,8 @@
     "course_name": "Introduction to AWS Databases",
     "signed_by": "Mumshad Mannambeth (Founder & Trainer, KodeKloud)",
     "issued_date": "November 23, 2024",
-    "credential_id": "78f97d14-785f-4663-8c9c-53e2bd29987f"
+    "credential_id": "78f97d14-785f-4663-8c9c-53e2bd29987f",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_181",
@@ -1807,7 +1987,8 @@
     "course_name": "Grafana Loki",
     "signed_by": "Mumshad Mannambeth",
     "issued_date": "November 29, 2024",
-    "credential_id": "14d4a6d3-3a62-4a57-b554-f91782fb9ccb"
+    "credential_id": "14d4a6d3-3a62-4a57-b554-f91782fb9ccb",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_182",
@@ -1817,7 +1998,8 @@
     "course_name": "AWS RDS",
     "signed_by": "Mumshad Mannambeth",
     "issued_date": "January 28, 2025",
-    "credential_id": "9f8a63fd-ce5e-4e2b-8e41-e74086e515d1"
+    "credential_id": "9f8a63fd-ce5e-4e2b-8e41-e74086e515d1",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_183",
@@ -1827,7 +2009,8 @@
     "course_name": "AWS RDS",
     "signed_by": "Mumshad Mannambeth",
     "issued_date": "January 28, 2025",
-    "credential_id": "9f8a63fd-ce5e-4e2b-8e41-e74086e515d1"
+    "credential_id": "9f8a63fd-ce5e-4e2b-8e41-e74086e515d1",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_184",
@@ -1837,7 +2020,8 @@
     "course_name": "Getting Started with Kubernetes",
     "signed_by": "N/A",
     "issued_date": "February 22nd 2025",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_185",
@@ -1847,7 +2031,8 @@
     "course_name": "Introduction to Developing AI Agents",
     "signed_by": "N/A",
     "issued_date": "March 31, 2025",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_186",
@@ -1857,7 +2042,8 @@
     "course_name": "Refactoring to SOLID C# Code",
     "signed_by": "N/A",
     "issued_date": "April 27, 2025",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_187",
@@ -1867,7 +2053,8 @@
     "course_name": "C# Best Practices",
     "signed_by": "N/A",
     "issued_date": "May 17, 2025",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_188",
@@ -1877,7 +2064,8 @@
     "course_name": "Linode : Kubernetes Engine",
     "signed_by": "Mumshad Mannambeth (Founder & Trainer, KodeKloud)",
     "issued_date": "June 05, 2025",
-    "credential_id": "d8218d38-3e11-4ddb-8b2d-f1133b766bb9"
+    "credential_id": "d8218d38-3e11-4ddb-8b2d-f1133b766bb9",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_189",
@@ -1887,7 +2075,8 @@
     "course_name": "Amazon Elastic Container Service (AWS ECS)",
     "signed_by": "Mumshad Mannambeth (Founder & Trainer, KodeKloud)",
     "issued_date": "June 03, 2025",
-    "credential_id": "7f610e6e-8c82-4fe3-84ae-02fd12220d82"
+    "credential_id": "7f610e6e-8c82-4fe3-84ae-02fd12220d82",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_190",
@@ -1897,7 +2086,8 @@
     "course_name": "Building Highly Available Kubernetes Clusters",
     "signed_by": "N/A",
     "issued_date": "June 13th 2025",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_191",
@@ -1907,7 +2097,8 @@
     "course_name": "Deploying Stateful Applications in Kubernetes",
     "signed_by": "N/A",
     "issued_date": "June 14, 2025",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_192",
@@ -1917,7 +2108,8 @@
     "course_name": "Creating Custom Resources in Kubernetes 1",
     "signed_by": "N/A",
     "issued_date": "June 15, 2025",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_193",
@@ -1927,7 +2119,8 @@
     "course_name": "Managing Advanced Kubernetes Logging and Tracing",
     "signed_by": "N/A",
     "issued_date": "June 24, 2025",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_194",
@@ -1937,7 +2130,8 @@
     "course_name": "Geospatial Analysis",
     "signed_by": "Jessica Li (Kaggle Instructor), Alexis Cook (Head of Kaggle Learn)",
     "issued_date": "June 25, 2025",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_195",
@@ -1947,7 +2141,8 @@
     "course_name": "AWS Summit India Online",
     "signed_by": "N/A",
     "issued_date": "June 26, 2025",
-    "credential_id": "N/A"
+    "credential_id": "N/A",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_196",
@@ -1957,7 +2152,8 @@
     "course_name": "কুরআন বোঝার হাতেখড়ি (Quran Bojhar Hatekhodi)",
     "signed_by": "Ayman Sadiq (CEO, 10 Minute School), Hafiz Mawlana Muhammad Muhsin Mashkur (Course Instructor)",
     "issued_date": "8 Jul, 2025",
-    "credential_id": "686c2974f14ff"
+    "credential_id": "686c2974f14ff",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_197",
@@ -1967,7 +2163,8 @@
     "course_name": "Marriage Preparation (Male)",
     "signed_by": "Shamsul Arefin (Instructor), Aslaf Academy (Founder & Director)",
     "issued_date": "N/A",
-    "credential_id": "PjWjEw9Xzi"
+    "credential_id": "PjWjEw9Xzi",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_198",
@@ -1977,7 +2174,8 @@
     "course_name": "Time Management",
     "signed_by": "Academy Authority (Instructor), Aslaf Academy (Founder & Director)",
     "issued_date": "N/A",
-    "credential_id": "OXe2VmZzcW"
+    "credential_id": "OXe2VmZzcW",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_199",
@@ -1987,7 +2185,8 @@
     "course_name": "Introduction to Islamic Finance and Economics",
     "signed_by": "Aslaf Academy (Instructor), Aslaf Academy (Founder & Director)",
     "issued_date": "N/A",
-    "credential_id": "S8TD8xX3Zc"
+    "credential_id": "S8TD8xX3Zc",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_200",
@@ -1997,7 +2196,8 @@
     "course_name": "Intro to AI Agents and Agentic AI",
     "signed_by": "Ned Krastev (CEO, 365 Company), Ivan Kitov (COO, 365 Company)",
     "issued_date": "November 10, 2025",
-    "credential_id": "CC-13B8E16B5C"
+    "credential_id": "CC-13B8E16B5C",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_201",
@@ -2007,7 +2207,8 @@
     "course_name": "Fully Automated MLOps",
     "signed_by": "Ned Krastev (CEO, 365 Company), Ivan Kitov (COO, 365 Company)",
     "issued_date": "November 14, 2025",
-    "credential_id": "CC-AC033C8AC7"
+    "credential_id": "CC-AC033C8AC7",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_202",
@@ -2017,7 +2218,8 @@
     "course_name": "Introduction to OpenAI",
     "signed_by": "Mumshad Mannambeth (Founder & Trainer, KodeKloud)",
     "issued_date": "November 02, 2025",
-    "credential_id": "674f7bcd-d711-4349-895b-32bdb9d52eea"
+    "credential_id": "674f7bcd-d711-4349-895b-32bdb9d52eea",
+    "is_sensitive_certificate": false
   },
   {
     "id": "Certificate_203",
@@ -2027,6 +2229,7 @@
     "course_name": "Learn by Doing - Prompt Engineering 101",
     "signed_by": "Mumshad Mannambeth (Founder & Trainer, KodeKloud)",
     "issued_date": "November 14, 2025",
-    "credential_id": "642594b8-6afa-4810-b32a-1bb820b9dc3b"
+    "credential_id": "642594b8-6afa-4810-b32a-1bb820b9dc3b",
+    "is_sensitive_certificate": false
   }
 ]
