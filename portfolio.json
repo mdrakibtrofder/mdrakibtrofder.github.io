@@ -107,20 +107,99 @@
   "projects": [
     {
       "name": "Software System Reconstruction Tool",
-      "technologies": [
-        "Python",
-        "Nest JS",
-        "React JS"
-      ],
-      "description": "Translated Java code to JSON from repositories, hid information, regenerated using LLMs, and compared with actual system JSON."
+      "type": "University Capstone Project",
+      "technologies": ["Python", "Nest JS", "React JS"],
+      "description": "Automated tool for translating Java structures to JSON, evaluating LLM-based system regeneration and architectural comparison."
+    },
+    {
+      "name": "Smart Campus IoT Hub",
+      "type": "University Capstone Project",
+      "technologies": ["ESP32", "MQTT", "Node.js", "React"],
+      "description": "Real-time energy monitoring and automated lighting control system for university campus facilities."
+    },
+    {
+      "name": "EcoTrack: Personal Carbon Ledger",
+      "type": "Idea Project",
+      "technologies": ["Next.js", "Firebase", "Tailwind CSS"],
+      "description": "A gamified social platform to track, reduce, and offset personal carbon footprints through daily activity logging."
+    },
+    {
+      "name": "SkillSwap: P2P Learning",
+      "type": "Idea Project",
+      "technologies": ["Solidity", "Web3.js", "React"],
+      "description": "Decentralized knowledge exchange marketplace using smart contracts to reward mentors with platform tokens."
+    },
+    {
+      "name": "QuickAid: Emergency Responder",
+      "type": "Hackathon Project",
+      "technologies": ["Flutter", "Google Maps API", "FastAPI"],
+      "description": "Winner at BUET CSE Fest Hackathon. Real-time emergency dispatch system optimizing responder routes using AI."
+    },
+    {
+      "name": "MediChain: Secure Health Sync",
+      "type": "Hackathon Project",
+      "technologies": ["Ethereum", "IPFS", "React"],
+      "description": "Privacy-preserving medical record sharing platform built during National Hackathon for secure doctor-patient data exchange."
     },
     {
       "name": "Git, Docker & Kubernetes Bioscope",
-      "technologies": [
-        "React",
-        "Tailwind CSS"
-      ],
-      "description": "Developed an interactive platform with concept visualizations, animations, and command simulation tools for Git, Docker, and Kubernetes."
+      "type": "Concept Visualization Project",
+      "technologies": ["React", "Framer Motion", "Tailwind CSS"],
+      "description": "Interactive platform featuring high-fidelity animations and command simulation tools for DevOps concept learning."
+    },
+    {
+      "name": "Visual DS: Sorting Odyssey",
+      "type": "Concept Visualization Project",
+      "technologies": ["Three.js", "Typescript", "React"],
+      "description": "3D visualization of complex sorting algorithms and data structure operations for intuitive computer science education."
+    },
+    {
+      "name": "Institutional Resource Planner",
+      "type": "Organization Portfolio Project",
+      "technologies": ["Angular", "ASP.NET Core", "PostgreSQL"],
+      "description": "Enterprise-grade ERP system developed for university administration to manage academic lifecycle and resource allocation."
+    },
+    {
+      "name": "Global Health NGO Dashboard",
+      "type": "Organization Portfolio Project",
+      "technologies": ["React", "D3.js", "Python"],
+      "description": "Strategic monitoring and evaluation platform for tracking health indices and vaccination coverage across multiple regions."
+    },
+    {
+      "name": "Compiler Construction Toolkit",
+      "type": "Course Materials Oriented Project",
+      "technologies": ["C++", "Flex/Bison", "Python"],
+      "description": "Educational suite for visualizing Lexical analysis and Syntax Tree generation for undergraduate Compiler Design courses."
+    },
+    {
+      "name": "OS Scheduler Simulator",
+      "type": "Course Materials Oriented Project",
+      "technologies": ["React", "Chart.js", "Typescript"],
+      "description": "Interactive CPU scheduling visualizer supporting FCFS, SJF, and Round Robin analysis for Operating Systems lab."
+    },
+    {
+      "name": "LLM Code Summarization Study",
+      "type": "Research Oriented Project",
+      "technologies": ["PyTorch", "Transformers", "Python"],
+      "description": "Analyzing attention mechanisms in Large Language Models for generating concise, human-readable summaries of complex code snippets."
+    },
+    {
+      "name": "Geospatial Ag-Tech Engine",
+      "type": "Research Oriented Project",
+      "technologies": ["Google Earth Engine", "Python", "Gis"],
+      "description": "Processing large-scale satellite datasets to predict crop yields and monitor soil moisture for precision agriculture research."
+    },
+    {
+      "name": "High-Throughput API Gateway",
+      "type": "Advance Engineering Project",
+      "technologies": ["Go", "Redis", "Docker", "gRPC"],
+      "description": "Custom-built, distributed API gateway supporting rate limiting, circuit breaking, and service discovery for microservices."
+    },
+    {
+      "name": "Distributed Event Streamer",
+      "type": "Advance Engineering Project",
+      "technologies": ["Java", "Kafka", "Zookeeper"],
+      "description": "Scalable event streaming platform designed to handle millions of events per second with high availability and fault tolerance."
     }
   ],
   "certificates": {
