@@ -13,6 +13,9 @@ import Certificates from "../components/Certificates";
 import Teaching from "../components/Teaching";
 import Mentorship from "../components/Mentorship";
 import Workshops from "../components/Workshops";
+import Volunteer from "../components/Volunteer";
+import DiplomaCareer from "../components/DiplomaCareer";
+import ContentMedia from "../components/ContentMedia";
 import portfolioData from "../../portfolio.json";
 
 const Index = () => {
@@ -20,7 +23,24 @@ const Index = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "certificates", "teaching", "mentorship", "workshops", "experience", "projects", "education", "contact"];
+      const sections = [
+        "home", 
+        "about", 
+        "skills", 
+        "certificates", 
+        "teaching", 
+        "mentorship", 
+        "workshops", 
+        "experience", 
+        "volunteer",
+        "projects", 
+        "education", 
+        "diploma",
+        "vlogs",
+        "writings",
+        "technical-content",
+        "contact"
+      ];
       const scrollPosition = window.scrollY + 100;
 
       sections.forEach((section) => {
@@ -55,15 +75,29 @@ const Index = () => {
         <Teaching />
         <Mentorship />
         <Workshops />
+        
         <section id="experience">
           <Experience professional={portfolioData.professional_experience} internship={portfolioData.internship_experience} />
         </section>
+        
+        <Volunteer volunteer={(portfolioData as any).volunteer_experience} />
+        
         <section id="projects">
           <Projects projects={portfolioData.projects} />
         </section>
+        
         <section id="education">
           <Education education={portfolioData.education} />
         </section>
+
+        <DiplomaCareer tracks={(portfolioData as any).diploma_career_tracks} />
+
+        <ContentMedia 
+          vlogs={(portfolioData as any).vlogs_local_guide}
+          writings={(portfolioData as any).writings}
+          technical={(portfolioData as any).technical_content}
+        />
+
         <section id="contact">
           <Contact contact={portfolioData.contact} links={portfolioData.links} />
         </section>

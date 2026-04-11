@@ -51,6 +51,37 @@
       ],
       "logo": "/organizations/notre-dame-college-dhaka.png",
       "link": "https://ndc.edu.bd/"
+    },
+    {
+      "degree": "Secondary School Certificate (SSC)",
+      "institute": "Kurmitola High School, Dhaka",
+      "duration": "Jan 2011 - Feb 2016",
+      "result": "GPA 5.00/5.00",
+      "achievements": [
+        "Achivement: Finalist, Creative Talent Hunt, 2014"
+      ],
+      "logo": "/organizations/kurmitola-high-school.png"
+    },
+    {
+      "degree": "Primary Education (Class 4 - 5)",
+      "institute": "Kurmitola Govt. Primary School",
+      "duration": "Jan 2009 - Dec 2010",
+      "achievements": [],
+      "isMore": true
+    },
+    {
+      "degree": "Primary Education (Class 4)",
+      "institute": "Barotopa Govt. Primary School",
+      "duration": "Oct 2008 - Dec 2008",
+      "achievements": [],
+      "isMore": true
+    },
+    {
+      "degree": "Primary Education (Class 1-4)",
+      "institute": "Tangra Nosor Uddin Govt. Primary School",
+      "duration": "Jan 2005 - Oct 2008",
+      "achievements": [],
+      "isMore": true
     }
   ],
   "professional_experience": [
@@ -259,6 +290,142 @@
         "tag": "DevOps"
       }
     ]
+  },
+  "diploma_career_tracks": [
+    {
+      "title": "BACKEND ENGINEERING WITH PYTHON & AWS",
+      "organization": "Unknown",
+      "duration": "August 2025 - Present",
+      "icon": "terminal"
+    },
+    {
+      "title": "Aspire Institute Leadership Program",
+      "organization": "Aspire Institute",
+      "duration": "April 2024 - June 2024",
+      "icon": "award"
+    }
+  ],
+  "volunteer_experience": [
+    {
+      "role": "Vice President",
+      "organization": "Somoyon",
+      "duration": "Jan 2024 - Feb 2025",
+      "category": "Social Services",
+      "logo": "/organizations/somoyon.png"
+    },
+    {
+      "role": "Treasurer",
+      "organization": "IIT Software Engineers' Community",
+      "duration": "Mar 2023 - May 2024",
+      "category": "Science and Technology",
+      "logo": "/organizations/iit-sec.png"
+    },
+    {
+      "role": "Office Secretary",
+      "organization": "Khilkhet Pathagar",
+      "duration": "Jan 2022 - Present",
+      "category": "Community Service",
+      "logo": "/organizations/khilkhet-pathagar.png"
+    },
+    {
+      "role": "Organizing Secretary",
+      "organization": "Somoyon",
+      "duration": "Jan 2023 - Dec 2023",
+      "category": "Social Services",
+      "logo": "/organizations/somoyon.png"
+    },
+    {
+      "role": "Event Ambassador (University of Dhaka)",
+      "organization": "CUET Computer Club",
+      "duration": "Aug 2021 - Oct 2021",
+      "category": "Science and Technology",
+      "logo": "/organizations/cuet-cc.png",
+      "link": "https://www.facebook.com/cuetcomputerclub/photos/pcb.1234565843635911/1234564600302702"
+    },
+    {
+      "role": "Organizing Secretary",
+      "organization": "IITDU Debating Club",
+      "duration": "Jan 2020 - Oct 2022",
+      "category": "Arts and Culture",
+      "logo": "/organizations/iitdu-dc.png"
+    },
+    {
+      "role": "Executive Committee Member",
+      "organization": "IITDU Debating Club",
+      "duration": "Feb 2019 - Jan 2020",
+      "category": "Arts and Culture",
+      "logo": "/organizations/iitdu-dc.png"
+    },
+    {
+      "role": "Member",
+      "organization": "Dhaka University Research Society (DURS)",
+      "duration": "Feb 2019 - Present",
+      "category": "Science and Technology",
+      "logo": "/organizations/durs.png"
+    },
+    {
+      "role": "Member",
+      "organization": "IIT Software Engineers' Community",
+      "duration": "Jan 2019 - Mar 2022",
+      "category": "Science and Technology",
+      "logo": "/organizations/iit-sec.png"
+    },
+    {
+      "role": "Member",
+      "organization": "Notre Dame Science Club",
+      "duration": "Jul 2016 - Jun 2018",
+      "category": "Science and Technology",
+      "logo": "/organizations/ndsc.png"
+    },
+    {
+      "role": "Member",
+      "organization": "Notre Dame Writers' Club",
+      "duration": "Jul 2016 - Jun 2018",
+      "category": "Arts and Culture",
+      "logo": "/organizations/ndwc.png"
+    },
+    {
+      "role": "Member",
+      "organization": "Bishwa Sahitto Kendra",
+      "duration": "Nov 2018 - May 2019",
+      "category": "Arts and Culture",
+      "logo": "/organizations/bsk.png"
+    },
+    {
+      "role": "Member",
+      "organization": "Khilkhet Pathagar",
+      "duration": "Jan 2015 - Aug 2017",
+      "category": "Community Service",
+      "logo": "/organizations/khilkhet-pathagar.png"
+    },
+    {
+      "role": "Executive Committee Member",
+      "organization": "Khilkhet Pathagar",
+      "duration": "Aug 2017 - Dec 2021",
+      "category": "Community Service",
+      "logo": "/organizations/khilkhet-pathagar.png"
+    },
+    {
+      "role": "Executive Committee Member",
+      "organization": "IIT Software Engineers' Community",
+      "duration": "Mar 2022 - Mar 2023",
+      "category": "Science and Technology",
+      "logo": "/organizations/iit-sec.png"
+    }
+  ],
+  "vlogs_local_guide": {
+    "youtube": "https://www.youtube.com/@mdrakibtrofder",
+    "google_maps": "https://www.google.com/maps/contrib/110694871538640683885/reviews/@22.6904924,90.2202369,451393m/data=!3m2!1e3!4b1!4m3!8m2!3m1!1e1?authuser=1&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "writings": [
+    "https://mdrakibtrofder.blogspot.com/",
+    "https://trofderthoughts.blogspot.com/",
+    "https://dailymotivationalinsights.blogspot.com/"
+  ],
+  "technical_content": {
+    "blog": "https://programmingwithtrofder.blogspot.com/",
+    "youtube": "https://www.youtube.com/@programmingwithtrofder",
+    "medium": "https://rakib3004.medium.com/"
   },
   "links": [
     "https://mdrakibtrofder.github.io/",
