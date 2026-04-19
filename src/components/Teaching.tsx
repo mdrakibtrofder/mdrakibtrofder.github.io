@@ -169,25 +169,6 @@ const Teaching = () => {
           })}
         </div>
         
-        {/* Statistics or Philosophy section */}
-        <div className="mt-20 p-8 rounded-3xl bg-violet-500/5 border border-violet-500/10 flex flex-col md:flex-row items-center justify-between gap-8">
-           <div className="space-y-2">
-             <h3 className="text-xl font-bold">Teaching Philosophy</h3>
-             <p className="text-muted-foreground text-sm max-w-xl italic">
-               "My goal is to simplify complex abstractions into intuitive building blocks, fostering a culture of curiosity and hands-on discovery in the lab."
-             </p>
-           </div>
-           <div className="grid grid-cols-2 gap-8 shrink-0">
-              <div className="text-center">
-                <p className="text-3xl font-bold text-violet-500">7+</p>
-                <p className="text-xs text-muted-foreground uppercase font-bold tracking-widest">Active Courses</p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl font-bold text-violet-500">2026</p>
-                <p className="text-xs text-muted-foreground uppercase font-bold tracking-widest">Current Tenure</p>
-              </div>
-           </div>
-        </div>
       </div>
     </section>
   );

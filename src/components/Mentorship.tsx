@@ -50,18 +50,8 @@ const Mentorship = () => {
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
               <span className="text-blue-500 italic">Mentorship</span>
             </h2>
-
-          </div>
-          <div className="hidden lg:block">
-            <div className="p-4 bg-background rounded-2xl border border-border/50 shadow-sm flex items-center gap-4">
-              <div className="h-10 w-10 rounded-full bg-blue-500/10 flex items-center justify-center">
-                <Users className="h-5 w-5 text-blue-500" />
-              </div>
-              <p className="text-sm font-bold truncate">8+ Active Mentees</p>
-            </div>
           </div>
         </div>
-
         <div className="grid grid-cols-1 gap-12">
           {mentorships.map((mentor, index) => (
             <div
