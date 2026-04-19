@@ -84,9 +84,6 @@ const Teaching = () => {
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
             Teaching & <span className="text-violet-500">Mentorship</span>
           </h2>
-          <p className="text-muted-foreground max-w-2xl text-lg">
-            Empowering the next generation of engineers through rigorous coursework, practical experimentation, and ethical grounding in Computer Science.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

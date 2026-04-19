@@ -8,7 +8,8 @@ const mentorships = [
     role: "Internship Supervisor @ Streams Tech Ltd.",
     period: "October 2025 - January 2026",
     studentCount: "3 Students",
-    location: "In-house Projects",
+    location: "Office",
+    programType: "6 Month Long Academic Industrial Internship",
     projects: [
       "Meeting Summarizer (AI Transcription)",
       "Call Center AI Agents",
@@ -19,11 +20,12 @@ const mentorships = [
     color: "blue"
   },
   {
-    institution: "CSE, BUET",
+    institution: "CSE, Bangladesh University of Engineering and Technology",
     role: "Industry Mentor @ Streams Tech Ltd.",
     period: "December 2025 - January 2026",
     studentCount: "5 Students",
-    location: "Ecological Monitoring",
+    location: "Online",
+    programType: "Final Year Capstone Project with Industry Collaboration",
     projects: [
       "Satellite Imagery Analysis for Deforestation",
       "River Bank Erosion & Delta Land-cover Tracking",
@@ -46,11 +48,9 @@ const Mentorship = () => {
               Mentorship & Guidance
             </Badge>
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-              Nurturing <span className="text-blue-500 italic">Future Engineers</span>
+              <span className="text-blue-500 italic">Mentorship</span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-xl">
-              I am dedicated to mentoring the next generation of software engineers through hands-on industrial projects and academic collaboration.
-            </p>
+
           </div>
           <div className="hidden lg:block">
             <div className="p-4 bg-background rounded-2xl border border-border/50 shadow-sm flex items-center gap-4">
@@ -87,14 +87,17 @@ const Mentorship = () => {
                   </p>
                 </div>
 
-                <div className="flex flex-wrap gap-3">
-                   <div className="flex items-center gap-1.5 px-3 py-1 transparent rounded-full bg-secondary/80 text-xs font-semibold text-muted-foreground">
-                     <Users className="h-3.5 w-3.5" /> {mentor.studentCount}
-                   </div>
-                   <div className="flex items-center gap-1.5 px-3 py-1 transparent rounded-full bg-secondary/80 text-xs font-semibold text-muted-foreground">
-                     <MapPin className="h-3.5 w-3.5" /> {mentor.location}
-                   </div>
-                </div>
+<div className="flex flex-wrap gap-3">
+                    <div className="flex items-center gap-1.5 px-3 py-1 transparent rounded-full bg-secondary/80 text-xs font-semibold text-muted-foreground">
+                      <Users className="h-3.5 w-3.5" /> {mentor.studentCount}
+                    </div>
+                    <div className="flex items-center gap-1.5 px-3 py-1 transparent rounded-full bg-secondary/80 text-xs font-semibold text-muted-foreground">
+                      <MapPin className="h-3.5 w-3.5" /> {mentor.location}
+                    </div>
+                    <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 text-xs font-semibold text-blue-600 dark:text-blue-400 border border-blue-500/20">
+                      {mentor.programType}
+                    </div>
+                 </div>
               </div>
 
               <div className="md:w-2/3">
