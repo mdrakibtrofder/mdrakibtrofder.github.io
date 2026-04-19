@@ -40,7 +40,7 @@ const Mentorship = () => {
     <section id="mentorship" className="py-24 px-4 bg-slate-50/50 dark:bg-slate-900/20 relative overflow-hidden">
       {/* Design elements */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
-      
+
       <div className="max-w-5xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="space-y-4">
@@ -55,7 +55,7 @@ const Mentorship = () => {
           <div className="hidden lg:block">
             <div className="p-4 bg-background rounded-2xl border border-border/50 shadow-sm flex items-center gap-4">
               <div className="h-10 w-10 rounded-full bg-blue-500/10 flex items-center justify-center">
-                 <Users className="h-5 w-5 text-blue-500" />
+                <Users className="h-5 w-5 text-blue-500" />
               </div>
               <p className="text-sm font-bold truncate">8+ Active Mentees</p>
             </div>
@@ -64,14 +64,13 @@ const Mentorship = () => {
 
         <div className="grid grid-cols-1 gap-12">
           {mentorships.map((mentor, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="group relative flex flex-col md:flex-row gap-8 md:gap-16 p-8 rounded-[2rem] bg-background border border-border/40 hover:border-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500"
             >
               {/* Vertical accent */}
-              <div className={`absolute left-0 top-12 bottom-12 w-1.5 rounded-r-full transition-all duration-500 ${
-                mentor.color === 'blue' ? 'bg-blue-500' : 'bg-emerald-500'
-              } opacity-50 group-hover:opacity-100 group-hover:w-2`} />
+              <div className={`absolute left-0 top-12 bottom-12 w-1.5 rounded-r-full transition-all duration-500 ${mentor.color === 'blue' ? 'bg-blue-500' : 'bg-emerald-500'
+                } opacity-50 group-hover:opacity-100 group-hover:w-2`} />
 
               <div className="md:w-1/3 space-y-6">
                 <div className="space-y-2">
@@ -87,17 +86,14 @@ const Mentorship = () => {
                   </p>
                 </div>
 
-<div className="flex flex-wrap gap-3">
-                    <div className="flex items-center gap-1.5 px-3 py-1 transparent rounded-full bg-secondary/80 text-xs font-semibold text-muted-foreground">
-                      <Users className="h-3.5 w-3.5" /> {mentor.studentCount}
-                    </div>
-                    <div className="flex items-center gap-1.5 px-3 py-1 transparent rounded-full bg-secondary/80 text-xs font-semibold text-muted-foreground">
-                      <MapPin className="h-3.5 w-3.5" /> {mentor.location}
-                    </div>
-                    <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-500/10 text-xs font-semibold text-blue-600 dark:text-blue-400 border border-blue-500/20">
-                      {mentor.programType}
-                    </div>
-                 </div>
+                <div className="flex flex-wrap gap-3">
+                  <div className="flex items-center gap-1.5 px-3 py-1 transparent rounded-full bg-secondary/80 text-xs font-semibold text-muted-foreground">
+                    <Users className="h-3.5 w-3.5" /> {mentor.studentCount}
+                  </div>
+                  <div className="flex items-center gap-1.5 px-3 py-1 transparent rounded-full bg-secondary/80 text-xs font-semibold text-muted-foreground">
+                    <MapPin className="h-3.5 w-3.5" /> {mentor.location}
+                  </div>
+                </div>
               </div>
 
               <div className="md:w-2/3">
@@ -105,17 +101,17 @@ const Mentorship = () => {
                   <div className="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-500">
                     <Building2 className="h-32 w-32 -rotate-12" />
                   </div>
-                  
+
                   <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-6 flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-blue-500" />
                     Core Project Contributions
                   </h4>
-                  
+
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
                     {mentor.projects.map((proj, pIdx) => (
                       <li key={pIdx} className="flex items-start gap-3 group/item">
                         <div className="h-5 w-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0 mt-0.5 group-hover/item:bg-blue-500 group-hover/item:text-white transition-all">
-                           <div className="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover/item:bg-white" />
+                          <div className="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover/item:bg-white" />
                         </div>
                         <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors leading-relaxed">
                           {proj}
@@ -127,14 +123,6 @@ const Mentorship = () => {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Closing statement */}
-        <div className="mt-20 text-center">
-            <p className="text-muted-foreground text-sm flex items-center justify-center gap-2 font-medium">
-              <GraduationCap className="h-5 w-5 text-blue-500" />
-              Empowering engineers through applied industrial challenges
-            </p>
         </div>
       </div>
     </section>
