@@ -71,23 +71,24 @@ const Index = () => {
         <section id="skills">
           <Skills skills={portfolioData.technical_skills} certificates={portfolioData.certificates} />
         </section>
-        <Certificates />
-        <Teaching />
-        <Mentorship />
-        <Workshops />
         
         <section id="experience">
           <Experience professional={portfolioData.professional_experience} internship={portfolioData.internship_experience} />
         </section>
         
+        <section id="education">
+          <Education education={portfolioData.education} />
+        </section>
+        
+        <Certificates />
+        <Teaching />
+        <Mentorship />
+        <Workshops />
+        
         <Volunteer volunteer={(portfolioData as any).volunteer_experience} />
         
         <section id="projects">
           <Projects projects={portfolioData.projects} />
-        </section>
-        
-        <section id="education">
-          <Education education={portfolioData.education} />
         </section>
 
         <DiplomaCareer tracks={(portfolioData as any).diploma_career_tracks} />
