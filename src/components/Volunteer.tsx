@@ -1,5 +1,6 @@
 
-import { ShieldCheck, Calendar, MapPin, Link as LinkIcon, ExternalLink } from "lucide-react";
+import { useState } from "react";
+import { ShieldCheck, Calendar, MapPin, Link as LinkIcon, ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
 
 interface Volunteer {
   role: string;
@@ -11,6 +12,10 @@ interface Volunteer {
 }
 
 const Volunteer = ({ volunteer }: { volunteer: Volunteer[] }) => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleVolunteer = showAll ? volunteer : volunteer.slice(0, 4);
+  const remainingCount = volunteer.length - 4;
+
   return (
     <div id="volunteer" className="py-24 px-4 bg-background relative overflow-hidden">
       {/* Decorative background elements */}
@@ -29,7 +34,7 @@ const Volunteer = ({ volunteer }: { volunteer: Volunteer[] }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {volunteer.map((item, index) => (
+          {visibleVolunteer.map((item, index) => (
             <div
               key={index}
               className="group relative bg-secondary/20 backdrop-blur-sm border border-white/5 rounded-2xl p-6 transition-all duration-500 hover:bg-secondary/40 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(16,185,129,0.1)]"
@@ -91,6 +96,25 @@ const Volunteer = ({ volunteer }: { volunteer: Volunteer[] }) => {
             </div>
           ))}
         </div>
+
+        {remainingCount > 0 && (
+          <div className="text-center mt-12">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="inline-flex items-center px-6 py-3 rounded-xl bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 font-semibold transition-all duration-300 border border-emerald-500/30 hover:border-emerald-500/50"
+            >
+              {showAll ? (
+                <>
+                  Show Less <ChevronUp className="ml-2 w-4 h-4" />
+                </>
+              ) : (
+                <>
+                  Show More ({remainingCount}) <ChevronDown className="ml-2 w-4 h-4" />
+                </>
+              )}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

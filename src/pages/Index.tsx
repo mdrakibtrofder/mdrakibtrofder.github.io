@@ -80,12 +80,12 @@ const Index = () => {
           <Education education={portfolioData.education} />
         </section>
         
-        <Certificates />
         <Teaching />
         <Mentorship />
         <Workshops />
-        
         <Volunteer volunteer={(portfolioData as any).volunteer_experience} />
+        
+        <Certificates />
         
         <section id="projects">
           <Projects projects={portfolioData.projects} />
