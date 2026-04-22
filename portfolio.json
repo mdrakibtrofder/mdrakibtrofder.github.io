@@ -31,6 +31,17 @@
   },
   "education": [
     {
+      "degree": "M.Sc. Engg., Computer Science & Engineering",
+      "institute": "Rajshahi University of Science and Technology",
+      "duration": "April 2026 - Present",
+      "cgpa": "---",
+      "achievements": [
+        "Academic Performance: ----"
+      ],
+      "logo": "/organizations/rajshahi-university-of-science-and-technology.png",
+      "link": "https://www.ru.ac.bd/"
+    },
+    {
       "degree": "B.Sc, Software Engineering",
       "institute": "IIT, University of Dhaka",
       "duration": "January 2019 - December 2023",

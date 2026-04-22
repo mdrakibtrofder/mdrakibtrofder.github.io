@@ -1,9 +1,77 @@
 
-import { BookOpen, Monitor, Shield, Users, Code, Terminal, Briefcase, GraduationCap } from "lucide-react";
+import { useState } from "react";
+import { BookOpen, Monitor, Shield, Users, Code, Terminal, Briefcase, GraduationCap, ExternalLink } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 const courses = [
+  {
+    code: "CSE 2123",
+    title: "Introduction to Computer Programming",
+    semester: "Winter 2026",
+    type: "Theory",
+    icon: Code,
+    color: "blue",
+    description: "Covering the core concepts of procedural programming, data types, control flow, and algorithmic thinking.",
+    url: "https://mdrakibtrofder.github.io/introduction-to-computer-programming"
+  },
+  {
+    code: "CSE 2124",
+    title: "Introduction to Computer Programming Sessional",
+    semester: "Winter 2026",
+    type: "Sessional",
+    icon: Terminal,
+    color: "emerald",
+    description: "Hands-on implementation of programming concepts through weekly lab exercises and project-based learning."
+  },
+  {
+    code: "CSE 2109",
+    title: "Computer Fundamentals",
+    semester: "Winter 2026",
+    type: "Theory",
+    icon: Monitor,
+    color: "purple",
+    description: "Undergraduate foundational course on computer architecture, operating systems, and digital logic design.",
+    url: "https://mdrakibtrofder.github.io/computer-fundamentals"
+  },
+  {
+    code: "CSE 2110",
+    title: "Computer Fundamentals Sessional",
+    semester: "Winter 2026",
+    type: "Sessional",
+    icon: Monitor,
+    color: "indigo",
+    description: "Practical exploration of hardware components, peripheral interfacing, and system software configuration."
+  },
+  {
+    code: "CSE 4215",
+    title: "Professional Issues and Ethics",
+    semester: "Winter 2026",
+    type: "Theory",
+    icon: Users,
+    color: "rose",
+    description: "Examining the social impact of technology, ethical frameworks for developers, and legal issues in computing.",
+    url: "https://mdrakibtrofder.github.io/professional-issues-and-ethics-for-computer-science/"
+  },
+  {
+    code: "CSE 4102",
+    title: "Computer Security Sessional",
+    semester: "Winter 2026",
+    type: "Sessional",
+    icon: Shield,
+    color: "cyan",
+    description: "Advanced lab focused on penetration testing, security auditing, and implementing robust cryptographic protocols."
+  },
+  {
+    code: "CSE 1204",
+    title: "Computer Applications for Business",
+    semester: "Winter 2026",
+    type: "Theory",
+    icon: Briefcase,
+    color: "orange",
+    description: "Bridging technology and business with advanced spreadsheet modeling, database management, and IT workflows."
+  },
   {
     code: "CSE 2123",
     title: "Introduction to Computer Programming",
