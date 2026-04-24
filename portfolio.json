@@ -100,6 +100,7 @@
       "role": "Lecturer",
       "company": "Bangladesh Army University of Science and Technology",
       "duration": "January 2026 - Present",
+      "location": "Nilphamari, Bangladesh",
       "responsibilities": [
         "Conducting lectures and laboratory sessions for undergraduate courses at CSE department and other non-departmental courses.",
         "Mentoring students in research projects and academic development."      ],
@@ -110,6 +111,7 @@
       "role": "Associate Software Engineer",
       "company": "Streams Tech Ltd.",
       "duration": "January 2024 - January 2026",
+      "location": "Dhaka, Bangladesh",
       "responsibilities": [
         "Developed microservice-based web application for monitoring and evaluation systems using Angular, ASP.NET, and Python.",
         "Developed end-to-end AI agent solutions leveraging the Gemini API.",
@@ -125,6 +127,7 @@
       "role": "Research Intern",
       "company": "SEMERU Lab, William & Mary",
       "duration": "August 2023 - December 2023",
+      "location": "Dhaka, Bangladesh",
       "responsibilities": [
         "Analyzed and reconstructed existing software structures to create detailed datasets.",
         "Evaluated performance of reconstruction tools and studied limitations of LLMs in software reconstruction."
@@ -136,6 +139,7 @@
       "role": "Trainee Software Engineer",
       "company": "Cefalo Bangladesh Ltd.",
       "duration": "January 2023 - June 2023",
+      "location": "Dhaka, Bangladesh",
       "responsibilities": [
         "Designed and built an in-house social media platform from prototype to deployment.",
         "Completed intensive training in core web development."
@@ -147,6 +151,7 @@
     "role": "Intern Software Engineer",
     "company": "Innova Tech Bangladesh",
     "duration": "July 2021 - December 2021",
+    "location": "Dhaka, Bangladesh",
     "responsibilities": [
       "Developed a front-end project using Vue.js, implementing responsive components and state management.",
       "Integrated REST APIs with HTTP Basic authentication to ensure secure data exchange between the client and server."
