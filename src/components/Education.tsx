@@ -21,77 +21,67 @@ const Education = ({ education }: {
   const mainEducation = education.filter(edu => !edu.isMore);
   const moreEducation = education.filter(edu => edu.isMore);
 
-  const renderEduCard = (edu: any, index: number) => (
-    <div
-      key={index}
-      className="bg-secondary/40 rounded-lg p-6 border border-transparent hover:border-primary transition-all duration-300"
-    >
-      <div className="flex flex-col md:flex-row items-start md:items-center space-y-4 md:space-y-0 md:space-x-6">
-        <div className="flex-shrink-0 w-20 h-20 flex items-center justify-center rounded-lg bg-white/5 p-2 border border-slate-600">
-          {edu.logo ? (
-            edu.link ? (
-              <a href={edu.link} target="_blank" rel="noopener noreferrer">
-                <img
-                  src={edu.logo}
-                  alt={`${edu.institute} logo`}
-                  className="max-w-full max-h-full object-contain hover:opacity-80 transition-opacity"
-                />
-              </a>
-            ) : (
-              <img
-                src={edu.logo}
-                alt={`${edu.institute} logo`}
-                className="max-w-full max-h-full object-contain"
-              />
-            )
-          ) : (
-            <GraduationCap className="w-12 h-12 text-emerald-400" />
-          )}
-        </div>
-
-        <div className="flex-grow">
-          <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-2">
-            <div>
-              <h3 className="text-xl font-semibold text-emerald-400 mb-1">
-                {edu.degree}
-              </h3>
-              {edu.link ? (
-                <a href={edu.link} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
-                  <h4 className="text-lg font-medium text-foreground">
-                    {edu.institute}
-                  </h4>
-                </a>
+  const renderEduTimelineItem = (edu: any, index: number) => (
+    <div key={index} className="relative pl-16">
+      <span className="absolute left-4 top-6 h-4 w-4 rounded-full border-4 border-emerald-400 bg-secondary shadow-xl" />
+      <div className="rounded-3xl border border-slate-700/60 bg-secondary/50 p-6 shadow-xl transition-all duration-300 hover:border-emerald-400/40">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-20 h-20 flex items-center justify-center rounded-3xl bg-white/5 p-2 border border-slate-600">
+              {edu.logo ? (
+                edu.link ? (
+                  <a href={edu.link} target="_blank" rel="noopener noreferrer">
+                    <img
+                      src={edu.logo}
+                      alt={`${edu.institute} logo`}
+                      className="max-w-full max-h-full object-contain hover:opacity-80 transition-opacity"
+                    />
+                  </a>
+                ) : (
+                  <img
+                    src={edu.logo}
+                    alt={`${edu.institute} logo`}
+                    className="max-w-full max-h-full object-contain"
+                  />
+                )
               ) : (
-                <h4 className="text-lg font-medium text-foreground">
-                  {edu.institute}
-                </h4>
-              )}
-              {edu.achievements.length > 0 && (
-                <p className="text-muted-foreground">
-                  {edu.achievements.join(", ")}
-                </p>
+                <GraduationCap className="w-12 h-12 text-emerald-400" />
               )}
             </div>
 
-            <div className="mt-2 md:mt-0 text-left md:text-right">
-              { (edu.cgpa || edu.result) && (
-                <span className="bg-indigo-400/10 text-indigo-400 px-3 py-1 rounded-full text-sm font-medium">
-                  {edu.cgpa ? `CGPA: ${edu.cgpa}` : edu.result}
-                </span>
+            <div>
+              <h3 className="text-xl font-semibold text-emerald-400 mb-1">{edu.degree}</h3>
+              {edu.link ? (
+                <a href={edu.link} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
+                  <h4 className="text-lg font-medium text-foreground">{edu.institute}</h4>
+                </a>
+              ) : (
+                <h4 className="text-lg font-medium text-foreground">{edu.institute}</h4>
               )}
-              <p className="text-muted-foreground mt-2">{edu.duration}</p>
+              {edu.achievements.length > 0 && (
+                <p className="mt-2 text-muted-foreground">{edu.achievements.join(", ")}</p>
+              )}
             </div>
           </div>
 
-          {(edu.cgpa || edu.result) && (
-            <div className="bg-gradient-to-r from-emerald-500/10 to-blue-500/10 rounded-lg p-4 border border-emerald-500/20 mt-4">
-              <div className="flex items-center space-x-2">
-                <span className="text-emerald-400 font-semibold">Academic Performance:</span>
-                <span className="text-foreground font-bold text-lg">{edu.cgpa ? edu.cgpa : edu.result}</span>
-              </div>
-            </div>
-          )}
+          <div className="text-left lg:text-right">
+            {(edu.cgpa || edu.result) && (
+              <span className="inline-flex rounded-full bg-indigo-400/10 px-3 py-1 text-sm font-medium text-indigo-400">
+                {edu.cgpa ? `CGPA: ${edu.cgpa}` : edu.result}
+              </span>
+            )}
+            <p className="mt-3 text-sm uppercase tracking-[0.24em] text-emerald-400/70">{edu.duration}</p>
+          </div>
         </div>
+
+        {(edu.cgpa || edu.result) && (
+          <div className="mt-6 rounded-3xl border border-emerald-500/20 bg-gradient-to-r from-emerald-500/10 to-blue-500/10 p-4">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-emerald-400 font-semibold">Academic Performance:</span>
+              <span className="text-foreground font-bold text-lg">{edu.cgpa ? edu.cgpa : edu.result}</span>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -111,32 +101,34 @@ const Education = ({ education }: {
           </p>
         </div>
 
-        <div className="space-y-6">
-          {mainEducation.map((edu, index) => renderEduCard(edu, index))}
-
-          {showMore && (
-            <div className="space-y-6 animate-in fade-in slide-in-from-top-4 duration-500">
-              {moreEducation.map((edu, index) => renderEduCard(edu, index + 100))}
-            </div>
-          )}
-
-          {moreEducation.length > 0 && (
-            <div className="flex justify-center mt-12">
-              <Button
-                variant="outline"
-                onClick={() => setShowMore(!showMore)}
-                className="group border-emerald-500/50 hover:border-emerald-500 hover:bg-emerald-500/10"
-              >
-                {showMore ? "See Less Education" : "See More Education"}
-                {showMore ? (
-                  <ChevronUp className="ml-2 h-4 w-4 transition-transform group-hover:-translate-y-1" />
-                ) : (
-                  <ChevronDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
-                )}
-              </Button>
-            </div>
-          )}
+        <div className="relative">
+          <div className="absolute top-0 bottom-0 left-6 w-px bg-slate-600/40" />
+          <div className="space-y-10">
+            {mainEducation.map((edu, index) => renderEduTimelineItem(edu, index))}
+            {showMore && (
+              <div className="space-y-10 animate-in fade-in slide-in-from-top-4 duration-500">
+                {moreEducation.map((edu, index) => renderEduTimelineItem(edu, index + 100))}
+              </div>
+            )}
+          </div>
         </div>
+
+        {moreEducation.length > 0 && (
+          <div className="flex justify-center mt-12">
+            <Button
+              variant="outline"
+              onClick={() => setShowMore(!showMore)}
+              className="group border-emerald-500/50 hover:border-emerald-500 hover:bg-emerald-500/10"
+            >
+              {showMore ? "See Less Education" : "See More Education"}
+              {showMore ? (
+                <ChevronUp className="ml-2 h-4 w-4 transition-transform group-hover:-translate-y-1" />
+              ) : (
+                <ChevronDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
+              )}
+            </Button>
+          </div>
+        )}
       </div>
     </div>
   );
