@@ -65,18 +65,59 @@ const Projects = ({ projects }: { projects: Project[] }) => {
     ? projects 
     : projects.filter(p => p.type === activeTab);
 
+  const renderProjectTimelineItem = (project: Project, index: number) => (
+    <div key={`${project.name}-${index}`} className="relative pl-16">
+      <span className="absolute left-4 top-6 h-4 w-4 rounded-full border-4 border-emerald-400 bg-secondary shadow-xl" />
+      <div className="rounded-3xl border border-slate-700/60 bg-secondary/50 p-6 shadow-xl transition-all duration-300 hover:border-emerald-400/40">
+        <div className="flex flex-col gap-4">
+          {/* Type Badge */}
+          <div className={`inline-flex items-center gap-2 bg-gradient-to-r ${getTypeStyles(project.type)} px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider border w-fit`}>
+            {getCategoryIcon(project.type)}
+            {project.type}
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold text-emerald-400 mb-2">
+              {project.name}
+            </h3>
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+              {project.description}
+            </p>
+
+            <div className="flex flex-wrap gap-2">
+              {project.technologies.slice(0, 5).map((tech) => (
+                <span
+                  key={tech}
+                  className="bg-white/5 px-3 py-1 rounded-md text-[10px] uppercase font-bold text-muted-foreground border border-white/5"
+                >
+                  {tech}
+                </span>
+              ))}
+              {project.technologies.length > 5 && (
+                <span className="text-[10px] text-muted-foreground self-center ml-1">
+                  +{project.technologies.length - 5} more
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <div className="py-20 px-4 relative overflow-hidden" id="projects">
       {/* Background Decorative Elements */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] -z-10" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-[120px] -z-10" />
 
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-extrabold mb-4 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
             Technical Portfolio
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+          <div className="h-1.5 w-24 bg-emerald-500 mx-auto rounded-full"></div>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mt-6">
             A curated collection of academic research, engineering feats, and creative visualizations.
           </p>
         </div>
@@ -106,52 +147,15 @@ const Projects = ({ projects }: { projects: Project[] }) => {
           })}
         </div>
         
-        {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 transition-all duration-500">
-          {filteredProjects.map((project, index) => (
-            <div
-              key={`${project.name}-${index}`}
-              className="group relative bg-secondary/20 backdrop-blur-xl rounded-2xl p-8 border border-white/5 hover:border-white/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-black/40"
-            >
-              {/* Type Badge */}
-              <div className={`inline-flex items-center gap-2 bg-gradient-to-r ${getTypeStyles(project.type)} px-4 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-wider mb-6 border`}>
-                {getCategoryIcon(project.type)}
-                {project.type}
-              </div>
-
-              <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
-                {project.name}
-              </h3>
-              
-              <p className="text-muted-foreground mb-8 leading-relaxed line-clamp-3 text-sm">
-                {project.description}
-              </p>
-              
-              <div>
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.slice(0, 4).map((tech) => (
-                    <span
-                      key={tech}
-                      className="bg-white/5 px-3 py-1 rounded-md text-[10px] uppercase font-bold text-muted-foreground border border-white/5"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                  {project.technologies.length > 4 && (
-                    <span className="text-[10px] text-muted-foreground self-center ml-1">
-                      +{project.technologies.length - 4} more
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              {/* Decorative Corner Highlight */}
-              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-white/5 to-transparent rounded-tr-2xl -z-10 group-hover:opacity-100 opacity-0 transition-opacity" />
+        {/* Projects Timeline List */}
+        {filteredProjects.length > 0 ? (
+          <div className="relative">
+            <div className="absolute top-0 bottom-0 left-6 w-px bg-emerald-500/30" />
+            <div className="space-y-10">
+              {filteredProjects.map((project, index) => renderProjectTimelineItem(project, index))}
             </div>
-          ))}
-        </div>
-
-        {filteredProjects.length === 0 && (
+          </div>
+        ) : (
           <div className="text-center py-20">
             <p className="text-muted-foreground italic">No projects found in this category yet.</p>
           </div>
