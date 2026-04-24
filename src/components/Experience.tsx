@@ -25,7 +25,7 @@ const Experience = ({ professional, internship }: {
   const experiences = [...professional, ...internship].map(exp => ({
     title: exp.role,
     company: exp.company,
-    location: "Dhaka, Bangladesh",
+    location: exp.company === "Bangladesh Army University of Science and Technology" ? "Nilphamari, Bangladesh" : "Dhaka, Bangladesh",
     period: exp.duration,
     type: professional.includes(exp as any) ? "Full-time" : "Internship",
     achievements: exp.responsibilities,

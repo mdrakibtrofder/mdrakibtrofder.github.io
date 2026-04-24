@@ -75,21 +75,21 @@
     },
     {
       "degree": "Primary Education (Class 4 - 5)",
-      "institute": "Kurmitola Govt. Primary School",
+      "institute": "Kurmitola Govt. Primary School, Dhaka",
       "duration": "Jan 2009 - Dec 2010",
       "achievements": [],
       "isMore": true
     },
     {
       "degree": "Primary Education (Class 4)",
-      "institute": "Barotopa Govt. Primary School",
+      "institute": "Barotopa Govt. Primary School, Gazipur",
       "duration": "Oct 2008 - Dec 2008",
       "achievements": [],
       "isMore": true
     },
     {
       "degree": "Primary Education (Class 1-4)",
-      "institute": "Tangra Nosor Uddin Govt. Primary School",
+      "institute": "Tangra Nosor Uddin Govt. Primary School, Gazipur",
       "duration": "Jan 2005 - Oct 2008",
       "achievements": [],
       "isMore": true
@@ -101,10 +101,8 @@
       "company": "Bangladesh Army University of Science and Technology",
       "duration": "January 2026 - Present",
       "responsibilities": [
-        "Conducting lectures and laboratory sessions for undergraduate courses in Computer Science.",
-        "Mentoring students in research projects and academic development.",
-        "Contributing to curriculum development and departmental activities."
-      ],
+        "Conducting lectures and laboratory sessions for undergraduate courses at CSE department and other non-departmental courses.",
+        "Mentoring students in research projects and academic development."      ],
       "logo": "/organizations/baust.png",
       "link": "https://baust.edu.bd/"
     },
@@ -144,6 +142,17 @@
       ],
       "logo": "/organizations/cefalo-bangladesh-ltd.png",
       "link": "https://www.cefalo.com/"
+    },
+    {
+    "role": "Intern Software Engineer",
+    "company": "Innova Tech Bangladesh",
+    "duration": "July 2021 - December 2021",
+    "responsibilities": [
+      "Developed a front-end project using Vue.js, implementing responsive components and state management.",
+      "Integrated REST APIs with HTTP Basic authentication to ensure secure data exchange between the client and server."
+    ],
+    "logo": "/organizations/innova-tech-bangladesh.jpeg",
+    "link": "https://www.innovatechbd.net/"
     }
   ],
   "projects": [
