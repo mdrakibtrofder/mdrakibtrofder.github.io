@@ -36,18 +36,18 @@ const theoryCourses = [
     description: "Examining the social impact of technology, ethical frameworks for developers, and legal issues in computing.",
     url: "https://mdrakibtrofder.github.io/professional-issues-and-ethics-for-computer-science/"
   },
+];
+
+const sessionalCourses = [
   {
     code: "CSE 1204",
     title: "Computer Applications for Business",
     semester: "Winter 2026",
-    type: "Theory",
+    type: "Sessional",
     icon: Briefcase,
     color: "orange",
     description: "Bridging technology and business with advanced spreadsheet modeling, database management, and IT workflows."
-  }
-];
-
-const sessionalCourses = [
+  },
   {
     code: "CSE 2124",
     title: "Introduction to Computer Programming Sessional",
@@ -206,7 +206,7 @@ const Teaching = () => {
                 </div>
                 <div>
                   <p className="font-semibold text-violet-500">Room No - 303 (C), Department of CSE</p>
-                  <p className="text-sm text-muted-foreground">Ahsanullah University of Science and Technology</p>
+                  <p className="text-sm text-muted-foreground">Bangladesh Army University of Science and Technology</p>
                 </div>
               </div>
             </div>

@@ -30,11 +30,11 @@ const Experience = ({ professional, internship }: {
 
   const renderExperienceTimelineItem = (exp: any, index: number) => (
     <div key={index} className="relative pl-16">
-      <span className="absolute left-4 top-6 h-4 w-4 rounded-full border-4 border-orange-400 bg-secondary shadow-xl" />
-      <div className="rounded-3xl border border-slate-700/60 bg-secondary/50 p-6 shadow-xl transition-all duration-300 hover:border-orange-400/40">
+      <span className="absolute left-4 top-6 h-4 w-4 rounded-full border-4 border-emerald-400 bg-secondary shadow-xl" />
+      <div className="rounded-3xl border border-slate-700/60 bg-secondary/50 p-6 shadow-xl transition-all duration-300 hover:border-emerald-400/40">
         <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
           <div className="flex items-start gap-4">
-            <div className="w-14 h-14 flex items-center justify-center rounded-3xl bg-white/10 p-3 border border-slate-600">
+            <div className="flex-shrink-0 w-20 h-20 flex items-center justify-center rounded-3xl bg-white/5 p-2 border border-slate-600">
               {exp.link ? (
                 <a href={exp.link} target="_blank" rel="noopener noreferrer">
                   <img
@@ -52,9 +52,9 @@ const Experience = ({ professional, internship }: {
               )}
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-orange-400">{exp.title}</h3>
+              <h3 className="text-xl font-semibold text-emerald-400">{exp.title}</h3>
               {exp.link ? (
-                <a href={exp.link} target="_blank" rel="noopener noreferrer" className="hover:text-orange-400 transition-colors">
+                <a href={exp.link} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
                   <h4 className="text-lg text-foreground">{exp.company}</h4>
                 </a>
               ) : (
@@ -68,14 +68,14 @@ const Experience = ({ professional, internship }: {
             <span className="inline-flex rounded-full bg-emerald-400/10 px-3 py-1 text-sm font-medium text-emerald-400">
               {exp.type}
             </span>
-            <p className="mt-3 text-sm uppercase tracking-[0.24em] text-orange-400/70">{exp.period}</p>
+            <p className="mt-3 text-sm uppercase tracking-[0.24em] text-emerald-400/70">{exp.period}</p>
           </div>
         </div>
 
         <ul className="mt-6 space-y-3">
           {exp.achievements.map((achievement: string, achIndex: number) => (
             <li key={achIndex} className="flex items-start gap-3 text-muted-foreground">
-              <span className="mt-1 h-2.5 w-2.5 rounded-full bg-orange-400 flex-shrink-0" />
+              <span className="mt-1 h-2.5 w-2.5 rounded-full bg-emerald-400 flex-shrink-0" />
               <span>{achievement}</span>
             </li>
           ))}
@@ -87,12 +87,12 @@ const Experience = ({ professional, internship }: {
   return (
     <div className="py-12 px-4 bg-secondary/20">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
+        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
           Work Experience
         </h2>
 
         <div className="relative">
-          <div className="absolute top-0 bottom-0 left-6 w-px bg-slate-600/40" />
+          <div className="absolute top-0 bottom-0 left-6 w-px bg-emerald-500/30" />
           <div className="space-y-10">
             {experiences.map((exp, index) => renderExperienceTimelineItem(exp, index))}
           </div>

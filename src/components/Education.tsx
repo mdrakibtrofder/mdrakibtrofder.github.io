@@ -96,9 +96,6 @@ const Education = ({ education }: {
             Education
           </h2>
           <div className="h-1.5 w-24 bg-emerald-500 mx-auto rounded-full"></div>
-          <p className="text-muted-foreground mt-6 max-w-2xl mx-auto italic">
-            "Education is the most powerful weapon which you can use to change the world."
-          </p>
         </div>
 
         <div className="relative">
