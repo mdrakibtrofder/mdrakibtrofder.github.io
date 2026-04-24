@@ -16,6 +16,60 @@ const Volunteer = ({ volunteer }: { volunteer: Volunteer[] }) => {
   const visibleVolunteer = showAll ? volunteer : volunteer.slice(0, 4);
   const remainingCount = volunteer.length - 4;
 
+  const renderVolunteerTimelineItem = (item: Volunteer, index: number) => (
+    <div key={index} className="relative pl-16">
+      <span className="absolute left-4 top-6 h-4 w-4 rounded-full border-4 border-emerald-400 bg-secondary shadow-xl" />
+      <div className="rounded-3xl border border-slate-700/60 bg-secondary/50 p-6 shadow-xl transition-all duration-300 hover:border-emerald-400/40">
+        <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-20 h-20 flex items-center justify-center rounded-3xl bg-white/5 p-2 border border-slate-600">
+              {item.logo ? (
+                <img
+                  src={item.logo}
+                  alt={item.organization}
+                  className="max-w-full max-h-full object-contain"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "/placeholder.svg";
+                  }}
+                />
+              ) : (
+                <ShieldCheck className="w-12 h-12 text-emerald-400" />
+              )}
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold text-emerald-400">{item.role}</h3>
+              {item.link ? (
+                <a href={item.link} target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition-colors">
+                  <h4 className="text-lg text-foreground">{item.organization}</h4>
+                </a>
+              ) : (
+                <h4 className="text-lg text-foreground">{item.organization}</h4>
+              )}
+              <p className="text-muted-foreground mt-1">{item.category}</p>
+            </div>
+          </div>
+
+          <div className="text-left md:text-right">
+            <p className="text-sm uppercase tracking-[0.24em] text-emerald-400/70">{item.duration}</p>
+          </div>
+        </div>
+
+        {item.link && (
+          <div className="mt-6">
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-sm text-emerald-400 hover:text-emerald-300 font-medium transition-colors"
+            >
+              View Details <ExternalLink className="w-3.5 h-3.5 ml-1.5" />
+            </a>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+
   return (
     <div id="volunteer" className="py-24 px-4 bg-background relative overflow-hidden">
       {/* Decorative background elements */}
@@ -33,68 +87,11 @@ const Volunteer = ({ volunteer }: { volunteer: Volunteer[] }) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {visibleVolunteer.map((item, index) => (
-            <div
-              key={index}
-              className="group relative bg-secondary/20 backdrop-blur-sm border border-white/5 rounded-2xl p-6 transition-all duration-500 hover:bg-secondary/40 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(16,185,129,0.1)]"
-            >
-              <div className="flex items-start space-x-4 mb-6">
-                <div className="relative">
-                  <div className="w-16 h-16 rounded-xl bg-white/5 flex items-center justify-center border border-white/10 group-hover:border-emerald-500/50 transition-colors">
-                    {item.logo ? (
-                      <img
-                        src={item.logo}
-                        alt={item.organization}
-                        className="max-w-[70%] max-h-[70%] object-contain"
-                        onError={(e) => {
-                          (e.target as HTMLImageElement).src = "/placeholder.svg";
-                        }}
-                      />
-                    ) : (
-                      <ShieldCheck className="w-8 h-8 text-emerald-400" />
-                    )}
-                  </div>
-                  <div className="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-emerald-500 flex items-center justify-center border-2 border-background scale-0 group-hover:scale-100 transition-transform duration-300">
-                    <ShieldCheck className="w-3.5 h-3.5 text-white" />
-                  </div>
-                </div>
-                <div className="flex-grow pt-1">
-                  <h3 className="font-bold text-lg group-hover:text-emerald-400 transition-colors line-clamp-2">
-                    {item.role}
-                  </h3>
-                  <p className="text-sm text-emerald-500/80 font-medium">
-                    {item.organization}
-                  </p>
-                </div>
-              </div>
-
-              <div className="space-y-3 mb-6">
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <Calendar className="w-4 h-4 mr-2 text-emerald-500" />
-                  {item.duration}
-                </div>
-                <div className="flex items-center text-sm text-muted-foreground">
-                  <MapPin className="w-4 h-4 mr-2 text-emerald-500" />
-                  {item.category}
-                </div>
-              </div>
-
-              {item.link && (
-                <a
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm text-emerald-400 hover:text-emerald-300 font-medium transition-colors"
-                >
-                  View Details <ExternalLink className="w-3.5 h-3.5 ml-1.5" />
-                </a>
-              )}
-
-              {/* Decorative line */}
-              <div className="absolute bottom-0 left-6 right-6 h-[1px] bg-gradient-to-r from-transparent via-emerald-500/20 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
-            </div>
-          ))}
+        <div className="relative">
+          <div className="absolute top-0 bottom-0 left-6 w-px bg-emerald-500/30" />
+          <div className="space-y-10">
+            {visibleVolunteer.map((item, index) => renderVolunteerTimelineItem(item, index))}
+          </div>
         </div>
 
         {remainingCount > 0 && (
