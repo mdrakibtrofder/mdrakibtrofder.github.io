@@ -1,4 +1,7 @@
 
+import { useState } from "react";
+import { ChevronDown, ChevronUp } from "lucide-react";
+
 const Experience = ({ professional, internship }: {
   professional: {
     role: string;
@@ -17,6 +20,8 @@ const Experience = ({ professional, internship }: {
     link?: string;
   }[];
 }) => {
+  const [showMore, setShowMore] = useState(false);
+  
   const experiences = [...professional, ...internship].map(exp => ({
     title: exp.role,
     company: exp.company,
@@ -27,6 +32,9 @@ const Experience = ({ professional, internship }: {
     logo: exp.logo || "/placeholder.svg",
     link: exp.link
   }));
+
+  const mainExperiences = experiences.slice(0, -2);
+  const moreExperiences = experiences.slice(-2);
 
   const renderExperienceTimelineItem = (exp: any, index: number) => (
     <div key={index} className="relative pl-16">
@@ -94,9 +102,30 @@ const Experience = ({ professional, internship }: {
         <div className="relative">
           <div className="absolute top-0 bottom-0 left-6 w-px bg-emerald-500/30" />
           <div className="space-y-10">
-            {experiences.map((exp, index) => renderExperienceTimelineItem(exp, index))}
+            {mainExperiences.map((exp, index) => renderExperienceTimelineItem(exp, index))}
+            {showMore && (
+              <div className="space-y-10 animate-in fade-in slide-in-from-top-4 duration-500">
+                {moreExperiences.map((exp, index) => renderExperienceTimelineItem(exp, index + 100))}
+              </div>
+            )}
           </div>
         </div>
+
+        {moreExperiences.length > 0 && (
+          <div className="flex justify-center mt-12">
+            <button
+              onClick={() => setShowMore(!showMore)}
+              className="group inline-flex items-center px-6 py-2 rounded-full border border-emerald-500/50 hover:border-emerald-500 hover:bg-emerald-500/10 text-emerald-400 font-medium transition-all"
+            >
+              {showMore ? "See Less Work Experience" : "See More Work Experience"}
+              {showMore ? (
+                <ChevronUp className="ml-2 h-4 w-4 transition-transform group-hover:-translate-y-1" />
+              ) : (
+                <ChevronDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1" />
+              )}
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
