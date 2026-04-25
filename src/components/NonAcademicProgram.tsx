@@ -1,4 +1,3 @@
-
 import { Award, Terminal, Cpu, Layout, BookOpen, Clock } from "lucide-react";
 
 interface Track {
@@ -16,13 +15,13 @@ const iconMap: Record<string, any> = {
   book: BookOpen
 };
 
-const DiplomaCareer = ({ tracks }: { tracks: Track[] }) => {
+const NonAcademicProgram = ({ tracks }: { tracks: Track[] }) => {
   return (
     <div id="diploma" className="py-24 px-4 bg-secondary/5">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-purple-400 to-indigo-500 bg-clip-text text-transparent">
-            Diploma & Career Track Course
+            Non-Academic Program
           </h2>
           <div className="h-1.5 w-24 bg-purple-500 mx-auto rounded-full"></div>
         </div>
@@ -71,4 +70,4 @@ const DiplomaCareer = ({ tracks }: { tracks: Track[] }) => {
   );
 };
 
-export default DiplomaCareer;
+export default NonAcademicProgram;
