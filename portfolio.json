@@ -216,28 +216,37 @@
       "description": "3D interactive periodic table of AI concepts, algorithms, and frameworks with detailed visualizations and explanations."
     },
     {
-      "name": "Institutional Resource Planner",
+      "name": "Khilkhet Pathagar",
       "type": "Organization Portfolio Project",
-      "technologies": ["Angular", "ASP.NET Core", "PostgreSQL"],
-      "description": "Enterprise-grade ERP system developed for university administration to manage academic lifecycle and resource allocation."
+      "technologies": ["HTML", "CSS", "Javascript"],
+      "description": "A portfolio project for a public library, showcasing book collections, events, and community engagement through a user-friendly website."
     },
     {
-      "name": "Global Health NGO Dashboard",
+      "name": "Somoyon DU",
       "type": "Organization Portfolio Project",
-      "technologies": ["React", "D3.js", "Python"],
-      "description": "Strategic monitoring and evaluation platform for tracking health indices and vaccination coverage across multiple regions."
+      "technologies": ["React", "Tailwind CSS"],
+      "description": "University of Dhaka's Khilkhet, Vatara, Basundhara, Gulshan based community service organization portfolio."
     },
     {
-      "name": "Compiler Construction Toolkit",
+      "name": "Introduction to Computer Programming",
       "type": "Course Materials Oriented Project",
-      "technologies": ["C++", "Flex/Bison", "Python"],
-      "description": "Educational suite for visualizing Lexical analysis and Syntax Tree generation for undergraduate Compiler Design courses."
+      "technologies": ["React", "Typescript"],
+      "description": "Educational suite for visualizing Lexical analysis and Syntax Tree generation for undergraduate Compiler Design courses.",
+      "url": "https://mdrakibtrofder.github.io/professional-issues-and-ethics-for-computer-science"
     },
     {
-      "name": "OS Scheduler Simulator",
+      "name": "Professional Issues and Ethics for Computer Science",
       "type": "Course Materials Oriented Project",
-      "technologies": ["React", "Chart.js", "Typescript"],
-      "description": "Interactive CPU scheduling visualizer supporting FCFS, SJF, and Round Robin analysis for Operating Systems lab."
+      "technologies": ["React", "Typescript"],
+      "description": "Educational suite for visualizing Lexical analysis and Syntax Tree generation for undergraduate Compiler Design courses.",
+      "url": "https://mdrakibtrofder.github.io/professional-issues-and-ethics-for-computer-science"
+    },
+    {
+      "name": "Computer Fundamentals",
+      "type": "Course Materials Oriented Project",
+      "technologies": ["React", "Typescript"],
+      "description": "Interactive CPU scheduling visualizer supporting FCFS, SJF, and Round Robin analysis for Operating Systems lab.",
+      "url": "https://mdrakibtrofder.github.io/computer-fundamentals"
     },
     {
       "name": "LLM Code Summarization Study",
