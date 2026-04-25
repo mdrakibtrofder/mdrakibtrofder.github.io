@@ -161,9 +161,6 @@ const Volunteer = ({ volunteer }: { volunteer: Volunteer[] }) => {
             Volunteer Experience
           </h2>
           <div className="h-1.5 w-32 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto rounded-full"></div>
-          <p className="text-muted-foreground mt-6 max-w-2xl mx-auto text-lg">
-            Giving back to the community and contributing to social and technical growth.
-          </p>
         </div>
 
         <div className="relative">

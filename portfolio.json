@@ -168,10 +168,16 @@
       "description": "Automated tool for translating Java structures to JSON, evaluating LLM-based system regeneration and architectural comparison."
     },
     {
-      "name": "Smart Campus IoT Hub",
+      "name": "Blog Bee: AI-Powered Video-Blog Creation Platform",
       "type": "University Capstone Project",
-      "technologies": ["ESP32", "MQTT", "Node.js", "React"],
-      "description": "Real-time energy monitoring and automated lighting control system for university campus facilities."
+      "technologies": ["Python", "MySQL", "Node.js", "React"],
+      "description": "End-to-end AI agent solution for generating video blogs from user prompts, utilizing Gemini API for content creation and media processing."
+    },
+    {
+      "name": "Library Recommendation System",
+      "type": "University Capstone Project",
+      "technologies": ["Java", "JavaFX"],
+      "description": "AI-driven recommendation system for library users, analyzing borrowing history and preferences to suggest relevant books and resources."
     },
     {
       "name": "EcoTrack: Personal Carbon Ledger",
@@ -186,16 +192,16 @@
       "description": "Decentralized knowledge exchange marketplace using smart contracts to reward mentors with platform tokens."
     },
     {
-      "name": "QuickAid: Emergency Responder",
+      "name": "Vaccine Management System",
       "type": "Hackathon Project",
-      "technologies": ["Flutter", "Google Maps API", "FastAPI"],
-      "description": "Winner at BUET CSE Fest Hackathon. Real-time emergency dispatch system optimizing responder routes using AI."
+      "technologies": ["React", "NodeJS", "AWS"],
+      "description": "Comprehensive vaccine management system for tracking inventory, scheduling appointments, and monitoring vaccination coverage in real-time."
     },
     {
-      "name": "MediChain: Secure Health Sync",
+      "name": "Tech Edu Assistant",
       "type": "Hackathon Project",
-      "technologies": ["Ethereum", "IPFS", "React"],
-      "description": "Privacy-preserving medical record sharing platform built during National Hackathon for secure doctor-patient data exchange."
+      "technologies": ["HTML", "CSS", "Javascript"],
+      "description": "Aassist students with technical queries, providing instant explanations and resources for computer science and software engineering concepts."
     },
     {
       "name": "Git, Docker & Kubernetes Bioscope",
@@ -204,10 +210,10 @@
       "description": "Interactive platform featuring high-fidelity animations and command simulation tools for DevOps concept learning."
     },
     {
-      "name": "Visual DS: Sorting Odyssey",
+      "name": "AI Periodic Table",
       "type": "Concept Visualization Project",
       "technologies": ["Three.js", "Typescript", "React"],
-      "description": "3D visualization of complex sorting algorithms and data structure operations for intuitive computer science education."
+      "description": "3D interactive periodic table of AI concepts, algorithms, and frameworks with detailed visualizations and explanations."
     },
     {
       "name": "Institutional Resource Planner",

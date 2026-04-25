@@ -114,12 +114,9 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent">
-            Technical Portfolio
+            Projects
           </h2>
           <div className="h-1.5 w-24 bg-emerald-500 mx-auto rounded-full"></div>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mt-6">
-            A curated collection of academic research, engineering feats, and creative visualizations.
-          </p>
         </div>
 
         {/* Category Filter Tabs */}
