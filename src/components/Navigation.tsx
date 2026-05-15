@@ -88,7 +88,7 @@ const Navigation = ({ activeSection }: NavigationProps) => {
               className="text-2xl font-black bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent cursor-pointer hover:opacity-80 transition-opacity"
               onClick={() => scrollToSection("home")}
             >
-              TROFDER
+              Md. Rakib Trofder
             </div>
           </div>
 
