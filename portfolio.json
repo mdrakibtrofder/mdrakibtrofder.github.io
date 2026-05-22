@@ -251,14 +251,21 @@
       "type": "Organization Portfolio Project",
       "technologies": ["HTML", "CSS", "Javascript"],
       "description": "A portfolio project for a public library, showcasing book collections, events, and community engagement through a user-friendly website.",
-      "url": ""
+      "url": "https://khilkhetpathagar.github.io/"
     },
     {
       "name": "Somoyon DU",
       "type": "Organization Portfolio Project",
       "technologies": ["React", "Tailwind CSS"],
       "description": "University of Dhaka's Khilkhet, Vatara, Basundhara, Gulshan based community service organization portfolio.",
-      "url": ""
+      "url": "https://somoyondu.netlify.app/"
+    },
+    {
+      "name": "The Terminals",
+      "type": "Organization Portfolio Project",
+      "technologies": ["React", "Tailwind CSS"],
+      "description": "The Terminals is a university-oriented intellectual group dedicated to knowledge sharing, research & development, career guidance, and consultancy for academic excellence and community growth.",
+      "url": "https://the-terminals.github.io/"
     },
     {
       "name": "Introduction to Computer Programming",
