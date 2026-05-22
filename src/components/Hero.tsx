@@ -70,12 +70,6 @@ const Hero = ({ name, title }: { name: string; title: string }) => {
       {/* Main Content */}
       <div className="relative z-10 max-w-5xl mx-auto text-center">
         {/* Status Badge */}
-        <div className={`mb-8 transition-all duration-700 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-full shadow-lg border border-emerald-200 dark:border-emerald-700">
-            <span className="w-3 h-3 bg-emerald-400 rounded-full animate-pulse" />
-            <span className="text-sm font-medium text-slate-700 dark:text-slate-300">Available for opportunities</span>
-          </div>
-        </div>
 
         {/* Name */}
         <h1 className={`text-5xl md:text-7xl font-bold mb-6 transition-all duration-700 delay-200 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
@@ -142,35 +136,6 @@ const Hero = ({ name, title }: { name: string; title: string }) => {
             <Mail size={20} className="group-hover:rotate-12 transition-transform" />
             <span className="font-medium">Contact Me</span>
           </a>
-        </div>
-
-        {/* Stats */}
-        <div className={`grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 transition-all duration-700 delay-800 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          {[
-            { label: "Experience", value: "2+ Years" },
-            { label: "Projects", value: "18+" },
-            { label: "Certificates", value: "10+" },
-            { label: "Organizations", value: "15+" },
-          ].map((stat, i) => (
-            <div
-              key={i}
-              className="glass-card rounded-xl p-4 hover:bg-white/10 dark:hover:bg-white/5 transition-all duration-300 hover:scale-105"
-            >
-              <div className="text-2xl md:text-3xl font-bold text-emerald-500">{stat.value}</div>
-              <div className="text-sm text-slate-500 dark:text-slate-400">{stat.label}</div>
-            </div>
-          ))}
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className={`transition-all duration-700 delay-1000 ${loaded ? "opacity-100" : "opacity-0"}`}>
-          <button
-            onClick={scrollToAbout}
-            className="group flex flex-col items-center gap-2 text-slate-500 hover:text-emerald-500 transition-colors duration-300"
-          >
-            <span className="text-sm font-medium">Scroll to explore</span>
-            <ArrowDown size={24} className="group-hover:translate-y-2 transition-transform duration-300 animate-bounce" />
-          </button>
         </div>
       </div>
 

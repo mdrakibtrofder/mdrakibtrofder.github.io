@@ -103,7 +103,8 @@
       "location": "Nilphamari, Bangladesh",
       "responsibilities": [
         "Conducting lectures and laboratory sessions for undergraduate courses at CSE department and other non-departmental courses.",
-        "Mentoring students in research projects and academic development."      ],
+        "Mentoring students in research projects and academic development."
+      ],
       "logo": "/organizations/baust.png",
       "link": "https://baust.edu.bd/"
     },
@@ -148,16 +149,16 @@
       "link": "https://www.cefalo.com/"
     },
     {
-    "role": "Intern Software Engineer",
-    "company": "Innova Tech Bangladesh",
-    "duration": "July 2021 - December 2021",
-    "location": "Dhaka, Bangladesh",
-    "responsibilities": [
-      "Developed a front-end project using Vue.js, implementing responsive components and state management.",
-      "Integrated REST APIs with HTTP Basic authentication to ensure secure data exchange between the client and server."
-    ],
-    "logo": "/organizations/innova-tech-bangladesh.jpeg",
-    "link": "https://www.innovatechbd.net/"
+      "role": "Intern Software Engineer",
+      "company": "Innova Tech Bangladesh",
+      "duration": "July 2021 - December 2021",
+      "location": "Dhaka, Bangladesh",
+      "responsibilities": [
+        "Developed a front-end project using Vue.js, implementing responsive components and state management.",
+        "Integrated REST APIs with HTTP Basic authentication to ensure secure data exchange between the client and server."
+      ],
+      "logo": "/organizations/innova-tech-bangladesh.jpeg",
+      "link": "https://www.innovatechbd.net/"
     }
   ],
   "projects": [
@@ -165,74 +166,85 @@
       "name": "Software System Reconstruction Tool",
       "type": "University Capstone Project",
       "technologies": ["Python", "Nest JS", "React JS"],
-      "description": "Automated tool for translating Java structures to JSON, evaluating LLM-based system regeneration and architectural comparison."
+      "description": "Automated tool for translating Java structures to JSON, evaluating LLM-based system regeneration and architectural comparison.",
+      "url": ""
     },
     {
       "name": "Blog Bee: AI-Powered Video-Blog Creation Platform",
       "type": "University Capstone Project",
       "technologies": ["Python", "MySQL", "Node.js", "React"],
-      "description": "End-to-end AI agent solution for generating video blogs from user prompts, utilizing Gemini API for content creation and media processing."
+      "description": "End-to-end AI agent solution for generating video blogs from user prompts, utilizing Gemini API for content creation and media processing.",
+      "url": ""
     },
     {
       "name": "Library Recommendation System",
       "type": "University Capstone Project",
       "technologies": ["Java", "JavaFX"],
-      "description": "AI-driven recommendation system for library users, analyzing borrowing history and preferences to suggest relevant books and resources."
+      "description": "AI-driven recommendation system for library users, analyzing borrowing history and preferences to suggest relevant books and resources.",
+      "url": ""
     },
     {
       "name": "EcoTrack: Personal Carbon Ledger",
       "type": "Idea Project",
       "technologies": ["Next.js", "Firebase", "Tailwind CSS"],
-      "description": "A gamified social platform to track, reduce, and offset personal carbon footprints through daily activity logging."
+      "description": "A gamified social platform to track, reduce, and offset personal carbon footprints through daily activity logging.",
+      "url": ""
     },
     {
       "name": "SkillSwap: P2P Learning",
       "type": "Idea Project",
       "technologies": ["Solidity", "Web3.js", "React"],
-      "description": "Decentralized knowledge exchange marketplace using smart contracts to reward mentors with platform tokens."
+      "description": "Decentralized knowledge exchange marketplace using smart contracts to reward mentors with platform tokens.",
+      "url": ""
     },
     {
       "name": "Vaccine Management System",
       "type": "Hackathon Project",
       "technologies": ["React", "NodeJS", "AWS"],
-      "description": "Comprehensive vaccine management system for tracking inventory, scheduling appointments, and monitoring vaccination coverage in real-time."
+      "description": "Comprehensive vaccine management system for tracking inventory, scheduling appointments, and monitoring vaccination coverage in real-time.",
+      "url": ""
     },
     {
       "name": "Tech Edu Assistant",
       "type": "Hackathon Project",
       "technologies": ["HTML", "CSS", "Javascript"],
-      "description": "Aassist students with technical queries, providing instant explanations and resources for computer science and software engineering concepts."
+      "description": "Aassist students with technical queries, providing instant explanations and resources for computer science and software engineering concepts.",
+      "url": ""
     },
     {
       "name": "Git, Docker & Kubernetes Bioscope",
       "type": "Concept Visualization Project",
       "technologies": ["React", "Framer Motion", "Tailwind CSS"],
-      "description": "Interactive platform featuring high-fidelity animations and command simulation tools for DevOps concept learning."
+      "description": "Interactive platform featuring high-fidelity animations and command simulation tools for DevOps concept learning.",
+      "url": ""
     },
     {
       "name": "AI Periodic Table",
       "type": "Concept Visualization Project",
       "technologies": ["Three.js", "Typescript", "React"],
-      "description": "3D interactive periodic table of AI concepts, algorithms, and frameworks with detailed visualizations and explanations."
+      "description": "3D interactive periodic table of AI concepts, algorithms, and frameworks with detailed visualizations and explanations.",
+      "url": ""
     },
     {
       "name": "Khilkhet Pathagar",
       "type": "Organization Portfolio Project",
       "technologies": ["HTML", "CSS", "Javascript"],
-      "description": "A portfolio project for a public library, showcasing book collections, events, and community engagement through a user-friendly website."
+      "description": "A portfolio project for a public library, showcasing book collections, events, and community engagement through a user-friendly website.",
+      "url": ""
     },
     {
       "name": "Somoyon DU",
       "type": "Organization Portfolio Project",
       "technologies": ["React", "Tailwind CSS"],
-      "description": "University of Dhaka's Khilkhet, Vatara, Basundhara, Gulshan based community service organization portfolio."
+      "description": "University of Dhaka's Khilkhet, Vatara, Basundhara, Gulshan based community service organization portfolio.",
+      "url": ""
     },
     {
       "name": "Introduction to Computer Programming",
       "type": "Course Materials Oriented Project",
       "technologies": ["React", "Typescript"],
       "description": "Educational suite for visualizing Lexical analysis and Syntax Tree generation for undergraduate Compiler Design courses.",
-      "url": "https://mdrakibtrofder.github.io/professional-issues-and-ethics-for-computer-science"
+      "url": "https://mdrakibtrofder.github.io/introduction-to-computer-programming"
     },
     {
       "name": "Professional Issues and Ethics for Computer Science",
@@ -252,25 +264,29 @@
       "name": "LLM Code Summarization Study",
       "type": "Research Oriented Project",
       "technologies": ["PyTorch", "Transformers", "Python"],
-      "description": "Analyzing attention mechanisms in Large Language Models for generating concise, human-readable summaries of complex code snippets."
+      "description": "Analyzing attention mechanisms in Large Language Models for generating concise, human-readable summaries of complex code snippets.",
+      "url": ""
     },
     {
       "name": "Geospatial Ag-Tech Engine",
       "type": "Research Oriented Project",
       "technologies": ["Google Earth Engine", "Python", "Gis"],
-      "description": "Processing large-scale satellite datasets to predict crop yields and monitor soil moisture for precision agriculture research."
+      "description": "Processing large-scale satellite datasets to predict crop yields and monitor soil moisture for precision agriculture research.",
+      "url": ""
     },
     {
       "name": "High-Throughput API Gateway",
       "type": "Advance Engineering Project",
       "technologies": ["Go", "Redis", "Docker", "gRPC"],
-      "description": "Custom-built, distributed API gateway supporting rate limiting, circuit breaking, and service discovery for microservices."
+      "description": "Custom-built, distributed API gateway supporting rate limiting, circuit breaking, and service discovery for microservices.",
+      "url": ""
     },
     {
       "name": "Distributed Event Streamer",
       "type": "Advance Engineering Project",
       "technologies": ["Java", "Kafka", "Zookeeper"],
-      "description": "Scalable event streaming platform designed to handle millions of events per second with high availability and fault tolerance."
+      "description": "Scalable event streaming platform designed to handle millions of events per second with high availability and fault tolerance.",
+      "url": ""
     }
   ],
   "certificates": {
@@ -386,7 +402,7 @@
     },
     {
       "role": "Organizing Secretary",
-      "organization": "IITDU Debating Club",
+      "organization":"IITDU Debating Club",
       "duration": "Jan 2020 - Oct 2022",
       "category": "Arts and Culture",
       "logo": "/organizations/iitdu-dc.png"
@@ -455,7 +471,7 @@
       "logo": "/organizations/iit-sec.png"
     }
   ],
-  "vlogs_local_guide": {
+  "vlog_local_guide": {
     "youtube": "https://www.youtube.com/@mdrakibtrofder",
     "google_maps": "https://www.google.com/maps/contrib/110694871538640683885/reviews/@22.6904924,90.2202369,451393m/data=!3m2!1e3!4b1!4m3!8m2!3m1!1e1?authuser=1&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D"
   },

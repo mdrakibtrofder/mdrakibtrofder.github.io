@@ -14,7 +14,7 @@ const theoryCourses = [
     icon: Code,
     color: "blue",
     description: "Covering the core concepts of procedural programming, data types, control flow, and algorithmic thinking.",
-    url: "https://mdrakibtrofder.github.io/"
+    url: "https://mdrakibtrofder.github.io/introduction-to-computer-programming"
   },
   {
     code: "CSE 2109",
