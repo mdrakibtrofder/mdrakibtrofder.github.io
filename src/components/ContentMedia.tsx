@@ -1,4 +1,4 @@
-import { Youtube, MapPin, PenTool, BookOpen, Code, Globe, ExternalLink, Play, Star, Users, MessageSquare, Heart, Share2 } from "lucide-react";
+import { Youtube, MapPin, PenTool, BookOpen, Code, ExternalLink, Play, Star, Heart, Share2, Feather } from "lucide-react";
 
 interface ContentMediaProps {
   vlogs: {
@@ -104,10 +104,10 @@ const ContentMedia = ({ vlogs, writings, technical }: ContentMediaProps) => {
                     <Star size={14} /> Reviews
                   </span>
                   <span className="flex items-center gap-1">
-                    <MessageSquare size={14} /> Photos
+                    <Heart size={14} /> Photos
                   </span>
                   <span className="flex items-center gap-1">
-                    <Users size={14} /> Level
+                    <Share2 size={14} /> Level
                   </span>
                 </div>
                 <div className="flex items-center gap-2 text-white font-semibold">
@@ -121,91 +121,296 @@ const ContentMedia = ({ vlogs, writings, technical }: ContentMediaProps) => {
 
       {/* Writings */}
       <section id="writings" className="max-w-6xl mx-auto py-12">
-        <div className="bg-secondary/40 to-background border border-white/5 rounded-[40px] p-12 relative overflow-hidden">
-            <div className="absolute -top-24 -right-24 w-64 h-64 bg-emerald-500/10 blur-[100px] rounded-full"></div>
-            
-            <div className="relative z-10 text-center mb-16">
-                <h2 className="text-4xl font-bold mb-4 flex items-center justify-center">
-                    <PenTool className="w-8 h-8 mr-4 text-emerald-400" /> Writings
-                </h2>
-                <p className="text-muted-foreground max-w-2xl mx-auto">
-                    Exploring thoughts, life, and daily inspirations through personal blogging.
-                </p>
-            </div>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-emerald-500 to-teal-500 bg-clip-text text-transparent flex items-center justify-center gap-3">
+            <PenTool className="w-8 h-8 text-emerald-500" /> Writings
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Exploring thoughts, life, and daily inspirations through personal blogging.
+          </p>
+        </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
-                {writings.map((url, i) => {
-                    const domain = new URL(url).hostname;
-                    const name = domain.split('.')[0];
-                    return (
-                        <a 
-                            key={i} 
-                            href={url} 
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                            className="bg-secondary/40 hover:bg-secondary/60 border border-white/5 hover:border-emerald-500/30 p-8 rounded-3xl transition-all duration-300 group"
-                        >
-                            <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform">
-                                <BookOpen className="w-6 h-6 text-emerald-400" />
-                            </div>
-                            <h3 className="text-xl font-bold mb-2 capitalize">{name.replace(/-/g, ' ')}</h3>
-                            <p className="text-sm text-muted-foreground mb-4">{domain}</p>
-                            <div className="flex items-center text-emerald-400 text-sm font-medium">
-                                Read Blog <ExternalLink className="w-3.5 h-3.5 ml-2" />
-                            </div>
-                        </a>
-                    )
-                })}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Trofder Blog Card */}
+          <a 
+            href="https://mdrakibtrofder.blogspot.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block bg-gradient-to-br from-violet-600 to-purple-700 rounded-3xl p-8 overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-violet-500/20"
+          >
+            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-black/20 rounded-full translate-y-1/2 -translate-x-1/2" />
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                  <Feather className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">Trofder Blog</h3>
+                  <p className="text-violet-100/80 text-sm">Personal Blog</p>
+                </div>
+              </div>
+              
+              <p className="text-white/80 mb-6 leading-relaxed">
+                Thoughts on technology, life experiences, and personal reflections shared through writing.
+              </p>
+              
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4 text-white/70 text-sm">
+                  <span className="flex items-center gap-1">
+                    <BookOpen size={14} /> Articles
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Heart size={14} /> Likes
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Share2 size={14} /> Share
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-white font-semibold">
+                  Read Now <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
             </div>
+          </a>
+
+          {/* Trofder Thoughts Card */}
+          <a 
+            href="https://trofderthoughts.blogspot.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block bg-gradient-to-br from-amber-600 to-orange-700 rounded-3xl p-8 overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-amber-500/20"
+          >
+            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-black/20 rounded-full translate-y-1/2 -translate-x-1/2" />
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                  <PenTool className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">Trofder Thoughts</h3>
+                  <p className="text-amber-100/80 text-sm">Thoughts & Ideas</p>
+                </div>
+              </div>
+              
+              <p className="text-white/80 mb-6 leading-relaxed">
+                Deep dives into ideas, philosophical explorations, and thoughtful discussions on various topics.
+              </p>
+              
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4 text-white/70 text-sm">
+                  <span className="flex items-center gap-1">
+                    <BookOpen size={14} /> Posts
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Heart size={14} /> Views
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Share2 size={14} /> Share
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-white font-semibold">
+                  Explore <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </div>
+          </a>
+
+          {/* Daily Motivation Card */}
+          <a 
+            href="https://dailymotivationalinsights.blogspot.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block bg-gradient-to-br from-rose-600 to-pink-700 rounded-3xl p-8 overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-rose-500/20"
+          >
+            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-black/20 rounded-full translate-y-1/2 -translate-x-1/2" />
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                  <Star className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">Daily Motivation</h3>
+                  <p className="text-rose-100/80 text-sm">Inspiration Blog</p>
+                </div>
+              </div>
+              
+              <p className="text-white/80 mb-6 leading-relaxed">
+                Daily doses of inspiration, motivational insights, and positive energy to fuel your journey.
+              </p>
+              
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4 text-white/70 text-sm">
+                  <span className="flex items-center gap-1">
+                    <BookOpen size={14} /> Posts
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Heart size={14} /> Hearts
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Share2 size={14} /> Share
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-white font-semibold">
+                  Get Inspired <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </section>
 
       {/* Technical Content */}
       <section id="technical-content" className="max-w-6xl mx-auto">
-        <div className="flex flex-col items-center text-center mb-16">
-            <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-bold tracking-widest uppercase mb-6">
-                Knowledge Sharing
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Technical Content</h2>
-            <p className="text-muted-foreground max-w-2xl text-lg">
-                Demystifying complex programming concepts through tutorials, blogs, and detailed case studies.
-            </p>
+        <div className="text-center mb-12">
+          <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-bold tracking-widest uppercase mb-6">
+            Knowledge Sharing
+          </div>
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
+            Technical Content
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Demystifying complex programming concepts through tutorials, blogs, and detailed case studies.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div className="bg-secondary/20 border border-white/5 rounded-3xl p-8 hover:bg-secondary/30 transition-all duration-300 flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-2xl bg-blue-600/10 flex items-center justify-center mb-6">
-                    <Code className="w-10 h-10 text-blue-500" />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Programming Blog Card */}
+          <a 
+            href={technical.blog} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-8 overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/20"
+          >
+            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-black/20 rounded-full translate-y-1/2 -translate-x-1/2" />
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                  <Code className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-3">Programming with Trofder Blog</h3>
-                <p className="text-muted-foreground mb-8 text-sm">Dedicated platform for technical articles, coding patterns, and software engineering deep-dives.</p>
-                <a href={technical.blog} target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex items-center px-6 py-2.5 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors">
-                    Visit Blog <Globe className="w-4 h-4 ml-2" />
-                </a>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">Programming Blog</h3>
+                  <p className="text-blue-100/80 text-sm">Tech Tutorials</p>
+                </div>
+              </div>
+              
+              <p className="text-white/80 mb-6 leading-relaxed">
+                Dedicated platform for technical articles, coding patterns, and software engineering deep-dives.
+              </p>
+              
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4 text-white/70 text-sm">
+                  <span className="flex items-center gap-1">
+                    <BookOpen size={14} /> Articles
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Heart size={14} /> Likes
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Share2 size={14} /> Share
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-white font-semibold">
+                  Visit Blog <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
             </div>
+          </a>
 
-            <div className="bg-secondary/20 border border-white/5 rounded-3xl p-8 hover:bg-secondary/30 transition-all duration-300 flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-2xl bg-red-```tsx
-600/10 flex items-center justify-center mb-6">
-                    <Youtube className="w-10 h-10 text-red-500" />
+          {/* Tech YouTube Card */}
+          <a 
+            href={technical.youtube} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block bg-gradient-to-br from-red-600 to-rose-700 rounded-3xl p-8 overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-red-500/20"
+          >
+            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-black/20 rounded-full translate-y-1/2 -translate-x-1/2" />
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                  <Youtube className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-3">Technical YouTube</h3>
-                <p className="text-muted-foreground mb-8 text-sm">Visual tutorials on full-stack development, AWS, Python, and system architecture.</p>
-                <a href={technical.youtube} target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex items-center px-6 py-2.5 rounded-full bg-red-600 text-white font-medium hover:bg-red-700 transition-colors">
-                    Watch Tutorials <Youtube className="w-4 h-4 ml-2" />
-                </a>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">Tech YouTube</h3>
+                  <p className="text-red-100/80 text-sm">Video Tutorials</p>
+                </div>
+              </div>
+              
+              <p className="text-white/80 mb-6 leading-relaxed">
+                Visual tutorials on full-stack development, AWS, Python, and system architecture.
+              </p>
+              
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4 text-white/70 text-sm">
+                  <span className="flex items-center gap-1">
+                    <Play size={14} /> Videos
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Heart size={14} /> Subscribers
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Share2 size={14} /> Share
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-white font-semibold">
+                  Watch Now <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
             </div>
+          </a>
 
-            <div className="bg-secondary/20 border border-white/5 rounded-3xl p-8 hover:bg-secondary/30 transition-all duration-300 flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-2xl bg-slate-800 flex items-center justify-center mb-6">
-                    <BookOpen className="w-10 h-10 text-white" />
+          {/* Medium Card */}
+          <a 
+            href={technical.medium} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block bg-gradient-to-br from-slate-700 to-slate-800 rounded-3xl p-8 overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-slate-500/20"
+          >
+            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-black/20 rounded-full translate-y-1/2 -translate-x-1/2" />
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                  <BookOpen className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold mb-3">Medium Articles</h3>
-                <p className="text-muted-foreground mb-8 text-sm">Professional tech articles and research summaries shared with the global developer community.</p>
-                <a href={technical.medium} target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex items-center px-6 py-2.5 rounded-full bg-zinc-800 text-white font-medium hover:bg-zinc-950 transition-colors border border-white/10">
-                    Read Medium <ExternalLink className="w-4 h-4 ml-2" />
-                </a>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">Medium Articles</h3>
+                  <p className="text-slate-100/80 text-sm">Tech Writing</p>
+                </div>
+              </div>
+              
+              <p className="text-white/80 mb-6 leading-relaxed">
+                Professional tech articles and research summaries shared with the global developer community.
+              </p>
+              
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4 text-white/70 text-sm">
+                  <span className="flex items-center gap-1">
+                    <BookOpen size={14} /> Stories
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Heart size={14} /> Claps
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Share2 size={14} /> Share
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-white font-semibold">
+                  Read Now <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
             </div>
+          </a>
         </div>
       </section>
 
