@@ -8,7 +8,8 @@ import {
   BookOpen, 
   Microscope, 
   Cpu,
-  Layers
+  Layers,
+  ExternalLink
 } from "lucide-react";
 
 interface Project {
@@ -16,6 +17,7 @@ interface Project {
   type: string;
   technologies: string[];
   description: string;
+  url?: string;
 }
 
 const Projects = ({ projects }: { projects: Project[] }) => {
@@ -77,8 +79,20 @@ const Projects = ({ projects }: { projects: Project[] }) => {
           </div>
 
           <div>
-            <h3 className="text-2xl font-bold text-emerald-400 mb-2">
-              {project.name}
+            <h3 className="text-2xl font-bold text-emerald-400 mb-2 group">
+              {project.url ? (
+                <a 
+                  href={project.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:underline inline-flex items-center gap-2"
+                >
+                  {project.name}
+                  <ExternalLink size={18} className="opacity-60 group-hover:opacity-100 transition-opacity" />
+                </a>
+              ) : (
+                project.name
+              )}
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
               {project.description}

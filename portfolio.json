@@ -212,18 +212,39 @@
       "url": ""
     },
     {
-      "name": "Git, Docker & Kubernetes Bioscope",
+      "name": "Git Bioscope",
+      "type": "Git Concept Visualization Project",
+      "technologies": ["React", "Framer Motion", "Tailwind CSS"],
+      "description": "Interactive platform featuring high-fidelity animations and command simulation tools for Git version control concept learning.",
+      "url": "https://mdrakibtrofder.github.io/git/"
+    },
+    {
+      "name": "Docker Bioscope",
+      "type": "Docker Concept Visualization Project",
+      "technologies": ["React", "Framer Motion", "Tailwind CSS"],
+      "description": "Interactive platform featuring high-fidelity animations and command simulation tools for Docker containerization concept learning.",
+      "url": "https://mdrakibtrofder.github.io/docker/"
+    },
+    {
+      "name": "Kubernetes Bioscope",
+      "type": "Kubernetes Concept Visualization Project",
+      "technologies": ["React", "Framer Motion", "Tailwind CSS"],
+      "description": "Interactive platform featuring high-fidelity animations and command simulation tools for Kubernetes orchestration concept learning.",
+      "url": "https://mdrakibtrofder.github.io/kubernetes/"
+    },
+    {
+      "name": "DevOps Workflow",
       "type": "Concept Visualization Project",
       "technologies": ["React", "Framer Motion", "Tailwind CSS"],
-      "description": "Interactive platform featuring high-fidelity animations and command simulation tools for DevOps concept learning.",
-      "url": ""
+      "description": "Interactive platform showcasing end-to-end DevOps workflow from code commit to deployment with CI/CD pipeline visualizations.",
+      "url": "https://mdrakibtrofder.github.io/devops-workflow/"
     },
     {
       "name": "AI Periodic Table",
       "type": "Concept Visualization Project",
       "technologies": ["Three.js", "Typescript", "React"],
       "description": "3D interactive periodic table of AI concepts, algorithms, and frameworks with detailed visualizations and explanations.",
-      "url": ""
+      "url": "https://mdrakibtrofder.github.io/ai-periodic-table/"
     },
     {
       "name": "Khilkhet Pathagar",
@@ -373,7 +394,7 @@
     },
     {
       "role": "Treasurer",
-      "organization": "IIT Software Engineers' Community",
+"organization": "IIT Software Engineers' Community",
       "duration": "Mar 2023 - May 2024",
       "category": "Science and Technology",
       "logo": "/organizations/iit-sec.png"
@@ -402,7 +423,7 @@
     },
     {
       "role": "Organizing Secretary",
-      "organization":"IITDU Debating Club",
+      "organization": "IITDU Debating Club",
       "duration": "Jan 2020 - Oct 2022",
       "category": "Arts and Culture",
       "logo": "/organizations/iitdu-dc.png"
