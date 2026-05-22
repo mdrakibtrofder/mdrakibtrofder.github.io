@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Mail, MapPin, Calendar } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, MapPin, Calendar, ExternalLink } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const Hero = ({ name, title }: { name: string; title: string }) => {
@@ -32,7 +32,7 @@ const Hero = ({ name, title }: { name: string; title: string }) => {
         }
       } else {
         if (displayText.length > 0) {
-          setDisplayText(currentText.slice(0, displayText.length - 1));
+          setDisplayText(displayText.slice(0, displayText.length - 1));
         } else {
           setIsDeleting(false);
           setCurrentTagline((prev) => (prev + 1) % taglines.length);
@@ -91,14 +91,16 @@ const Hero = ({ name, title }: { name: string; title: string }) => {
 
         {/* Location & Date */}
         <div className={`flex flex-wrap justify-center gap-4 mb-8 transition-all duration-700 delay-500 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
-          <div className="flex items-center gap-2 px-4 py-2 bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-full text-slate-600 dark:text-slate-400 text-sm">
+          <a 
+            href="https://baust.edu.bd/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-4 py-2 bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-full text-slate-600 dark:text-slate-400 text-sm hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+          >
             <MapPin size={16} className="text-emerald-500" />
             <span>Bangladesh Army University of Science and Technology</span>
-          </div>
-          <div className="flex items-center gap-2 px-4 py-2 bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-full text-slate-600 dark:text-slate-400 text-sm">
-            <Calendar size={16} className="text-emerald-500" />
-            <span>Joined: January 2026</span>
-          </div>
+            <ExternalLink size={14} className="opacity-50" />
+          </a>
         </div>
 
         {/* Bio */}

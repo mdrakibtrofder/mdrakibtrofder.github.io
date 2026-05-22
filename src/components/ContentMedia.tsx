@@ -1,5 +1,4 @@
-
-import { Youtube, MapPin, PenTool, Hash, BookOpen, Presentation, Code, Globe, ExternalLink } from "lucide-react";
+import { Youtube, MapPin, PenTool, BookOpen, Code, Globe, ExternalLink, Play, Star, Users, MessageSquare, Heart, Share2 } from "lucide-react";
 
 interface ContentMediaProps {
   vlogs: {
@@ -20,58 +19,109 @@ const ContentMedia = ({ vlogs, writings, technical }: ContentMediaProps) => {
       
       {/* Vlogs & Local Guide */}
       <section id="vlogs" className="max-w-6xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between mb-12 gap-8">
-          <div className="max-w-xl">
-            <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
-              Vlogs & Local Guide
-            </h2>
-            <p className="text-muted-foreground text-lg">
-              Exploring the world, sharing experiences through travel vlogs, and contributing as a Google Top Local Guide.
-            </p>
-          </div>
-          <div className="flex flex-wrap gap-4">
-            <a 
-              href={vlogs.youtube} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl bg-red-600/10 text-red-500 border border-red-600/20 hover:bg-red-600 hover:text-white transition-all duration-300 flex items-center"
-            >
-              <Youtube className="w-5 h-5 mr-2" /> YouTube Channel
-            </a>
-            <a 
-              href={vlogs.google_maps} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="px-6 py-3 rounded-xl bg-blue-600/10 text-blue-500 border border-blue-600/20 hover:bg-blue-600 hover:text-white transition-all duration-300 flex items-center"
-            >
-              <MapPin className="w-5 h-5 mr-2" /> Google Local Guide
-            </a>
-          </div>
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
+            Vlogs & Local Guide
+          </h2>
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            Exploring the world through travel vlogs and helping others discover great places as a Google Top Local Guide.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="group relative rounded-3xl overflow-hidden aspect-video bg-secondary/30 border border-white/5 shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
-                    <span className="text-red-500 font-bold text-sm tracking-widest uppercase mb-2">Platform</span>
-                    <h3 className="text-2xl font-bold text-white mb-4">Sharing Journeys on YouTube</h3>
-                    <p className="text-white/70 line-clamp-2 mb-6">Join my vlog journey where I capture the essence of different places and cultures.</p>
+          {/* YouTube Card */}
+          <a 
+            href={vlogs?.youtube} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block bg-gradient-to-br from-red-600 to-red-700 rounded-3xl p-8 overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-red-500/20"
+          >
+            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-black/20 rounded-full translate-y-1/2 -translate-x-1/2" />
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                  <Youtube className="w-8 h-8 text-white" />
                 </div>
-                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&q=80" alt="Vlog thumbnail" className="absolute inset-0 -z-10 object-cover group-hover:scale-110 transition-transform duration-700 opacity-40" />
-            </div>
-            <div className="group relative rounded-3xl overflow-hidden aspect-video bg-secondary/30 border border-white/5 shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
-                    <span className="text-blue-500 font-bold text-sm tracking-widest uppercase mb-2">Community</span>
-                    <h3 className="text-2xl font-bold text-white mb-4">Google Maps Top Contributor</h3>
-                    <p className="text-white/70 line-clamp-2 mb-6">Helping millions of people find the best places through detailed reviews and photos.</p>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">YouTube Channel</h3>
+                  <p className="text-red-100/80 text-sm">Travel & Life Vlogs</p>
                 </div>
-                <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80" alt="Map thumbnail" className="absolute inset-0 -z-10 object-cover group-hover:scale-110 transition-transform duration-700 opacity-40" />
+              </div>
+              
+              <p className="text-white/80 mb-6 leading-relaxed">
+                Join my journey as I explore new places, capture unique cultures, and share authentic experiences through engaging video content.
+              </p>
+              
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4 text-white/70 text-sm">
+                  <span className="flex items-center gap-1">
+                    <Play size={14} /> Videos
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Heart size={14} /> Likes
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Share2 size={14} /> Share
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-white font-semibold">
+                  Watch Now <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
             </div>
+          </a>
+
+          {/* Google Maps Local Guide Card */}
+          <a 
+            href={vlogs?.google_maps} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative block bg-gradient-to-br from-blue-600 to-blue-700 rounded-3xl p-8 overflow-hidden transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-blue-500/20"
+          >
+            <div className="absolute top-0 right-0 w-40 h-40 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-32 h-32 bg-black/20 rounded-full translate-y-1/2 -translate-x-1/2" />
+            
+            <div className="relative z-10">
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center backdrop-blur-sm">
+                  <MapPin className="w-8 h-8 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">Google Local Guide</h3>
+                  <p className="text-blue-100/80 text-sm">Top Contributor</p>
+                </div>
+              </div>
+              
+              <p className="text-white/80 mb-6 leading-relaxed">
+                Helping millions discover the best local spots through detailed reviews, photos, and recommendations based on real experiences.
+              </p>
+              
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-4 text-white/70 text-sm">
+                  <span className="flex items-center gap-1">
+                    <Star size={14} /> Reviews
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <MessageSquare size={14} /> Photos
+                  </span>
+                  <span className="flex items-center gap-1">
+                    <Users size={14} /> Level
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-white font-semibold">
+                  View Profile <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </section>
 
       {/* Writings */}
       <section id="writings" className="max-w-6xl mx-auto py-12">
-        <div className="bg-gradient-to-br from-secondary/40 to-background border border-white/5 rounded-[40px] p-12 relative overflow-hidden">
+        <div className="bg-secondary/40 to-background border border-white/5 rounded-[40px] p-12 relative overflow-hidden">
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-emerald-500/10 blur-[100px] rounded-full"></div>
             
             <div className="relative z-10 text-center mb-16">
@@ -135,7 +185,8 @@ const ContentMedia = ({ vlogs, writings, technical }: ContentMediaProps) => {
             </div>
 
             <div className="bg-secondary/20 border border-white/5 rounded-3xl p-8 hover:bg-secondary/30 transition-all duration-300 flex flex-col items-center text-center">
-                <div className="w-20 h-20 rounded-2xl bg-red-600/10 flex items-center justify-center mb-6">
+                <div className="w-20 h-20 rounded-2xl bg-red-```tsx
+600/10 flex items-center justify-center mb-6">
                     <Youtube className="w-10 h-10 text-red-500" />
                 </div>
                 <h3 className="text-2xl font-bold mb-3">Technical YouTube</h3>

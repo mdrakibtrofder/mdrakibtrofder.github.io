@@ -124,6 +124,18 @@
     }
   ],
   "internship_experience": [
+     {
+      "role": "Trainee Software Engineer",
+      "company": "Cefalo Bangladesh Ltd.",
+      "duration": "January 2023 - June 2023",
+      "location": "Dhaka, Bangladesh",
+      "responsibilities": [
+        "Designed and built an in-house social media platform from prototype to deployment.",
+        "Completed intensive training in core web development."
+      ],
+      "logo": "/organizations/cefalo-bangladesh-ltd.png",
+      "link": "https://www.cefalo.com/"
+    },
     {
       "role": "Research Intern",
       "company": "SEMERU Lab, William & Mary",
@@ -135,18 +147,6 @@
       ],
       "logo": "/organizations/semeru-lab-william-mary.png",
       "link": "https://www.wm.edu/"
-    },
-    {
-      "role": "Trainee Software Engineer",
-      "company": "Cefalo Bangladesh Ltd.",
-      "duration": "January 2023 - June 2023",
-      "location": "Dhaka, Bangladesh",
-      "responsibilities": [
-        "Designed and built an in-house social media platform from prototype to deployment.",
-        "Completed intensive training in core web development."
-      ],
-      "logo": "/organizations/cefalo-bangladesh-ltd.png",
-      "link": "https://www.cefalo.com/"
     },
     {
       "role": "Intern Software Engineer",
