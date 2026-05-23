@@ -54,21 +54,11 @@ const ContentMedia = ({ vlogs, writings, technical }: ContentMediaProps) => {
                 Join my journey as I explore new places, capture unique cultures, and share authentic experiences through engaging video content.
               </p>
               
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4 text-white/70 text-sm">
-                  <span className="flex items-center gap-1">
-                    <Play size={14} /> Videos
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Heart size={14} /> Likes
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Share2 size={14} /> Share
-                  </span>
+              <div className="flex items-center justify-between mt-6 pt-6 border-t border-white/10">
+                <div className="text-white/90 font-medium text-lg">
+                  Watch Now
                 </div>
-                <div className="flex items-center gap-2 text-white font-semibold">
-                  Watch Now <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
-                </div>
+                <ExternalLink size={20} className="text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all" />
               </div>
             </div>
           </a>
@@ -98,21 +88,11 @@ const ContentMedia = ({ vlogs, writings, technical }: ContentMediaProps) => {
                 Helping millions discover the best local spots through detailed reviews, photos, and recommendations based on real experiences.
               </p>
               
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4 text-white/70 text-sm">
-                  <span className="flex items-center gap-1">
-                    <Star size={14} /> Reviews
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Heart size={14} /> Photos
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Share2 size={14} /> Level
-                  </span>
+              <div className="flex items-center justify-between mt-6 pt-6 border-t border-white/10">
+                <div className="text-white/90 font-medium text-lg">
+                  View Profile
                 </div>
-                <div className="flex items-center gap-2 text-white font-semibold">
-                  View Profile <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
-                </div>
+                <ExternalLink size={20} className="text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all" />
               </div>
             </div>
           </a>
@@ -156,21 +136,11 @@ const ContentMedia = ({ vlogs, writings, technical }: ContentMediaProps) => {
                 Thoughts on technology, life experiences, and personal reflections shared through writing.
               </p>
               
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4 text-white/70 text-sm">
-                  <span className="flex items-center gap-1">
-                    <BookOpen size={14} /> Articles
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Heart size={14} /> Likes
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Share2 size={14} /> Share
-                  </span>
+              <div className="flex items-center justify-between mt-6 pt-6 border-t border-white/10">
+                <div className="text-white/90 font-medium text-lg">
+                  Read Now
                 </div>
-                <div className="flex items-center gap-2 text-white font-semibold">
-                  Read Now <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
-                </div>
+                <ExternalLink size={20} className="text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all" />
               </div>
             </div>
           </a>
@@ -200,21 +170,11 @@ const ContentMedia = ({ vlogs, writings, technical }: ContentMediaProps) => {
                 Deep dives into ideas, philosophical explorations, and thoughtful discussions on various topics.
               </p>
               
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4 text-white/70 text-sm">
-                  <span className="flex items-center gap-1">
-                    <BookOpen size={14} /> Posts
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Heart size={14} /> Views
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Share2 size={14} /> Share
-                  </span>
+              <div className="flex items-center justify-between mt-6 pt-6 border-t border-white/10">
+                <div className="text-white/90 font-medium text-lg">
+                  Explore
                 </div>
-                <div className="flex items-center gap-2 text-white font-semibold">
-                  Explore <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
-                </div>
+                <ExternalLink size={20} className="text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all" />
               </div>
             </div>
           </a>
@@ -244,21 +204,11 @@ const ContentMedia = ({ vlogs, writings, technical }: ContentMediaProps) => {
                 Daily doses of inspiration, motivational insights, and positive energy to fuel your journey.
               </p>
               
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4 text-white/70 text-sm">
-                  <span className="flex items-center gap-1">
-                    <BookOpen size={14} /> Posts
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Heart size={14} /> Hearts
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Share2 size={14} /> Share
-                  </span>
+              <div className="flex items-center justify-between mt-6 pt-6 border-t border-white/10">
+                <div className="text-white/90 font-medium text-lg">
+                  Get Inspired
                 </div>
-                <div className="flex items-center gap-2 text-white font-semibold">
-                  Get Inspired <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
-                </div>
+                <ExternalLink size={20} className="text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all" />
               </div>
             </div>
           </a>
@@ -305,21 +255,11 @@ const ContentMedia = ({ vlogs, writings, technical }: ContentMediaProps) => {
                 Dedicated platform for technical articles, coding patterns, and software engineering deep-dives.
               </p>
               
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4 text-white/70 text-sm">
-                  <span className="flex items-center gap-1">
-                    <BookOpen size={14} /> Articles
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Heart size={14} /> Likes
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Share2 size={14} /> Share
-                  </span>
+              <div className="flex items-center justify-between mt-6 pt-6 border-t border-white/10">
+                <div className="text-white/90 font-medium text-lg">
+                  Visit Blog
                 </div>
-                <div className="flex items-center gap-2 text-white font-semibold">
-                  Visit Blog <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
-                </div>
+                <ExternalLink size={20} className="text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all" />
               </div>
             </div>
           </a>
@@ -349,21 +289,11 @@ const ContentMedia = ({ vlogs, writings, technical }: ContentMediaProps) => {
                 Visual tutorials on full-stack development, AWS, Python, and system architecture.
               </p>
               
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4 text-white/70 text-sm">
-                  <span className="flex items-center gap-1">
-                    <Play size={14} /> Videos
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Heart size={14} /> Subscribers
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Share2 size={14} /> Share
-                  </span>
+              <div className="flex items-center justify-between mt-6 pt-6 border-t border-white/10">
+                <div className="text-white/90 font-medium text-lg">
+                  Watch Now
                 </div>
-                <div className="flex items-center gap-2 text-white font-semibold">
-                  Watch Now <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
-                </div>
+                <ExternalLink size={20} className="text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all" />
               </div>
             </div>
           </a>
@@ -393,21 +323,11 @@ const ContentMedia = ({ vlogs, writings, technical }: ContentMediaProps) => {
                 Professional tech articles and research summaries shared with the global developer community.
               </p>
               
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-4 text-white/70 text-sm">
-                  <span className="flex items-center gap-1">
-                    <BookOpen size={14} /> Stories
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Heart size={14} /> Claps
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <Share2 size={14} /> Share
-                  </span>
+              <div className="flex items-center justify-between mt-6 pt-6 border-t border-white/10">
+                <div className="text-white/90 font-medium text-lg">
+                  Read Now
                 </div>
-                <div className="flex items-center gap-2 text-white font-semibold">
-                  Read Now <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
-                </div>
+                <ExternalLink size={20} className="text-white/70 group-hover:text-white group-hover:translate-x-1 transition-all" />
               </div>
             </div>
           </a>
