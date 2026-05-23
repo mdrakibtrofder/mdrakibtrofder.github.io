@@ -14,6 +14,7 @@ import Teaching from "../components/Teaching";
 import Mentorship from "../components/Mentorship";
 import Workshops from "../components/Workshops";
 import Volunteer from "../components/Volunteer";
+import Supervision from "../components/Supervision";
 import NonAcademicProgram from "../components/NonAcademicProgram";
 import ContentMedia from "../components/ContentMedia";
 import portfolioData from "../../portfolio.json";
@@ -104,6 +105,7 @@ const Index = () => {
         <Teaching />
         <Mentorship />
         <Workshops />
+        <Supervision />
         
         <Volunteer volunteer={(portfolioData as any).volunteer_experience} />
         
