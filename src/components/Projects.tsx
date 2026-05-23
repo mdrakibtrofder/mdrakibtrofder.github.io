@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { 
   GraduationCap, 
   Lightbulb, 
@@ -9,7 +9,9 @@ import {
   Microscope, 
   Cpu,
   Layers,
-  ExternalLink
+  ExternalLink,
+  ChevronDown,
+  ChevronUp
 } from "lucide-react";
 
 interface Project {
@@ -22,6 +24,7 @@ interface Project {
 
 const Projects = ({ projects }: { projects: Project[] }) => {
   const [activeTab, setActiveTab] = useState("All");
+  const [showAll, setShowAll] = useState(false);
 
   const categories = [
     "All",
@@ -34,6 +37,46 @@ const Projects = ({ projects }: { projects: Project[] }) => {
     "Research Oriented Project",
     "Advance Engineering Project"
   ];
+
+  // Get curated projects: first from each type, then fill to 5 from first type
+  const curatedProjects = useMemo(() => {
+    const typeOrder = categories.filter(c => c !== "All");
+    const seenTypes = new Set<string>();
+    const result: Project[] = [];
+    
+    // First pass: collect first project from each unique type
+    for (const project of projects) {
+      if (!seenTypes.has(project.type) && result.length < 5) {
+        seenTypes.add(project.type);
+        result.push(project);
+      }
+    }
+    
+    // Second pass: if less than 5, fill from first type's remaining projects
+    if (result.length < 5) {
+      const firstType = result[0]?.type;
+      const firstTypeProjects = projects.filter(p => p.type === firstType);
+      
+      for (const project of firstTypeProjects) {
+        if (!result.some(p => p.name === project.name) && result.length < 5) {
+          result.push(project);
+        }
+      }
+    }
+    
+    return result;
+  }, [projects]);
+
+  // Combined list: curated projects + "All" tab projects for filtered view
+  const getDisplayProjects = () => {
+    if (activeTab === "All") {
+      return showAll ? projects : curatedProjects;
+    }
+    return projects.filter(p => p.type === activeTab);
+  };
+
+  const displayProjects = getDisplayProjects();
+  const hasMoreToShow = activeTab === "All" && projects.length > curatedProjects.length;
 
   const getCategoryIcon = (type: string) => {
     switch (type) {
@@ -64,7 +107,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
   };
 
   const filteredProjects = activeTab === "All" 
-    ? projects 
+    ? displayProjects 
     : projects.filter(p => p.type === activeTab);
 
   const renderProjectTimelineItem = (project: Project, index: number) => (
@@ -165,6 +208,28 @@ const Projects = ({ projects }: { projects: Project[] }) => {
             <div className="space-y-10">
               {filteredProjects.map((project, index) => renderProjectTimelineItem(project, index))}
             </div>
+            
+            {/* Show More/Less Button */}
+            {hasMoreToShow && (
+              <div className="flex justify-center mt-12">
+                <button
+                  onClick={() => setShowAll(!showAll)}
+                  className="group flex items-center gap-2 px-6 py-3 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 font-medium transition-all duration-300 hover:bg-emerald-500/20 hover:border-emerald-400/50 hover:shadow-[0_0_20px_rgba(52,211,153,0.15)]"
+                >
+                  {showAll ? (
+                    <>
+                      <ChevronUp size={18} className="transition-transform group-hover:-translate-y-1" />
+                      Show Less
+                    </>
+                  ) : (
+                    <>
+                      <ChevronDown size={18} className="transition-transform group-hover:translate-y-1" />
+                      Show More ({projects.length - curatedProjects.length} more)
+                    </>
+                  )}
+                </button>
+              </div>
+            )}
           </div>
         ) : (
           <div className="text-center py-20">
