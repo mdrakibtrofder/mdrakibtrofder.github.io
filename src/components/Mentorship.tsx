@@ -1,8 +1,20 @@
+import { GraduationCap, Users, Calendar, CheckCircle2, Building2, MapPin, ChevronDown, ChevronUp } from "lucide-react";
+import { Button } from "./ui/button";
 
-import { GraduationCap, Users, Calendar, CheckCircle2, Building2, MapPin } from "lucide-react";
-import { Badge } from "./ui/badge";
+interface MentorshipItem {
+  institution: string;
+  role: string;
+  period: string;
+  studentCount: string;
+  location: string;
+  programType: string;
+  projects: string[];
+  color: string;
+  logo?: string;
+  link?: string;
+}
 
-const mentorships = [
+const mentorshipData: MentorshipItem[] = [
   {
     institution: "IIT, University of Dhaka",
     role: "Internship Supervisor @ Streams Tech Ltd.",
@@ -35,87 +47,83 @@ const mentorships = [
   }
 ];
 
-const Mentorship = () => {
-  return (
-    <section id="mentorship" className="py-24 px-4 bg-slate-50/50 dark:bg-slate-900/20 relative overflow-hidden">
-      {/* Design elements */}
-      <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+const Mentorship = ({ mentorships }: { mentorships?: MentorshipItem[] }) => {
+  const data = mentorships || mentorshipData;
 
-      <div className="max-w-5xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
-          <div className="space-y-4">
-            <Badge className="bg-blue-500/10 text-blue-500 hover:bg-blue-500/20 border-none px-4 mb-2">
-              Mentorship & Guidance
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-              <span className="text-blue-500 italic">Mentorship</span>
-            </h2>
+  const renderMentorTimelineItem = (mentor: MentorshipItem, index: number) => (
+    <div key={index} className="relative pl-16">
+      <span className={`absolute left-4 top-6 h-4 w-4 rounded-full border-4 ${mentor.color === 'blue' ? 'border-blue-500' : 'border-emerald-400'} bg-secondary shadow-xl`} />
+      <div className="rounded-3xl border border-slate-700/60 bg-secondary/50 p-6 shadow-xl transition-all duration-300 hover:border-blue-500/40">
+        <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+          <div className="flex items-start gap-4">
+            <div className="flex-shrink-0 w-20 h-20 flex items-center justify-center rounded-3xl bg-white/5 p-3 border border-slate-600">
+              <Building2 className="w-10 h-10 text-blue-500" />
+            </div>
+
+            <div>
+              <div className="flex items-center gap-2 text-xs font-bold text-blue-500 uppercase tracking-widest mb-2">
+                <Calendar className="h-3.5 w-3.5" />
+                {mentor.period}
+              </div>
+              <h3 className="text-xl font-semibold text-blue-400 mb-1">{mentor.institution}</h3>
+              <p className="text-base font-medium text-foreground/80 italic font-serif">{mentor.role}</p>
+            </div>
+          </div>
+
+          <div className="text-left lg:text-right flex flex-wrap gap-3 lg:justify-end">
+            <span className="inline-flex rounded-full bg-blue-500/10 px-3 py-1 text-xs font-semibold text-blue-400 flex items-center gap-1.5">
+              <Users className="h-3.5 w-3.5" /> {mentor.studentCount}
+            </span>
+            <span className="inline-flex rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-semibold text-emerald-400 flex items-center gap-1.5">
+              <MapPin className="h-3.5 w-3.5" /> {mentor.location}
+            </span>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-12">
-          {mentorships.map((mentor, index) => (
-            <div
-              key={index}
-              className="group relative flex flex-col md:flex-row gap-8 md:gap-16 p-8 rounded-[2rem] bg-background border border-border/40 hover:border-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/5 transition-all duration-500"
-            >
-              {/* Vertical accent */}
-              <div className={`absolute left-0 top-12 bottom-12 w-1.5 rounded-r-full transition-all duration-500 ${mentor.color === 'blue' ? 'bg-blue-500' : 'bg-emerald-500'
-                } opacity-50 group-hover:opacity-100 group-hover:w-2`} />
 
-              <div className="md:w-1/3 space-y-6">
-                <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-xs font-bold text-blue-500 uppercase tracking-widest">
-                    <Calendar className="h-3.5 w-3.5" />
-                    {mentor.period}
-                  </div>
-                  <h3 className="text-2xl font-bold leading-tight group-hover:text-blue-500 transition-colors">
-                    {mentor.institution}
-                  </h3>
-                  <p className="text-lg font-medium text-foreground/80 lowercase italic font-serif">
-                    {mentor.role}
-                  </p>
+        <div className="mt-6 rounded-2xl border border-blue-500/20 bg-gradient-to-r from-blue-500/10 to-emerald-500/10 p-4">
+          <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-4 flex items-center gap-2">
+            <CheckCircle2 className="h-4 w-4 text-blue-500" />
+            Core Project Contributions
+          </h4>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-3 gap-x-8">
+            {mentor.projects.map((proj, pIdx) => (
+              <li key={pIdx} className="flex items-start gap-3">
+                <div className="h-5 w-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
                 </div>
-
-                <div className="flex flex-wrap gap-3">
-                  <div className="flex items-center gap-1.5 px-3 py-1 transparent rounded-full bg-secondary/80 text-xs font-semibold text-muted-foreground">
-                    <Users className="h-3.5 w-3.5" /> {mentor.studentCount}
-                  </div>
-                  <div className="flex items-center gap-1.5 px-3 py-1 transparent rounded-full bg-secondary/80 text-xs font-semibold text-muted-foreground">
-                    <MapPin className="h-3.5 w-3.5" /> {mentor.location}
-                  </div>
-                </div>
-              </div>
-
-              <div className="md:w-2/3">
-                <div className="bg-secondary/20 rounded-2xl p-6 md:p-8 relative overflow-hidden">
-                  <div className="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity duration-500">
-                    <Building2 className="h-32 w-32 -rotate-12" />
-                  </div>
-
-                  <h4 className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-6 flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-blue-500" />
-                    Core Project Contributions
-                  </h4>
-
-                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
-                    {mentor.projects.map((proj, pIdx) => (
-                      <li key={pIdx} className="flex items-start gap-3 group/item">
-                        <div className="h-5 w-5 rounded-full bg-blue-500/10 flex items-center justify-center shrink-0 mt-0.5 group-hover/item:bg-blue-500 group-hover/item:text-white transition-all">
-                          <div className="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover/item:bg-white" />
-                        </div>
-                        <span className="text-sm text-muted-foreground group-hover/item:text-foreground transition-colors leading-relaxed">
-                          {proj}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          ))}
+                <span className="text-sm text-muted-foreground leading-relaxed">
+                  {proj}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
-    </section>
+    </div>
+  );
+
+  return (
+    <div className="py-20 px-4 relative overflow-hidden" id="mentorship">
+      {/* Background Decorative Elements */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[120px] -z-10" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[120px] -z-10" />
+
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-emerald-500 bg-clip-text text-transparent">
+            Mentorship
+          </h2>
+          <div className="h-1.5 w-24 bg-blue-500 mx-auto rounded-full"></div>
+        </div>
+
+        <div className="relative">
+          <div className="absolute top-0 bottom-0 left-6 w-px bg-blue-500/30" />
+          <div className="space-y-10">
+            {data.map((mentor, index) => renderMentorTimelineItem(mentor, index))}
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 
