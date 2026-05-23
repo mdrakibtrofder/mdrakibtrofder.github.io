@@ -28,12 +28,7 @@ const Index = () => {
         "about", 
         "skills", 
         "certificates", 
-        "teaching", 
-        "mentorship", 
-        "workshops", 
         "experience", 
-        "volunteer",
-        "projects", 
         "education", 
         "diploma",
         "vlogs",
@@ -82,14 +77,14 @@ const Index = () => {
 
         <NonAcademicProgram tracks={(portfolioData as any).diploma_career_tracks} />
         
-        <Teaching />
-        <Mentorship />
-        
         <section id="projects">
           <Projects projects={portfolioData.projects} />
         </section>
         
+        <Teaching />
+        <Mentorship />
         <Workshops />
+        
         <Volunteer volunteer={(portfolioData as any).volunteer_experience} />
         
         <Certificates />
