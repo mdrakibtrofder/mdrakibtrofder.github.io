@@ -1,10 +1,10 @@
-import { ThemeProvider } from "next-themes";
-import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Index from "./pages/Index";
+import BackToTop from "./components/BackToTop";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -36,10 +36,13 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <HashRouter>
+      <BrowserRouter>
+        <Index />
+        <BackToTop />
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route path="/" element={<SectionPage sectionId="home" />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="/home" element={<SectionPage sectionId="home" />} />
           <Route path="/about" element={<SectionPage sectionId="about" />} />
           <Route path="/skills" element={<SectionPage sectionId="skills" />} />
           <Route path="/experience" element={<SectionPage sectionId="experience" />} />
@@ -57,7 +60,7 @@ const App = () => (
           <Route path="/technical-content" element={<SectionPage sectionId="technical-content" />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
 );
