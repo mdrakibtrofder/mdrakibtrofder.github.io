@@ -13,6 +13,15 @@ interface WorkshopItem {
 
 const workshopData: WorkshopItem[] = [
   {
+    title: "DevOps Workflow Implementation",
+    org: "East West University (EWU)",
+    dept: "CSE Department",
+    date: "October 19, 2025",
+    program: "Day Long Industrial Visit",
+    description: "Hands-on session on modern DevOps practices, focusing on version control, automated testing, and containerization using Docker and GitHub Actions.",
+    tags: ["Docker", "GitHub Actions", "Modern DevOps"]
+  },
+  {
     title: "Project Deployments from Scratch",
     org: "Chittagong University of Engineering and Technology (CUET)",
     dept: "ETE Department",
@@ -21,15 +30,6 @@ const workshopData: WorkshopItem[] = [
     description: "A comprehensive deep-dive into full-stack application deployment strategies, cloud infrastructure, and CI/CD pipelines for ETE students.",
     tags: ["Cloud Infrastructure", "CI/CD", "Application Lifecycle"]
   },
-  {
-    title: "DevOps Workflow Implementation",
-    org: "East West University (EWU)",
-    dept: "CSE Department",
-    date: "October 19, 2025",
-    program: "Day Long Industrial Visit",
-    description: "Hands-on session on modern DevOps practices, focusing on version control, automated testing, and containerization using Docker and GitHub Actions.",
-    tags: ["Docker", "GitHub Actions", "Modern DevOps"]
-  }
 ];
 
 const Workshops = ({ workshops }: { workshops?: WorkshopItem[] }) => {

@@ -70,9 +70,9 @@ const Navigation = ({ activeSection }: NavigationProps) => {
       label: "Community",
       icon: <Heart className="w-4 h-4 mr-2" />,
       items: [
-        { id: "volunteer", label: "Volunteer" },
         { id: "mentorship", label: "Mentorship" },
         { id: "workshops", label: "Workshops" },
+        { id: "volunteer", label: "Volunteer" },
       ]
     },
     {

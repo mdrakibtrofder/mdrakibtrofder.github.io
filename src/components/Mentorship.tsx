@@ -7,7 +7,6 @@ interface MentorshipItem {
   period: string;
   studentCount: string;
   location: string;
-  programType: string;
   projects: string[];
   color: string;
   logo?: string;
@@ -16,12 +15,38 @@ interface MentorshipItem {
 
 const mentorshipData: MentorshipItem[] = [
   {
-    institution: "IIT, University of Dhaka",
+    institution: "CSE, Banggladesh Army University of Science and Technology (BAUST)",
+    role: "Final Year Project Co-Supervisor",
+    period: "February 2026 - Present",
+    studentCount: "3 Students",
+    location: "University Campus",
+    projects: [
+      "Rerival Augmentation Generation (RAG)",
+      "Vector Database",
+      "Large Language Models in Education Section",
+      "Reinforcement Learning Based Educational Content Improvement",
+    ],
+    color: "blue"
+  },
+  {
+    institution: "CSE, Bangladesh University of Engineering and Technology (BUET)",
+    role: "Industry Mentor @ Streams Tech Ltd.",
+    period: "December 2025 - January 2026",
+    studentCount: "5 Students",
+    location: "Online",
+    projects: [
+      "Satellite Imagery Analysis for Deforestation",
+      "River Bank Erosion & Delta Land-cover Tracking",
+      "Multi-spectral Data Processing Workflows"
+    ],
+    color: "emerald"
+  },
+  {
+    institution: "IIT, University of Dhaka (DU)",
     role: "Internship Supervisor @ Streams Tech Ltd.",
     period: "October 2025 - January 2026",
     studentCount: "3 Students",
     location: "Office",
-    programType: "6 Month Long Academic Industrial Internship",
     projects: [
       "Meeting Summarizer (AI Transcription)",
       "Call Center AI Agents",
@@ -31,20 +56,6 @@ const mentorshipData: MentorshipItem[] = [
     ],
     color: "blue"
   },
-  {
-    institution: "CSE, Bangladesh University of Engineering and Technology",
-    role: "Industry Mentor @ Streams Tech Ltd.",
-    period: "December 2025 - January 2026",
-    studentCount: "5 Students",
-    location: "Online",
-    programType: "Final Year Capstone Project with Industry Collaboration",
-    projects: [
-      "Satellite Imagery Analysis for Deforestation",
-      "River Bank Erosion & Delta Land-cover Tracking",
-      "Multi-spectral Data Processing Workflows"
-    ],
-    color: "emerald"
-  }
 ];
 
 const Mentorship = ({ mentorships }: { mentorships?: MentorshipItem[] }) => {
