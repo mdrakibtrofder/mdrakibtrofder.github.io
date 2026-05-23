@@ -112,7 +112,7 @@ const Index = () => {
         <Certificates />
 
         <ContentMedia 
-          vlogs={(portfolioData as any).vlogs_local_guide}
+          vlogs={(portfolioData as any).vlog_local_guide}
           writings={(portfolioData as any).writings}
           technical={(portfolioData as any).technical_content}
         />
