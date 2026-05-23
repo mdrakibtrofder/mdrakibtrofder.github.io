@@ -71,32 +71,6 @@ const Volunteer = ({ volunteer }: { volunteer: Volunteer[] }) => {
   const visibleGroups = showAll ? volunteerGroups : volunteerGroups.slice(0, 4);
   const remainingCount = Math.max(0, volunteerGroups.length - 4);
 
-  const renderRoleTimelineItem = (item: Volunteer, index: number) => (
-    <div key={`${item.organization}-${item.role}-${index}`} className="relative pl-12">
-      <span className="absolute left-0 top-5 h-3 w-3 rounded-full bg-emerald-400 shadow-sm" />
-      <div className="ml-6 rounded-2xl border border-slate-700/60 bg-secondary/30 p-4">
-        <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
-          <div>
-            <h4 className="text-base font-semibold text-foreground">{item.role}</h4>
-            <p className="text-sm text-muted-foreground mt-1">{item.duration}</p>
-          </div>
-          <p className="text-sm uppercase tracking-[0.24em] text-emerald-400/70">{item.category}</p>
-        </div>
-        {item.link && (
-          <a
-            href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-4 text-sm text-emerald-400 hover:text-emerald-300 font-medium transition-colors"
-          >
-            <LinkIcon className="w-4 h-4" />
-            View Details
-          </a>
-        )}
-      </div>
-    </div>
-  );
-
   const renderVolunteerGroup = (group: VolunteerGroup, index: number) => {
     const logoSrc = getClubLogo(group.organization, group.logo);
 
@@ -137,10 +111,34 @@ const Volunteer = ({ volunteer }: { volunteer: Volunteer[] }) => {
             )}
           </div>
 
-          <div className="mt-8 pl-6 relative">
-            <div className="absolute top-6 bottom-0 left-0 w-px bg-slate-600/40" />
-            <div className="space-y-6">
-              {group.roles.map((item, index) => renderRoleTimelineItem(item, index))}
+          <div className="mt-8 relative">
+            <div className="absolute top-0 left-2 bottom-0 w-px bg-slate-600/40" />
+            <div className="space-y-0">
+              {group.roles.map((item, index) => (
+                <div key={`${item.organization}-${item.role}-${index}`} className="relative">
+                  <span className="absolute left-0 top-5 h-3 w-3 rounded-full bg-emerald-400 shadow-sm z-10" />
+                  <div className="ml-6 rounded-2xl border border-slate-700/60 bg-secondary/30 p-4">
+                    <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+                      <div>
+                        <h4 className="text-base font-semibold text-foreground">{item.role}</h4>
+                        <p className="text-sm text-muted-foreground mt-1">{item.duration}</p>
+                      </div>
+                      <p className="text-sm uppercase tracking-[0.24em] text-emerald-400/70">{item.category}</p>
+                    </div>
+                    {item.link && (
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 mt-4 text-sm text-emerald-400 hover:text-emerald-300 font-medium transition-colors"
+                      >
+                        <LinkIcon className="w-4 h-4" />
+                        View Details
+                      </a>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
