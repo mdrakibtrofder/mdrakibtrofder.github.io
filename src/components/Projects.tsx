@@ -25,24 +25,24 @@ const Projects = ({ projects }: { projects: Project[] }) => {
 
   const categories = [
     "All",
+    "Course Oriented Project",
+    "Concept Visualization Project",
     "University Capstone Project",
     "Idea Project",
     "Hackathon Project",
-    "Concept Visualization Project",
     "Organization Portfolio Project",
-    "Course Materials Oriented Project",
     "Research Oriented Project",
     "Advance Engineering Project"
   ];
 
   const getCategoryIcon = (type: string) => {
     switch (type) {
+      case "Course Oriented Project": return <BookOpen size={18} />;
+      case "Concept Visualization Project": return <Presentation size={18} />;
       case "University Capstone Project": return <GraduationCap size={18} />;
       case "Idea Project": return <Lightbulb size={18} />;
       case "Hackathon Project": return <Trophy size={18} />;
-      case "Concept Visualization Project": return <Presentation size={18} />;
       case "Organization Portfolio Project": return <Building2 size={18} />;
-      case "Course Materials Oriented Project": return <BookOpen size={18} />;
       case "Research Oriented Project": return <Microscope size={18} />;
       case "Advance Engineering Project": return <Cpu size={18} />;
       default: return <Layers size={18} />;
@@ -51,12 +51,12 @@ const Projects = ({ projects }: { projects: Project[] }) => {
 
   const getTypeStyles = (type: string) => {
     const styles = {
+      "Course Oriented Project": "from-blue-600/20 to-indigo-600/20 border-blue-600/30 text-blue-400 shadow-blue-600/10",
+      "Concept Visualization Project": "from-cyan-500/20 to-blue-500/20 border-cyan-500/30 text-cyan-400 shadow-cyan-500/10",
       "University Capstone Project": "from-purple-500/20 to-pink-500/20 border-purple-500/30 text-purple-400 shadow-purple-500/10",
       "Idea Project": "from-amber-500/20 to-orange-500/20 border-amber-500/30 text-amber-400 shadow-amber-500/10",
       "Hackathon Project": "from-rose-500/20 to-red-500/20 border-rose-500/30 text-rose-400 shadow-rose-500/10",
-      "Concept Visualization Project": "from-cyan-500/20 to-blue-500/20 border-cyan-500/30 text-cyan-400 shadow-cyan-500/10",
       "Organization Portfolio Project": "from-emerald-500/20 to-teal-500/20 border-emerald-500/30 text-emerald-400 shadow-emerald-500/10",
-      "Course Materials Oriented Project": "from-blue-600/20 to-indigo-600/20 border-blue-600/30 text-blue-400 shadow-blue-600/10",
       "Research Oriented Project": "from-indigo-500/20 to-violet-500/20 border-indigo-500/30 text-indigo-400 shadow-indigo-500/10",
       "Advance Engineering Project": "from-yellow-400/30 via-amber-500/20 to-orange-600/30 border-yellow-500/50 text-yellow-500 shadow-[0_0_20px_rgba(234,179,8,0.15)] animate-pulse-slow"
     };

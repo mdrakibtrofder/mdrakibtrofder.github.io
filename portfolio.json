@@ -124,7 +124,7 @@
     }
   ],
   "internship_experience": [
-     {
+    {
       "role": "Trainee Software Engineer",
       "company": "Cefalo Bangladesh Ltd.",
       "duration": "January 2023 - June 2023",
@@ -163,25 +163,39 @@
   ],
   "projects": [
     {
+      "name": "Introduction to Computer Programming",
+      "type": "Course Oriented Project",
+      "technologies": ["React", "Typescript"],
+      "description": "Educational suite for visualizing Lexical analysis and Syntax Tree generation for undergraduate Compiler Design courses.",
+      "url": "https://mdrakibtrofder.github.io/introduction-to-computer-programming"
+    },
+    {
+      "name": "Professional Issues and Ethics for Computer Science",
+      "type": "Course Oriented Project",
+      "technologies": ["React", "Typescript"],
+      "description": "Educational suite for visualizing Lexical analysis and Syntax Tree generation for undergraduate Compiler Design courses.",
+      "url": "https://mdrakibtrofder.github.io/professional-issues-and-ethics-for-computer-science"
+    },
+    {
       "name": "Software System Reconstruction Tool",
       "type": "University Capstone Project",
       "technologies": ["Python", "Nest JS", "React JS"],
       "description": "Automated tool for translating Java structures to JSON, evaluating LLM-based system regeneration and architectural comparison.",
-      "url": ""
+      "url": "https://github.com/mdrakibtrofder/SPL3"
     },
     {
       "name": "Blog Bee: AI-Powered Video-Blog Creation Platform",
       "type": "University Capstone Project",
       "technologies": ["Python", "MySQL", "Node.js", "React"],
       "description": "End-to-end AI agent solution for generating video blogs from user prompts, utilizing Gemini API for content creation and media processing.",
-      "url": ""
+      "url": "https://github.com/mdrakibtrofder/SPL2"
     },
     {
       "name": "Library Recommendation System",
       "type": "University Capstone Project",
       "technologies": ["Java", "JavaFX"],
       "description": "AI-driven recommendation system for library users, analyzing borrowing history and preferences to suggest relevant books and resources.",
-      "url": ""
+      "url": "https://github.com/mdrakibtrofder/SPL1"
     },
     {
       "name": "EcoTrack: Personal Carbon Ledger",
@@ -213,21 +227,21 @@
     },
     {
       "name": "Git Bioscope",
-      "type": "Git Concept Visualization Project",
+      "type": "Concept Visualization Project",
       "technologies": ["React", "Framer Motion", "Tailwind CSS"],
       "description": "Interactive platform featuring high-fidelity animations and command simulation tools for Git version control concept learning.",
       "url": "https://mdrakibtrofder.github.io/git/"
     },
     {
       "name": "Docker Bioscope",
-      "type": "Docker Concept Visualization Project",
+      "type": "Concept Visualization Project",
       "technologies": ["React", "Framer Motion", "Tailwind CSS"],
       "description": "Interactive platform featuring high-fidelity animations and command simulation tools for Docker containerization concept learning.",
       "url": "https://mdrakibtrofder.github.io/docker/"
     },
     {
       "name": "Kubernetes Bioscope",
-      "type": "Kubernetes Concept Visualization Project",
+      "type": "Concept Visualization Project",
       "technologies": ["React", "Framer Motion", "Tailwind CSS"],
       "description": "Interactive platform featuring high-fidelity animations and command simulation tools for Kubernetes orchestration concept learning.",
       "url": "https://mdrakibtrofder.github.io/kubernetes/"
@@ -268,22 +282,8 @@
       "url": "https://the-terminals.github.io/"
     },
     {
-      "name": "Introduction to Computer Programming",
-      "type": "Course Materials Oriented Project",
-      "technologies": ["React", "Typescript"],
-      "description": "Educational suite for visualizing Lexical analysis and Syntax Tree generation for undergraduate Compiler Design courses.",
-      "url": "https://mdrakibtrofder.github.io/introduction-to-computer-programming"
-    },
-    {
-      "name": "Professional Issues and Ethics for Computer Science",
-      "type": "Course Materials Oriented Project",
-      "technologies": ["React", "Typescript"],
-      "description": "Educational suite for visualizing Lexical analysis and Syntax Tree generation for undergraduate Compiler Design courses.",
-      "url": "https://mdrakibtrofder.github.io/professional-issues-and-ethics-for-computer-science"
-    },
-    {
       "name": "Computer Fundamentals",
-      "type": "Course Materials Oriented Project",
+      "type": "Course Oriented Project",
       "technologies": ["React", "Typescript"],
       "description": "Interactive CPU scheduling visualizer supporting FCFS, SJF, and Round Robin analysis for Operating Systems lab.",
       "url": "https://mdrakibtrofder.github.io/computer-fundamentals"
