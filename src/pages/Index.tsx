@@ -50,7 +50,7 @@ const Index = () => {
         "certificates", 
         "experience", 
         "education", 
-        "diploma",
+        "non-academic-program",
         "vlogs",
         "writings",
         "technical-content",

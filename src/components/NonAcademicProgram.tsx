@@ -61,7 +61,7 @@ const NonAcademicProgram = ({ tracks }: { tracks: Track[] }) => {
   };
 
   return (
-    <div id="diploma" className="py-24 px-4 bg-secondary/10 relative overflow-hidden">
+    <div id="non-academic-program" className="py-24 px-4 bg-secondary/10 relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500/50 to-transparent"></div>
       
       <div className="max-w-5xl mx-auto">

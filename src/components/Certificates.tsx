@@ -160,11 +160,8 @@ const Certificates = () => {
             Credentials & Achievements
           </Badge>
           <h2 className="text-4xl md:text-5xl font-bold text-center tracking-tight">
-            Certification <span className="text-emerald-400 italic">Portfolio</span>
+            <span className="text-emerald-400 italic">Certificates</span>
           </h2>
-          <p className="text-muted-foreground text-center max-w-2xl">
-            A comprehensive collection of professional certifications, academic honors, and skill assessments acquired throughout my technical journey.
-          </p>
         </div>
 
         {/* Controls */}

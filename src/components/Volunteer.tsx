@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { ShieldCheck, Calendar, MapPin, Link as LinkIcon, ExternalLink, ChevronDown, ChevronUp } from "lucide-react";
 
@@ -138,8 +137,8 @@ const Volunteer = ({ volunteer }: { volunteer: Volunteer[] }) => {
             )}
           </div>
 
-          <div className="mt-8 relative">
-            <div className="absolute top-0 bottom-0 left-3 w-px bg-slate-600/40" />
+          <div className="mt-8 pl-6 relative">
+            <div className="absolute top-6 bottom-0 left-0 w-px bg-slate-600/40" />
             <div className="space-y-6">
               {group.roles.map((item, index) => renderRoleTimelineItem(item, index))}
             </div>

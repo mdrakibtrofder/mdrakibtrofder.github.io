@@ -54,6 +54,7 @@ const Navigation = ({ activeSection }: NavigationProps) => {
         { id: "experience", label: "Experience" },
         { id: "projects", label: "Projects" },
         { id: "skills", label: "Skills" },
+        { id: "teaching", label: "Teaching" },
       ]
     },
     {
@@ -61,8 +62,8 @@ const Navigation = ({ activeSection }: NavigationProps) => {
       icon: <Book className="w-4 h-4 mr-2" />,
       items: [
         { id: "education", label: "Education" },
+        { id: "non-academic-program", label: "Non-Academic Program" },
         { id: "certificates", label: "Certificates" },
-        { id: "diploma", label: "Diploma & Career" },
       ]
     },
     {
@@ -70,7 +71,6 @@ const Navigation = ({ activeSection }: NavigationProps) => {
       icon: <Heart className="w-4 h-4 mr-2" />,
       items: [
         { id: "volunteer", label: "Volunteer" },
-        { id: "teaching", label: "Teaching" },
         { id: "mentorship", label: "Mentorship" },
         { id: "workshops", label: "Workshops" },
       ]
