@@ -163,6 +163,13 @@
   ],
   "projects": [
     {
+      "name": "Computer Science Preview",
+      "type": "Course Oriented Project",
+      "technologies": ["React", "Typescript"],
+      "description": "Interactive preview platform for computer science fundamentals, covering key concepts and terminologies for beginners.",
+      "url": "https://mdrakibtrofder.github.io/computer-science-preview/"
+    },
+    {
       "name": "Introduction to Computer Programming",
       "type": "Course Oriented Project",
       "technologies": ["React", "Typescript"],
@@ -173,8 +180,36 @@
       "name": "Professional Issues and Ethics for Computer Science",
       "type": "Course Oriented Project",
       "technologies": ["React", "Typescript"],
-      "description": "Educational suite for visualizing Lexical analysis and Syntax Tree generation for undergraduate Compiler Design courses.",
+      "description": "Educational suite for exploring ethical dilemmas and professional standards in computer science.",
       "url": "https://mdrakibtrofder.github.io/professional-issues-and-ethics-for-computer-science"
+    },
+    {
+      "name": "Introduction to DSA",
+      "type": "Course Oriented Project",
+      "technologies": ["React", "Typescript"],
+      "description": "Interactive platform for learning fundamental data structures and algorithms with visualizations and implementations.",
+      "url": "https://mdrakibtrofder.github.io/introduction-to-dsa/"
+    },
+    {
+      "name": "Assignment Builder",
+      "type": "Course Oriented Project",
+      "technologies": ["React", "Typescript"],
+      "description": "Tool for educators to create, manage, and distribute programming assignments with automated validation.",
+      "url": "https://mdrakibtrofder.github.io/assignment-builder/"
+    },
+    {
+      "name": "Assessment Platform",
+      "type": "Course Oriented Project",
+      "technologies": ["React", "Typescript"],
+      "description": "Comprehensive platform for conducting programming assessments with real-time evaluation and feedback.",
+      "url": "https://mdrakibtrofder.github.io/assessment-platform/"
+    },
+    {
+      "name": "Computer Fundamentals",
+      "type": "Course Oriented Project",
+      "technologies": ["React", "Typescript"],
+      "description": "Interactive CPU scheduling visualizer supporting FCFS, SJF, and Round Robin analysis for Operating Systems lab.",
+      "url": "https://mdrakibtrofder.github.io/computer-fundamentals"
     },
     {
       "name": "Software System Reconstruction Tool",
@@ -250,7 +285,8 @@
       "name": "DevOps Workflow",
       "type": "Concept Visualization Project",
       "technologies": ["React", "Framer Motion", "Tailwind CSS"],
-      "description": "Interactive platform showcasing end-to-end DevOps workflow from code commit to deployment with CI/CD pipeline visualizations.",
+
+"description": "Interactive platform showcasing end-to-end DevOps workflow from code commit to deployment with CI/CD pipeline visualizations.",
       "url": "https://mdrakibtrofder.github.io/devops-workflow/"
     },
     {
@@ -280,13 +316,6 @@
       "technologies": ["React", "Tailwind CSS"],
       "description": "The Terminals is a university-oriented intellectual group dedicated to knowledge sharing, research & development, career guidance, and consultancy for academic excellence and community growth.",
       "url": "https://the-terminals.github.io/"
-    },
-    {
-      "name": "Computer Fundamentals",
-      "type": "Course Oriented Project",
-      "technologies": ["React", "Typescript"],
-      "description": "Interactive CPU scheduling visualizer supporting FCFS, SJF, and Round Robin analysis for Operating Systems lab.",
-      "url": "https://mdrakibtrofder.github.io/computer-fundamentals"
     },
     {
       "name": "LLM Code Summarization Study",
@@ -401,7 +430,7 @@
     },
     {
       "role": "Treasurer",
-"organization": "IIT Software Engineers' Community",
+      "organization": "IIT Software Engineers' Community",
       "duration": "Mar 2023 - May 2024",
       "category": "Science and Technology",
       "logo": "/organizations/iit-sec.png"
