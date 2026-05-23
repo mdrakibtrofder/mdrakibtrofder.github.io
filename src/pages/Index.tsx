@@ -1,5 +1,5 @@
-
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Skills from "../components/Skills";
@@ -20,6 +20,26 @@ import portfolioData from "../../portfolio.json";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("home");
+  const location = useLocation();
+
+  // Handle hash-based navigation on mount and hash change
+  useEffect(() => {
+    const hash = window.location.hash.replace("#", "").replace("/", "");
+    if (hash && hash !== "") {
+      setTimeout(() => {
+        const element = document.getElementById(hash);
+        if (element) {
+          const offset = 80;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+          });
+        }
+      }, 100);
+    }
+  }, [location.pathname]);
 
   useEffect(() => {
     const handleScroll = () => {

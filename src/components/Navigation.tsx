@@ -1,5 +1,5 @@
-
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Menu, X, ChevronDown, User, Book, Briefcase, Heart, PlayCircle, Mail, Code } from "lucide-react";
 import {
   DropdownMenu,
@@ -14,19 +14,26 @@ interface NavigationProps {
 
 const Navigation = ({ activeSection }: NavigationProps) => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
+    // Navigate to the section route (this will update URL hash)
+    navigate(`/${sectionId}`);
+    
+    // Scroll to the section
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const offset = 80;
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
 
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-    }
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+      }
+    }, 50);
     setIsOpen(false);
   };
 
