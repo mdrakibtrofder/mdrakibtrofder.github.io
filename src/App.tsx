@@ -40,25 +40,8 @@ const App = () => (
         <Index />
         <BackToTop />
         <Routes>
-          <Route path="/" element={<SectionPage sectionId="home" />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="/home" element={<SectionPage sectionId="home" />} />
-          <Route path="/about" element={<SectionPage sectionId="about" />} />
-          <Route path="/skills" element={<SectionPage sectionId="skills" />} />
-          <Route path="/experience" element={<SectionPage sectionId="experience" />} />
-          <Route path="/education" element={<SectionPage sectionId="education" />} />
-          <Route path="/projects" element={<SectionPage sectionId="projects" />} />
-          <Route path="/certificates" element={<SectionPage sectionId="certificates" />} />
-          <Route path="/volunteer" element={<SectionPage sectionId="volunteer" />} />
-          <Route path="/teaching" element={<SectionPage sectionId="teaching" />} />
-          <Route path="/mentorship" element={<SectionPage sectionId="mentorship" />} />
-          <Route path="/workshops" element={<SectionPage sectionId="workshops" />} />
-          <Route path="/supervision" element={<SectionPage sectionId="supervision" />} />
-          <Route path="/non-academic-program" element={<SectionPage sectionId="non-academic-program" />} />
-          <Route path="/contact" element={<SectionPage sectionId="contact" />} />
-          <Route path="/vlogs" element={<SectionPage sectionId="vlogs" />} />
-          <Route path="/writings" element={<SectionPage sectionId="writings" />} />
-          <Route path="/technical-content" element={<SectionPage sectionId="technical-content" />} />
+          {/* Since Index is already rendered, we don't need SectionPage to render it again */}
+          {/* The section scrolling will be handled by Index component's useEffect */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

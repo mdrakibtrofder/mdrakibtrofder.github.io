@@ -23,12 +23,15 @@ const Index = () => {
   const [activeSection, setActiveSection] = useState("home");
   const location = useLocation();
 
-  // Handle hash-based navigation on mount and hash change
+  // Handle hash-based and path-based navigation on mount and change
   useEffect(() => {
-    const hash = window.location.hash.replace("#", "").replace("/", "");
-    if (hash && hash !== "") {
+    let targetSection = window.location.hash.replace("#", "").replace("/", "");
+    if (!targetSection) {
+      targetSection = location.pathname.replace("/", "");
+    }
+    if (targetSection && targetSection !== "") {
       setTimeout(() => {
-        const element = document.getElementById(hash);
+        const element = document.getElementById(targetSection);
         if (element) {
           const offset = 80;
           const elementPosition = element.getBoundingClientRect().top;
@@ -40,7 +43,7 @@ const Index = () => {
         }
       }, 100);
     }
-  }, [location.pathname]);
+  }, [location.pathname, location.hash]);
 
   useEffect(() => {
     const handleScroll = () => {
