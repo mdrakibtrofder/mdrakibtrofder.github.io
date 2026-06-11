@@ -17,8 +17,8 @@ const Navigation = ({ activeSection }: NavigationProps) => {
   const navigate = useNavigate();
 
   const scrollToSection = (sectionId: string) => {
-    // Navigate to the section route (this will update URL hash)
-    navigate(`/${sectionId}`);
+    // Update URL hash
+    window.location.hash = sectionId;
     
     // Scroll to the section
     setTimeout(() => {

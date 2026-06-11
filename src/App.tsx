@@ -39,27 +39,10 @@ const App = () => (
       <BrowserRouter>
         <Index />
         <BackToTop />
+        {/* No more path routes needed for hash navigation */}
         <Routes>
-          {/* Match valid paths without rendering anything extra */}
-          <Route path="/" element={null} />
-          <Route path="/home" element={null} />
-          <Route path="/about" element={null} />
-          <Route path="/skills" element={null} />
-          <Route path="/experience" element={null} />
-          <Route path="/education" element={null} />
-          <Route path="/projects" element={null} />
-          <Route path="/certificates" element={null} />
-          <Route path="/volunteer" element={null} />
-          <Route path="/teaching" element={null} />
-          <Route path="/mentorship" element={null} />
-          <Route path="/workshops" element={null} />
-          <Route path="/supervision" element={null} />
-          <Route path="/non-academic-program" element={null} />
-          <Route path="/contact" element={null} />
-          <Route path="/vlogs" element={null} />
-          <Route path="/writings" element={null} />
-          <Route path="/technical-content" element={null} />
-          {/* Only show 404 for truly invalid paths */}
+          {/* Since we're using hash navigation, all paths will work as long as they're on the same page */}
+          {/* Only show 404 for truly invalid paths (though hash navigation will prevent most 404s) */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
