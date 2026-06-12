@@ -163,13 +163,6 @@
   ],
   "projects": [
     {
-      "name": "Computer Science Preview",
-      "type": "Course Oriented Project",
-      "technologies": ["React", "Typescript"],
-      "description": "Interactive preview platform for computer science fundamentals, covering key concepts and terminologies for beginners.",
-      "url": "https://mdrakibtrofder.github.io/computer-science-preview/"
-    },
-    {
       "name": "Introduction to Computer Programming",
       "type": "Course Oriented Project",
       "technologies": ["React", "Typescript"],
@@ -182,6 +175,20 @@
       "technologies": ["React", "Typescript"],
       "description": "Educational suite for exploring ethical dilemmas and professional standards in computer science.",
       "url": "https://mdrakibtrofder.github.io/professional-issues-and-ethics-for-computer-science"
+    },
+    {
+      "name": "Computer Science Preview",
+      "type": "Course Oriented Project",
+      "technologies": ["React", "Typescript"],
+      "description": "Interactive preview platform for computer science fundamentals, covering key concepts and terminologies for beginners.",
+      "url": "https://mdrakibtrofder.github.io/computer-science-preview/"
+    },
+    {
+      "name": "Prompt Craft Projects",
+      "type": "Course Oriented Project",
+      "technologies": ["React", "Typescript"],
+      "description": "An educational showcase that leverages AI-driven prompt engineering to help students rapidly prototype websites, transforming their own creations into practical case studies for understanding Intellectual Property concepts.",
+      "url": "https://mdrakibtrofder.github.io/prompt-craft-projects/"
     },
     {
       "name": "Introduction to DSA",
