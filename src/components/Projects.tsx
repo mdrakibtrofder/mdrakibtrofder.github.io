@@ -1,14 +1,15 @@
 import React, { useState, useMemo } from "react";
-import { 
-  GraduationCap, 
-  Lightbulb, 
-  Trophy, 
-  Presentation, 
-  Building2, 
-  BookOpen, 
-  Microscope, 
+import {
+  GraduationCap,
+  Lightbulb,
+  Trophy,
+  Presentation,
+  Building2,
+  BookOpen,
+  Microscope,
   Cpu,
   Layers,
+  Wrench,
   ExternalLink,
   ChevronDown,
   ChevronUp
@@ -35,7 +36,8 @@ const Projects = ({ projects }: { projects: Project[] }) => {
     "Hackathon Project",
     "Organization Portfolio Project",
     "Research Oriented Project",
-    "Advance Engineering Project"
+    "Advance Engineering Project",
+    "Utilities Project"
   ];
 
   // Get curated projects: first from each type, then fill to 5 from first type
@@ -88,6 +90,7 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       case "Organization Portfolio Project": return <Building2 size={18} />;
       case "Research Oriented Project": return <Microscope size={18} />;
       case "Advance Engineering Project": return <Cpu size={18} />;
+      case "Utilities Project": return <Wrench size={18} />;
       default: return <Layers size={18} />;
     }
   };
@@ -101,7 +104,8 @@ const Projects = ({ projects }: { projects: Project[] }) => {
       "Hackathon Project": "from-rose-500/20 to-red-500/20 border-rose-500/30 text-rose-400 shadow-rose-500/10",
       "Organization Portfolio Project": "from-emerald-500/20 to-teal-500/20 border-emerald-500/30 text-emerald-400 shadow-emerald-500/10",
       "Research Oriented Project": "from-indigo-500/20 to-violet-500/20 border-indigo-500/30 text-indigo-400 shadow-indigo-500/10",
-      "Advance Engineering Project": "from-yellow-400/30 via-amber-500/20 to-orange-600/30 border-yellow-500/50 text-yellow-500 shadow-[0_0_20px_rgba(234,179,8,0.15)] animate-pulse-slow"
+      "Advance Engineering Project": "from-yellow-400/30 via-amber-500/20 to-orange-600/30 border-yellow-500/50 text-yellow-500 shadow-[0_0_20px_rgba(234,179,8,0.15)] animate-pulse-slow",
+      "Utilities Project": "from-slate-500/20 to-zinc-500/20 border-slate-500/30 text-slate-400 shadow-slate-500/10"
     };
     return styles[type as keyof typeof styles] || "from-blue-500/20 to-cyan-500/20 border-blue-500/30 text-blue-400";
   };

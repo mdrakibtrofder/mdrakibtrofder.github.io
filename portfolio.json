@@ -184,13 +184,6 @@
       "url": "https://mdrakibtrofder.github.io/computer-science-preview/"
     },
     {
-      "name": "Prompt Craft Projects",
-      "type": "Course Oriented Project",
-      "technologies": ["React", "Typescript"],
-      "description": "An educational showcase that leverages AI-driven prompt engineering to help students rapidly prototype websites, transforming their own creations into practical case studies for understanding Intellectual Property concepts.",
-      "url": "https://mdrakibtrofder.github.io/prompt-craft-projects/"
-    },
-    {
       "name": "Introduction to DSA",
       "type": "Course Oriented Project",
       "technologies": ["React", "Typescript"],
@@ -266,6 +259,13 @@
       "technologies": ["HTML", "CSS", "Javascript"],
       "description": "Aassist students with technical queries, providing instant explanations and resources for computer science and software engineering concepts.",
       "url": ""
+    },
+    {
+      "name": "Prompt Craft Projects",
+      "type": "Concept Visualization Project",
+      "technologies": ["React", "Typescript"],
+      "description": "An educational showcase that leverages AI-driven prompt engineering to help students rapidly prototype websites, transforming their own creations into practical case studies for understanding Intellectual Property concepts.",
+      "url": "https://mdrakibtrofder.github.io/prompt-craft-projects/"
     },
     {
       "name": "Git Bioscope",
@@ -351,6 +351,13 @@
       "technologies": ["Java", "Kafka", "Zookeeper"],
       "description": "Scalable event streaming platform designed to handle millions of events per second with high availability and fault tolerance.",
       "url": ""
+    },
+    {
+      "name": "Utilities",
+      "type": "Utilities Project",
+      "technologies": ["React", "Typescript"],
+      "description": "A collection of handy developer and everyday utilities built for quick, practical use.",
+      "url": "https://mdrakibtrofder.github.io/utilities"
     }
   ],
   "certificates": {
