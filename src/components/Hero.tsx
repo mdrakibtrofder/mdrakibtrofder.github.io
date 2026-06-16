@@ -112,7 +112,7 @@ const Hero = ({ name, title }: { name: string; title: string }) => {
         </p>
 
         {/* Action Buttons */}
-        <div className={`flex flex-wrap justify-center gap-4 mb-16 transition-all duration-700 delay-700 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
+        <div className={`flex flex-wrap justify-center gap-4 mb-6 transition-all duration-700 delay-700 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}>
           <a
             href="https://github.com/mdrakibtrofder"
             target="_blank"
