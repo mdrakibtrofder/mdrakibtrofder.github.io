@@ -24,8 +24,9 @@ const supervisionData: Supervision[] = [
     supervisionType: "Department Head",
     duration: "January 2026 - Present",
     supervisor: {
-      name: "Associate Professor Dr. Nakib Hayat Chowdhury",
-      role: "Head of the Department"
+      name: "Associate Professor Dr. Md Nakib Hayat Chowdhury",
+      role: "Head of the Department",
+      url: "https://www.linkedin.com/in/md-nakib-hayat-chowdhury-phd-b23a8874/"
     }
   },
   {
@@ -34,12 +35,13 @@ const supervisionData: Supervision[] = [
     supervisionType: "Project Lead",
     duration: "January 2024 - January 2026",
     supervisor: {
-      name: "Mostafizur Rahman",
-      role: "Senior Software Engineer"
+      name: "Mostafizur Rahman Monir",
+      role: "Senior Software Engineer",
+      url: "https://www.linkedin.com/in/mostafizur-rahman-monir-7ab95944/"
     }
   },
   {
-    institutes: ["IIT, University of Dhaka", "College of William & Mary"],
+    institutes: ["IIT, University of Dhaka", "William & Mary"],
     supervisionType: "Software Project Lab 3",
     duration: "August 2023 - December 2023",
     supervisor: {
