@@ -25,7 +25,7 @@ const supervisionData: Supervision[] = [
     duration: "January 2026 - Present",
     supervisor: {
       name: "Associate Professor Dr. Md Nakib Hayat Chowdhury",
-      role: "Head of the Department",
+      role: "Head of the Department, CSE Department",
       url: "https://www.linkedin.com/in/md-nakib-hayat-chowdhury-phd-b23a8874/"
     }
   },
