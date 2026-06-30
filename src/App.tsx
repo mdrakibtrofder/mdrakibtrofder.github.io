@@ -37,12 +37,9 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Index />
         <BackToTop />
-        {/* No more path routes needed for hash navigation */}
         <Routes>
-          {/* Since we're using hash navigation, all paths will work as long as they're on the same page */}
-          {/* Only show 404 for truly invalid paths (though hash navigation will prevent most 404s) */}
+          <Route path="/" element={<Index />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
