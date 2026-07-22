@@ -16,10 +16,12 @@ const Navigation = ({ activeSection }: NavigationProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = (sectionId: string, e?: React.MouseEvent) => {
+    e?.preventDefault();
+
     // Update URL hash
     window.location.hash = sectionId;
-    
+
     // Scroll to the section
     setTimeout(() => {
       const element = document.getElementById(sectionId);
@@ -92,12 +94,13 @@ const Navigation = ({ activeSection }: NavigationProps) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <div 
+            <a
+              href="#home"
               className="text-2xl font-black bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={() => scrollToSection("home")}
+              onClick={(e) => scrollToSection("home", e)}
             >
               Md. Rakib Trofder
-            </div>
+            </a>
           </div>
 
           {/* Desktop Navigation */}
@@ -114,15 +117,17 @@ const Navigation = ({ activeSection }: NavigationProps) => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="bg-background/95 backdrop-blur-xl border-white/10 rounded-2xl p-2 min-w-[200px] shadow-2xl animate-in fade-in zoom-in-95 duration-200">
                   {group.items.map((item) => (
-                    <DropdownMenuItem
-                      key={item.id}
-                      onClick={() => scrollToSection(item.id)}
-                      className={`flex items-center px-4 py-3 rounded-xl text-sm font-medium cursor-pointer transition-colors mb-1 last:mb-0
-                        ${activeSection === item.id 
-                          ? "bg-emerald-400/20 text-emerald-400" 
-                          : "hover:bg-emerald-400/10 hover:text-emerald-400"}`}
-                    >
-                      {item.label}
+                    <DropdownMenuItem key={item.id} asChild>
+                      <a
+                        href={`#${item.id}`}
+                        onClick={(e) => scrollToSection(item.id, e)}
+                        className={`flex items-center px-4 py-3 rounded-xl text-sm font-medium cursor-pointer transition-colors mb-1 last:mb-0
+                          ${activeSection === item.id
+                            ? "bg-emerald-400/20 text-emerald-400"
+                            : "hover:bg-emerald-400/10 hover:text-emerald-400"}`}
+                      >
+                        {item.label}
+                      </a>
                     </DropdownMenuItem>
                   ))}
                 </DropdownMenuContent>
@@ -153,16 +158,17 @@ const Navigation = ({ activeSection }: NavigationProps) => {
                   </div>
                   <div className="grid grid-cols-1 gap-1">
                     {group.items.map((item) => (
-                      <button
+                      <a
                         key={item.id}
-                        onClick={() => scrollToSection(item.id)}
+                        href={`#${item.id}`}
+                        onClick={(e) => scrollToSection(item.id, e)}
                         className={`flex items-center px-4 py-3 rounded-2xl text-base font-semibold w-full text-left transition-all
                           ${activeSection === item.id
                             ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 shadow-[0_0_20px_rgba(16,185,129,0.1)]"
                             : "text-muted-foreground hover:bg-white/5 hover:text-foreground"}`}
                       >
                         {item.label}
-                      </button>
+                      </a>
                     ))}
                   </div>
                 </div>

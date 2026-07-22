@@ -84,6 +84,7 @@ const Volunteer = ({ volunteer }: { volunteer: Volunteer[] }) => {
                 <img
                   src={logoSrc}
                   alt={`${group.organization} logo`}
+                  loading="lazy"
                   className="max-w-full max-h-full object-contain"
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = "/placeholder.svg";

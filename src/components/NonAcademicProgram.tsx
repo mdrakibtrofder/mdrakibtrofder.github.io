@@ -30,6 +30,7 @@ const NonAcademicProgram = ({ tracks }: { tracks: Track[] }) => {
                   <img
                     src={track.logo}
                     alt={`${track.organization} logo`}
+                    loading="lazy"
                     className="max-w-full max-h-full object-contain"
                   />
                 ) : (

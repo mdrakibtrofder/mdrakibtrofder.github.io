@@ -34,6 +34,7 @@ const Education = ({ education }: {
                     <img
                       src={edu.logo}
                       alt={`${edu.institute} logo`}
+                      loading="lazy"
                       className="max-w-full max-h-full object-contain hover:opacity-80 transition-opacity"
                     />
                   </a>
@@ -41,6 +42,7 @@ const Education = ({ education }: {
                   <img
                     src={edu.logo}
                     alt={`${edu.institute} logo`}
+                    loading="lazy"
                     className="max-w-full max-h-full object-contain"
                   />
                 )

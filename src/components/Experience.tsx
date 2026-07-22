@@ -50,6 +50,7 @@ const Experience = ({ professional, internship }: {
                   <img
                     src={exp.logo}
                     alt={`${exp.company} logo`}
+                    loading="lazy"
                     className="max-w-full max-h-full object-contain hover:opacity-80 transition-opacity"
                   />
                 </a>
@@ -57,6 +58,7 @@ const Experience = ({ professional, internship }: {
                 <img
                   src={exp.logo}
                   alt={`${exp.company} logo`}
+                  loading="lazy"
                   className="max-w-full max-h-full object-contain"
                 />
               )}
