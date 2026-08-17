@@ -2434,5 +2434,89 @@
     "credential_id": "642594b8-6afa-4810-b32a-1bb820b9dc3b",
     "is_sensitive_certificate": false,
     "image": "/certificates/images/Certificate_203.png"
+  },
+  {
+    "id": "Certificate_204",
+    "type": "Certificate of Participation",
+    "issued_to": "Rakib Trofder",
+    "organization": "Bangladesh Army University of Science and Technology (BAUST)",
+    "course_name": "6-day Orientation and Training Program for Faculty Members, Administrative Officials and Staff",
+    "signed_by": "Prof. Dr. Imtiaz Ahmed Choudhury (Director, IQAC, BAUST), Dr. Engr. Md. Mahmudul Hasan (Additional Director-1, IQAC, BAUST), Nur Hasan Mahmud Shahen (Additional Director-2, IQAC, BAUST)",
+    "issued_date": "January 29, 2026",
+    "credential_id": "IQAC 2025-10-22",
+    "is_sensitive_certificate": false,
+    "image": "/certificates/images/Certificate_204.png"
+  },
+  {
+    "id": "Certificate_205",
+    "type": "Certificate of Appreciation",
+    "issued_to": "Md. Rakib Trofder",
+    "organization": "Bangladesh Army University of Science and Technology (BAUST)",
+    "course_name": "Blood Donation at BAUST Blood Donation Camp",
+    "signed_by": "Medical Officer, BAUST Medical Center; Registrar, BAUST",
+    "issued_date": "February 17, 2026",
+    "credential_id": null,
+    "is_sensitive_certificate": false,
+    "image": "/certificates/images/Certificate_205.png"
+  },
+  {
+    "id": "Certificate_206",
+    "type": "Certificate of Completion",
+    "issued_to": "Md. Rakib Trofder",
+    "organization": "Anthropic",
+    "course_name": "Claude 101",
+    "signed_by": "Anthropic Education",
+    "issued_date": "July 16, 2026",
+    "credential_id": null,
+    "is_sensitive_certificate": false,
+    "image": "/certificates/images/Certificate_206.png"
+  },
+  {
+    "id": "Certificate_207",
+    "type": "Certificate of Completion",
+    "issued_to": "Md. Rakib Trofder",
+    "organization": "Anthropic",
+    "course_name": "Claude Code 101",
+    "signed_by": "Anthropic Education",
+    "issued_date": "July 17, 2026",
+    "credential_id": null,
+    "is_sensitive_certificate": false,
+    "image": "/certificates/images/Certificate_207.png"
+  },
+  {
+    "id": "Certificate_208",
+    "type": "Certificate of Completion",
+    "issued_to": "Md. Rakib Trofder",
+    "organization": "Anthropic",
+    "course_name": "Claude Platform 101",
+    "signed_by": "Anthropic Education",
+    "issued_date": "July 19, 2026",
+    "credential_id": null,
+    "is_sensitive_certificate": false,
+    "image": "/certificates/images/Certificate_208.png"
+  },
+  {
+    "id": "Certificate_209",
+    "type": "Certificate of Completion",
+    "issued_to": "Md. Rakib Trofder",
+    "organization": "Anthropic",
+    "course_name": "Introduction to Claude Cowork",
+    "signed_by": "Anthropic Education",
+    "issued_date": "July 23, 2026",
+    "credential_id": null,
+    "is_sensitive_certificate": false,
+    "image": "/certificates/images/Certificate_209.png"
+  },
+  {
+    "id": "Certificate_210",
+    "type": "Certificate of Completion",
+    "issued_to": "Md. Rakib Trofder",
+    "organization": "Anthropic",
+    "course_name": "Claude Code in Action",
+    "signed_by": "Anthropic Education",
+    "issued_date": "July 26, 2026",
+    "credential_id": null,
+    "is_sensitive_certificate": false,
+    "image": "/certificates/images/Certificate_210.png"
   }
 ]
