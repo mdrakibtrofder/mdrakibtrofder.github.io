@@ -19,6 +19,16 @@ interface Supervision {
 
 const supervisionData: Supervision[] = [
   {
+    institutes: ["Rajshahi University of Engineering and Technology"],
+    department: "Department of Computer Science and Engineering (CSE)",
+    supervisionType: "M.Sc. Thesis",
+    duration: "July 2026 - Present",
+    supervisor: {
+      name: "Professor Dr. Boshir Ahmed",
+      url: "https://www.linkedin.com/in/dr-boshir-ahmed-b830621b4/"
+    }
+  },
+  {
     institutes: ["Bangladesh Army University of Science and Technology", "Saidpur"],
     department: "Department of Computer Science",
     supervisionType: "Department Head",
@@ -91,6 +101,7 @@ const supervisionData: Supervision[] = [
 ];
 
 const typeColors: Record<string, string> = {
+  "M.Sc. Thesis": "bg-rose-500/10 text-rose-400 border-rose-500/30",
   "Department Head": "bg-emerald-500/10 text-emerald-400 border-emerald-500/30",
   "Project Lead": "bg-orange-500/10 text-orange-400 border-orange-500/30",
   "Industry Trainer": "bg-amber-500/10 text-amber-400 border-amber-500/30",
@@ -100,6 +111,7 @@ const typeColors: Record<string, string> = {
 };
 
 const dotColors = [
+  "bg-rose-400 border-rose-400",
   "bg-emerald-400 border-emerald-400",
   "bg-orange-400 border-orange-400",
   "bg-purple-400 border-purple-400",
