@@ -20,11 +20,14 @@ const mentorshipData: MentorshipItem[] = [
     period: "August 2026 - Present",
     studentCount: "1 Student",
     location: "University Campus",
+    // Railway Routing Optimization & Train Tracing Prediction — scope not finalized yet.
+    // Candidate sub-topics (restore when confirmed):
+    // "Railway Network Modeling & Shortest-Path Route Optimization",
+    // "Multi-Objective Scheduling for Cost, Time & Capacity Trade-offs",
+    // "Real-Time Train Tracing with GPS & Sensor Data Fusion",
+    // "Predictive Arrival Time & Delay Forecasting Models",
     projects: [
-      "Railway Network Modeling & Shortest-Path Route Optimization",
-      "Multi-Objective Scheduling for Cost, Time & Capacity Trade-offs",
-      "Real-Time Train Tracing with GPS & Sensor Data Fusion",
-      "Predictive Arrival Time & Delay Forecasting Models",
+      "Scope To Be Decided",
     ],
     color: "blue"
   },
@@ -34,11 +37,14 @@ const mentorshipData: MentorshipItem[] = [
     period: "August 2026 - Present",
     studentCount: "1 Student",
     location: "University Campus",
+    // Large Language Model Chatting Application Localization & MLOps — scope not finalized yet.
+    // Candidate sub-topics (restore when confirmed):
+    // "Bangla Localization & Cultural Adaptation of LLM Chat Interfaces",
+    // "Domain-Specific Fine-Tuning and Evaluation for Low-Resource Language",
+    // "MLOps Pipeline for Continuous Training, Versioning & Deployment",
+    // "Production Monitoring, Inference Optimization & Response Quality Tracking",
     projects: [
-      "Bangla Localization & Cultural Adaptation of LLM Chat Interfaces",
-      "Domain-Specific Fine-Tuning and Evaluation for Low-Resource Language",
-      "MLOps Pipeline for Continuous Training, Versioning & Deployment",
-      "Production Monitoring, Inference Optimization & Response Quality Tracking",
+      "Scope To Be Decided",
     ],
     color: "emerald"
   },
