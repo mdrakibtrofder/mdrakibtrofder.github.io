@@ -15,15 +15,43 @@ interface MentorshipItem {
 
 const mentorshipData: MentorshipItem[] = [
   {
-    institution: "CSE, Banggladesh Army University of Science and Technology (BAUST)",
-    role: "Final Year Project Co-Supervisor",
+    institution: "CSE, Bangladesh Army University of Science and Technology (BAUST)",
+    role: "Final Year Project Co-Supervisor (CSE 17th Batch)",
+    period: "August 2026 - Present",
+    studentCount: "1 Student",
+    location: "University Campus",
+    projects: [
+      "Railway Network Modeling & Shortest-Path Route Optimization",
+      "Multi-Objective Scheduling for Cost, Time & Capacity Trade-offs",
+      "Real-Time Train Tracing with GPS & Sensor Data Fusion",
+      "Predictive Arrival Time & Delay Forecasting Models",
+    ],
+    color: "blue"
+  },
+  {
+    institution: "CSE, Bangladesh Army University of Science and Technology (BAUST)",
+    role: "Final Year Project Co-Supervisor (CSE 17th Batch)",
+    period: "August 2026 - Present",
+    studentCount: "1 Student",
+    location: "University Campus",
+    projects: [
+      "Bangla Localization & Cultural Adaptation of LLM Chat Interfaces",
+      "Domain-Specific Fine-Tuning and Evaluation for Low-Resource Language",
+      "MLOps Pipeline for Continuous Training, Versioning & Deployment",
+      "Production Monitoring, Inference Optimization & Response Quality Tracking",
+    ],
+    color: "emerald"
+  },
+  {
+    institution: "CSE, Bangladesh Army University of Science and Technology (BAUST)",
+    role: "Final Year Project Co-Supervisor (CSE 16th Batch)",
     period: "February 2026 - Present",
     studentCount: "3 Students",
     location: "University Campus",
     projects: [
-      "Rerival Augmentation Generation (RAG)",
-      "Vector Database",
-      "Large Language Models in Education Section",
+      "Anonymized, Community-Visible LLM Chat",
+      "AI For Education",
+      "Large Language Models Response Analysis",
       "Reinforcement Learning Based Educational Content Improvement",
     ],
     color: "blue"
