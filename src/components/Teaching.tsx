@@ -1,13 +1,18 @@
-import { 
-  Code, 
-  Monitor, 
-  Shield, 
-  Briefcase, 
-  Terminal, 
-  GraduationCap, 
-  ExternalLink, 
-  Clock, 
-  MapPin
+import { useState } from "react";
+import {
+  Code,
+  Monitor,
+  Shield,
+  Briefcase,
+  Terminal,
+  Database,
+  Layers,
+  Rocket,
+  GraduationCap,
+  ExternalLink,
+  Clock,
+  MapPin,
+  ChevronDown
 } from "lucide-react";
 import { Badge } from "./ui/badge";
 
@@ -23,6 +28,42 @@ interface Course {
 }
 
 const courses: Course[] = [
+  {
+    code: "CSE 2205",
+    title: "Database Management Systems",
+    semester: "Summer 2026",
+    type: "Theory",
+    icon: Database,
+    color: "blue",
+    description: "Relational data modeling, normalization, SQL query design, transaction management, and indexing strategies for reliable data-driven systems."
+  },
+  {
+    code: "CSE 2206",
+    title: "Database Management Systems Sessional",
+    semester: "Summer 2026",
+    type: "Sessional",
+    icon: Database,
+    color: "emerald",
+    description: "Hands-on lab work building and querying relational schemas, writing stored procedures, and tuning queries for real-world workloads."
+  },
+  {
+    code: "CSE 3100",
+    title: "Software Development Project II",
+    semester: "Summer 2026",
+    type: "Sessional",
+    icon: Rocket,
+    color: "orange",
+    description: "Team-based capstone project spanning requirement analysis, system design, iterative implementation, and deployment of a complete software product."
+  },
+  {
+    code: "CSE 3102",
+    title: "Software Engineering Sessional",
+    semester: "Summer 2026",
+    type: "Sessional",
+    icon: Layers,
+    color: "indigo",
+    description: "Applied practice in software process models, UML modeling, version control workflows, testing, and collaborative engineering documentation."
+  },
   {
     code: "CSE 2123",
     title: "Introduction to Computer Programming",
@@ -115,7 +156,25 @@ const getCourseTypeColor = (type: string) => {
   return type === "Theory" ? "bg-blue-500" : "bg-emerald-500";
 };
 
+// Semesters are listed most-recent first; the first one is expanded by default.
+const semesters: string[] = courses.reduce<string[]>((acc, course) => {
+  if (!acc.includes(course.semester)) acc.push(course.semester);
+  return acc;
+}, []);
+
 const Teaching = () => {
+  const [openSemesters, setOpenSemesters] = useState<string[]>(
+    semesters.slice(0, 1)
+  );
+
+  const toggleSemester = (semester: string) => {
+    setOpenSemesters((prev) =>
+      prev.includes(semester)
+        ? prev.filter((s) => s !== semester)
+        : [...prev, semester]
+    );
+  };
+
   return (
     <div className="py-20 px-4 relative overflow-hidden" id="teaching">
       {/* Background Decorative Elements */}
@@ -154,62 +213,112 @@ const Teaching = () => {
           </div>
         </div>
 
-        {/* Timeline */}
-        <div className="relative">
-          <div className="absolute top-0 bottom-0 left-6 w-px bg-violet-500/30" />
-          <div className="space-y-10">
-            {courses.map((course) => {
-              const Icon = course.icon;
-              return (
-                <div key={course.code} className="relative pl-16">
-                  <span className={`absolute left-4 top-6 h-4 w-4 rounded-full border-4 ${dotColors[course.color]} bg-secondary shadow-xl`} />
-                  <div className={`rounded-3xl border border-slate-700/60 bg-secondary/50 p-6 shadow-xl transition-all duration-300 hover:border-violet-500/40`}>
-                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
-                      <div className="flex items-start gap-4">
-                        <div className={`flex-shrink-0 w-16 h-16 flex items-center justify-center rounded-2xl ${colorClasses[course.color]}`}>
-                          <Icon className="w-8 h-8" />
-                        </div>
-                        <div>
-                          <div className="flex items-center gap-2 text-xs font-bold text-muted-foreground uppercase tracking-widest mb-2">
-                            <GraduationCap className="h-3.5 w-3.5" />
-                            {course.semester}
-                          </div>
-                          <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest block mb-1">{course.code}</span>
-                          <h3 className="text-xl font-bold text-foreground mb-1">{course.title}</h3>
-                          
-                          <div className="flex items-center gap-3 mt-3">
-                            <span className={`inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full ${colorClasses[course.color]}`}>
-                              <div className={`w-2 h-2 rounded-full ${getCourseTypeColor(course.type)}`} />
-                              {course.type}
-                            </span>
-                            <Badge variant="outline" className="text-xs border-violet-500/30 text-violet-400">
-                              Instructor
-                            </Badge>
-                          </div>
-                        </div>
-                      </div>
+        {/* Semester sections */}
+        <div className="space-y-8">
+          {semesters.map((semester) => {
+            const semesterCourses = courses.filter((c) => c.semester === semester);
+            const isOpen = openSemesters.includes(semester);
+            const theoryCount = semesterCourses.filter((c) => c.type === "Theory").length;
+            const sessionalCount = semesterCourses.length - theoryCount;
 
-                      {course.url && (
-                        <a 
-                          href={course.url} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-sm font-medium hover:bg-violet-500/20 hover:border-violet-400/50 transition-all"
-                        >
-                          View Material
-                          <ExternalLink className="w-4 h-4" />
-                        </a>
-                      )}
+            return (
+              <div
+                key={semester}
+                className="rounded-3xl border border-violet-500/20 bg-secondary/30 overflow-hidden"
+              >
+                <button
+                  type="button"
+                  onClick={() => toggleSemester(semester)}
+                  aria-expanded={isOpen}
+                  aria-controls={`semester-panel-${semester.replace(/\s+/g, "-")}`}
+                  className="w-full flex items-center justify-between gap-4 p-6 text-left transition-colors hover:bg-violet-500/5"
+                >
+                  <div className="flex items-center gap-4">
+                    <div className="p-3 rounded-xl bg-violet-500/10">
+                      <GraduationCap className="w-5 h-5 text-violet-500" />
                     </div>
+                    <div>
+                      <h3 className="text-xl font-bold text-foreground">{semester}</h3>
+                      <p className="text-sm text-muted-foreground">
+                        {semesterCourses.length} course{semesterCourses.length === 1 ? "" : "s"}
+                        {theoryCount > 0 && ` · ${theoryCount} Theory`}
+                        {sessionalCount > 0 && ` · ${sessionalCount} Sessional`}
+                      </p>
+                    </div>
+                  </div>
+                  <ChevronDown
+                    className={`w-5 h-5 flex-shrink-0 text-violet-400 transition-transform duration-300 ${
+                      isOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
 
-                    <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
-                      {course.description}
-                    </p>
+                <div
+                  id={`semester-panel-${semester.replace(/\s+/g, "-")}`}
+                  hidden={!isOpen}
+                  className="px-6 pb-8"
+                >
+                  {/* Timeline */}
+                  <div className="relative">
+                    <div className="absolute top-0 bottom-0 left-6 w-px bg-violet-500/30" />
+                    <div className="space-y-10">
+                      {semesterCourses.map((course) => {
+                        const Icon = course.icon;
+                        return (
+                          <div key={course.code} className="relative pl-16">
+                            <span className={`absolute left-4 top-6 h-4 w-4 rounded-full border-4 ${dotColors[course.color]} bg-secondary shadow-xl`} />
+                            <div className="rounded-3xl border border-slate-700/60 bg-secondary/50 p-6 shadow-xl transition-all duration-300 hover:border-violet-500/40">
+                              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4">
+                                <div className="flex items-start gap-4">
+                                  <div className={`flex-shrink-0 w-16 h-16 flex items-center justify-center rounded-2xl ${colorClasses[course.color]}`}>
+                                    <Icon className="w-8 h-8" />
+                                  </div>
+                                  <div>
+                                    <div className="flex items-center gap-2 text-xs font-bold text-muted-foreground uppercase tracking-widest mb-2">
+                                      <GraduationCap className="h-3.5 w-3.5" />
+                                      {course.semester}
+                                    </div>
+                                    <span className="text-xs font-bold text-muted-foreground uppercase tracking-widest block mb-1">{course.code}</span>
+                                    <h4 className="text-xl font-bold text-foreground mb-1">{course.title}</h4>
+
+                                    <div className="flex items-center gap-3 mt-3">
+                                      <span className={`inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full ${colorClasses[course.color]}`}>
+                                        <div className={`w-2 h-2 rounded-full ${getCourseTypeColor(course.type)}`} />
+                                        {course.type}
+                                      </span>
+                                      <Badge variant="outline" className="text-xs border-violet-500/30 text-violet-400">
+                                        Instructor
+                                      </Badge>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                {course.url && (
+                                  <a
+                                    href={course.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-400 text-sm font-medium hover:bg-violet-500/20 hover:border-violet-400/50 transition-all"
+                                  >
+                                    View Material
+                                    <ExternalLink className="w-4 h-4" />
+                                  </a>
+                                )}
+                              </div>
+
+                              <p className="text-sm text-muted-foreground mt-4 leading-relaxed">
+                                {course.description}
+                              </p>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
-              );
-            })}
-          </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
