@@ -198,7 +198,7 @@ const Teaching = () => {
               </div>
               <div>
                 <p className="font-semibold text-violet-500">Counseling Time</p>
-                <p className="text-sm text-muted-foreground">9:00 - 11:00 PM (Sunday, Monday, Thursday)</p>
+                <p className="text-sm text-muted-foreground">9:00 AM - 11:00 AM on Monday, 10.00 AM - 12.00 PM on Thursday</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
