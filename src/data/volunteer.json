@@ -1,0 +1,108 @@
+[
+  {
+    "role": "Vice President",
+    "organization": "Somoyon",
+    "duration": "Jan 2024 - Feb 2025",
+    "category": "Social Services",
+    "logo": "/clubs/somoyon.jpeg"
+  },
+  {
+    "role": "Treasurer",
+    "organization": "IIT Software Engineers' Community",
+    "duration": "Mar 2023 - May 2024",
+    "category": "Science and Technology",
+    "logo": "/clubs/iitsec.jpg"
+  },
+  {
+    "role": "Office Secretary",
+    "organization": "Khilkhet Pathagar",
+    "duration": "Jan 2022 - Present",
+    "category": "Community Service",
+    "logo": "/clubs/khilkhet-pathagar.jpg"
+  },
+  {
+    "role": "Organizing Secretary",
+    "organization": "Somoyon",
+    "duration": "Jan 2023 - Dec 2023",
+    "category": "Social Services",
+    "logo": "/clubs/somoyon.jpeg"
+  },
+  {
+    "role": "Event Ambassador (University of Dhaka)",
+    "organization": "CUET Computer Club",
+    "duration": "Aug 2021 - Oct 2021",
+    "category": "Science and Technology",
+    "logo": "/clubs/cuet-computer-club.jpg",
+    "link": "https://www.facebook.com/cuetcomputerclub/photos/pcb.1234565843635911/1234564600302702"
+  },
+  {
+    "role": "Organizing Secretary",
+    "organization": "IITDU Debating Club",
+    "duration": "Jan 2020 - Oct 2022",
+    "category": "Arts and Culture",
+    "logo": "/clubs/iitdc.png"
+  },
+  {
+    "role": "Executive Committee Member",
+    "organization": "IITDU Debating Club",
+    "duration": "Feb 2019 - Jan 2020",
+    "category": "Arts and Culture",
+    "logo": "/clubs/iitdc.png"
+  },
+  {
+    "role": "Member",
+    "organization": "Dhaka University Research Society (DURS)",
+    "duration": "Feb 2019 - Present",
+    "category": "Science and Technology",
+    "logo": "/clubs/dhaka-university-research-society.jpg"
+  },
+  {
+    "role": "Member",
+    "organization": "IIT Software Engineers' Community",
+    "duration": "Jan 2019 - Mar 2022",
+    "category": "Science and Technology",
+    "logo": "/clubs/iitsec.jpg"
+  },
+  {
+    "role": "Member",
+    "organization": "Notre Dame Science Club",
+    "duration": "Jul 2016 - Jun 2018",
+    "category": "Science and Technology",
+    "logo": "/clubs/notre-dame-science-club.jpg"
+  },
+  {
+    "role": "Member",
+    "organization": "Notre Dame Writers' Club",
+    "duration": "Jul 2016 - Jun 2018",
+    "category": "Arts and Culture",
+    "logo": "/clubs/notre-dame-writers-club.jpg"
+  },
+  {
+    "role": "Member",
+    "organization": "Bishwa Sahitto Kendra",
+    "duration": "Nov 2018 - May 2019",
+    "category": "Arts and Culture",
+    "logo": "/clubs/bishwa-sahitto-kendra.png"
+  },
+  {
+    "role": "Member",
+    "organization": "Khilkhet Pathagar",
+    "duration": "Jan 2015 - Aug 2017",
+    "category": "Community Service",
+    "logo": "/clubs/khilkhet-pathagar.jpg"
+  },
+  {
+    "role": "Executive Committee Member",
+    "organization": "Khilkhet Pathagar",
+    "duration": "Aug 2017 - Dec 2021",
+    "category": "Community Service",
+    "logo": "/clubs/khilkhet-pathagar.jpg"
+  },
+  {
+    "role": "Executive Committee Member",
+    "organization": "IIT Software Engineers' Community",
+    "duration": "Mar 2022 - Mar 2023",
+    "category": "Science and Technology",
+    "logo": "/clubs/iitsec.jpg"
+  }
+]

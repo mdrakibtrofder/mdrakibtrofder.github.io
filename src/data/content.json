@@ -1,0 +1,64 @@
+{
+  "vlogs": [
+    {
+      "title": "YouTube Channel",
+      "subtitle": "Travel & life vlogs",
+      "description": "Exploring new places, cultures and everyday stories through video.",
+      "url": "https://www.youtube.com/@mdrakibtrofder",
+      "icon": "youtube"
+    },
+    {
+      "title": "Google Local Guide",
+      "subtitle": "Top contributor",
+      "description": "Reviews, photos and recommendations that help people discover good local spots.",
+      "url": "https://www.google.com/maps/contrib/110694871538640683885/reviews/@22.6904924,90.2202369,451393m/data=!3m2!1e3!4b1!4m3!8m2!3m1!1e1?authuser=1&entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D",
+      "icon": "map-pin"
+    }
+  ],
+  "writings": [
+    {
+      "title": "Trofder Blog",
+      "subtitle": "Personal blog",
+      "description": "Thoughts on technology, life experiences and personal reflections.",
+      "url": "https://mdrakibtrofder.blogspot.com/",
+      "icon": "feather"
+    },
+    {
+      "title": "Trofder Thoughts",
+      "subtitle": "Thoughts & ideas",
+      "description": "Deep dives into ideas, philosophy and discussions on various topics.",
+      "url": "https://trofderthoughts.blogspot.com/",
+      "icon": "pen-tool"
+    },
+    {
+      "title": "Daily Motivation",
+      "subtitle": "Inspiration blog",
+      "description": "Daily motivational insights and positive energy for your journey.",
+      "url": "https://dailymotivationalinsights.blogspot.com/",
+      "icon": "star"
+    }
+  ],
+  "technical": [
+    {
+      "title": "Programming Blog",
+      "subtitle": "Tech tutorials",
+      "description": "Technical articles, coding patterns and software engineering deep-dives.",
+      "url": "https://programmingwithtrofder.blogspot.com/",
+      "icon": "code"
+    },
+    {
+      "title": "Tech YouTube",
+      "subtitle": "Video tutorials",
+      "description": "Visual tutorials on full-stack development, AWS, Python and system architecture.",
+      "url": "https://www.youtube.com/@programmingwithtrofder",
+      "icon": "youtube"
+    },
+    {
+      "title": "Medium Articles",
+      "subtitle": "Tech writing",
+      "description": "Tech articles and research summaries for the developer community.",
+      "url": "https://rakib3004.medium.com/",
+      "icon": "book-open"
+    }
+  ]
+}

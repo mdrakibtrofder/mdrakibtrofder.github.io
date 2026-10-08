@@ -1,73 +1,69 @@
-# Welcome to your Lovable project
+# mdrakibtrofder.github.io
 
-## Project info
+Personal site of **Md. Rakib Trofder**, covering teaching, software engineering and background.
+Built with Vite, React, TypeScript, Tailwind CSS and a few shadcn/ui components. Deployed to GitHub Pages by
+`.github/workflows/deploy.yml` on every push to `main`.
 
-**URL**: https://lovable.dev/projects/6dea56fa-257d-4abf-8040-b74a59cdf64a
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/6dea56fa-257d-4abf-8040-b74a59cdf64a) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
+## Run locally
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+npm ci
+npm run dev        # http://localhost:8080
+npm run build      # production build in dist/
+npm run typecheck  # TypeScript check
+npm run lint
 ```
 
-**Edit a file directly in GitHub**
+## Updating content
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+All content lives in `src/data/`. You should not need to edit components to add a course, project or role.
 
-**Use GitHub Codespaces**
+| What to update | File |
+| --- | --- |
+| Name, headline, summary, the two "tracks", research interests, contact | `src/data/profile.json` |
+| Courses and counseling hours | `src/data/teaching.json` |
+| Jobs and internships (`track`: `academic` or `engineering`) | `src/data/experience.json` |
+| Projects | `src/data/projects.json` |
+| Skills and certification links | `src/data/skills.json` |
+| Student mentorship / FYP supervision | `src/data/mentorship.json` |
+| Workshops | `src/data/workshops.json` |
+| Education (`isMore: true` hides it behind "Show") | `src/data/education.json` |
+| Professional programs | `src/data/programs.json` |
+| Your supervisors and mentors | `src/data/supervision.json` |
+| Volunteer roles | `src/data/volunteer.json` |
+| Blogs, YouTube, Medium, Local Guide | `src/data/content.json` |
+| Certificates (images in the same folder) | `public/certificates/certificate_details.json` |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Icons in the JSON are referenced by name (for example `"icon": "database"`). The available names are in
+`src/lib/icons.ts`. The "At a glance" numbers in the hero are calculated from these files automatically.
 
-## What technologies are used for this project?
+## Project structure
 
-This project is built with:
+```
+src/
+├── app/            App.tsx (routes) and providers.tsx (theme, React Query)
+├── pages/          HomePage, SectionRoute (/teaching etc.), NotFoundPage
+├── features/       one folder per section: hero, about, experience, teaching, mentorship,
+│                   workshops, projects, skills, education, programs, certificates,
+│                   supervision, volunteer, content, contact
+├── components/
+│   ├── layout/     Navigation, Footer, BackToTop, ThemeToggle
+│   ├── common/     Section, ChapterHeader, LogoBox, Tag, ShowMoreButton, ExternalLink
+│   └── ui/         shadcn/ui components actually in use
+├── data/           JSON content + index.ts (typed exports)
+├── types/          TypeScript types for all content
+├── config/site.ts  navigation groups and section ids
+├── hooks/          useActiveSection, useScrollToHash
+└── lib/            utils, icons, scroll, stats
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Every section reads its data from `@/data`. To move a section to an API later, replace its import with a
+React Query hook (React Query is already set up in `app/providers.tsx`); the component markup stays the same.
 
-## How can I deploy this project?
+## Design
 
-Simply open [Lovable](https://lovable.dev/projects/6dea56fa-257d-4abf-8040-b74a59cdf64a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Light theme by default with a dark mode toggle.
+- Two accent colours: indigo for teaching and research (`academic`), emerald for software work (`engineering`).
+  They are defined as CSS variables in `src/index.css` and as Tailwind colours in `tailwind.config.ts`.
+- The page is grouped into parts: About & Experience, Teaching, Software Engineering, Background, Beyond Work, Contact.
+- Section anchors (`/#teaching`, `/#projects`, ...) and paths (`/teaching`) are unchanged from the previous version.

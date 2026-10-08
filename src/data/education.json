@@ -1,0 +1,63 @@
+[
+  {
+    "degree": "M.Sc. Engg., Computer Science & Engineering",
+    "institute": "Rajshahi University of Engineering & Technology",
+    "duration": "April 2026 - Present",
+    "achievements": [],
+    "logo": "/organizations/rajshahi-university-of-science-and-technology.png",
+    "link": "https://www.ruet.ac.bd/"
+  },
+  {
+    "degree": "B.Sc, Software Engineering",
+    "institute": "IIT, University of Dhaka",
+    "duration": "January 2019 - December 2023",
+    "achievements": [
+      "1st Runner-up, BUET CSE Fest Hackathon, 2023"
+    ],
+    "logo": "/organizations/iit-university-of-dhaka.png",
+    "link": "https://www.du.ac.bd/",
+    "result": "CGPA 3.78/4.00"
+  },
+  {
+    "degree": "Higher Secondary Certificate (HSC)",
+    "institute": "Notre Dame College, Dhaka",
+    "duration": "July 2016 - June 2018",
+    "result": "GPA 5.00/5.00",
+    "achievements": [
+      "Finalist, Bangladesh Chemistry Olympiad, 2017"
+    ],
+    "logo": "/organizations/notre-dame-college-dhaka.png",
+    "link": "https://ndc.edu.bd/"
+  },
+  {
+    "degree": "Secondary School Certificate (SSC)",
+    "institute": "Kurmitola High School, Dhaka",
+    "duration": "Jan 2011 - Feb 2016",
+    "result": "GPA 5.00/5.00",
+    "achievements": [
+      "Finalist, Creative Talent Hunt, 2014"
+    ],
+    "logo": "/organizations/kurmitola-high-school.png"
+  },
+  {
+    "degree": "Primary Education (Class 4 - 5)",
+    "institute": "Kurmitola Govt. Primary School, Dhaka",
+    "duration": "Jan 2009 - Dec 2010",
+    "achievements": [],
+    "isMore": true
+  },
+  {
+    "degree": "Primary Education (Class 4)",
+    "institute": "Barotopa Govt. Primary School, Gazipur",
+    "duration": "Oct 2008 - Dec 2008",
+    "achievements": [],
+    "isMore": true
+  },
+  {
+    "degree": "Primary Education (Class 1-4)",
+    "institute": "Tangra Nosor Uddin Govt. Primary School, Gazipur",
+    "duration": "Jan 2005 - Oct 2008",
+    "achievements": [],
+    "isMore": true
+  }
+]

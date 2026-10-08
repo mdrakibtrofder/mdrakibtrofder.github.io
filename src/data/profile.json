@@ -1,0 +1,47 @@
+{
+  "name": "Md. Rakib Trofder",
+  "shortName": "Rakib Trofder",
+  "headline": "Lecturer, Department of Computer Science and Engineering",
+  "affiliation": {
+    "name": "Bangladesh Army University of Science and Technology",
+    "url": "https://baust.edu.bd/"
+  },
+  "location": "Bangladesh",
+  "summary": "I teach computer science at BAUST and build software. Before joining academia I spent two years as a software engineer working on microservices, AI agents, CI/CD and geospatial data systems. Now I bring that industry experience into the classroom while researching software engineering and AI for my M.Sc. at RUET.",
+  "tracks": {
+    "academic": {
+      "title": "Teaching & Research",
+      "role": "Lecturer, CSE · BAUST",
+      "points": [
+        "Undergraduate theory and lab courses in programming, databases and software engineering",
+        "Co-supervising final-year projects on LLMs and AI for education",
+        "M.Sc. thesis research at RUET"
+      ]
+    },
+    "engineering": {
+      "title": "Software Engineering",
+      "role": "Former Associate Software Engineer · Streams Tech",
+      "points": [
+        "Microservice web systems with Angular, ASP.NET and Python",
+        "End-to-end AI agents with the Gemini API",
+        "On-prem infrastructure and fully automated CI/CD pipelines"
+      ]
+    }
+  },
+  "researchInterests": [
+    "AI-based software system reconstruction",
+    "LLMs for software engineering",
+    "AI in education",
+    "Geospatial data processing"
+  ],
+  "contact": {
+    "email": "mdrakibtrofder@gmail.com",
+    "phone": "+8801939649428",
+    "website": "https://mdrakibtrofder.github.io"
+  },
+  "socials": {
+    "github": "https://github.com/mdrakibtrofder",
+    "linkedin": "https://www.linkedin.com/in/mdrakibtrofder/",
+    "youtube": "https://www.youtube.com/@mdrakibtrofder"
+  }
+}

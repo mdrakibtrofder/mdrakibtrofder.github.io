@@ -1,0 +1,98 @@
+[
+  {
+    "institutes": [
+      "Rajshahi University of Engineering and Technology"
+    ],
+    "department": "Department of Computer Science and Engineering (CSE)",
+    "supervisionType": "M.Sc. Thesis",
+    "duration": "July 2026 - Present",
+    "supervisor": {
+      "name": "Professor Dr. Boshir Ahmed",
+      "url": "https://www.linkedin.com/in/dr-boshir-ahmed-b830621b4/"
+    }
+  },
+  {
+    "institutes": [
+      "Bangladesh Army University of Science and Technology",
+      "Saidpur"
+    ],
+    "department": "Department of Computer Science",
+    "supervisionType": "Department Head",
+    "duration": "January 2026 - Present",
+    "supervisor": {
+      "name": "Associate Professor Dr. Md Nakib Hayat Chowdhury",
+      "url": "https://www.linkedin.com/in/md-nakib-hayat-chowdhury-phd-b23a8874/",
+      "role": "Head of the Department, CSE Department"
+    }
+  },
+  {
+    "institutes": [
+      "Streams Tech Ltd."
+    ],
+    "department": "Monitoring and Evaluation Project",
+    "supervisionType": "Project Lead",
+    "duration": "January 2024 - January 2026",
+    "supervisor": {
+      "name": "Mostafizur Rahman Monir",
+      "url": "https://www.linkedin.com/in/mostafizur-rahman-monir-7ab95944/",
+      "role": "Senior Software Engineer"
+    }
+  },
+  {
+    "institutes": [
+      "IIT, University of Dhaka",
+      "William & Mary"
+    ],
+    "supervisionType": "Software Project Lab 3",
+    "duration": "August 2023 - December 2023",
+    "supervisor": {
+      "name": "Professor Dr. Denys Poshyvanyk",
+      "url": "https://www.linkedin.com/in/denys-poshyvanyk-784ab33/"
+    },
+    "coSupervisor": {
+      "name": "Associate Professor Dr. Ahmedul Kabir",
+      "url": "https://www.linkedin.com/in/ahmedul-kabir-90469134/"
+    },
+    "mentor": {
+      "name": "Daniel Rodriguez Cardenas",
+      "url": "https://www.linkedin.com/in/daniel-rodriguez-cardenas/"
+    }
+  },
+  {
+    "institutes": [
+      "Cefalo Bangladesh Ltd."
+    ],
+    "supervisionType": "Industry Trainer",
+    "duration": "January 2023 - June 2023",
+    "mentor": {
+      "name": "Simanta Deb Turja",
+      "url": "https://www.linkedin.com/in/simantaturja/"
+    }
+  },
+  {
+    "institutes": [
+      "IIT, University of Dhaka"
+    ],
+    "supervisionType": "Software Project Lab 2",
+    "duration": "January 2022 - June 2022",
+    "supervisor": {
+      "name": "Assistant Professor Kishan Kumar Ganguly",
+      "url": "https://www.linkedin.com/in/kkganguly/"
+    }
+  },
+  {
+    "institutes": [
+      "IIT, University of Dhaka"
+    ],
+    "supervisionType": "Software Project Lab 1",
+    "duration": "January 2020 - August 2021",
+    "supervisor": {
+      "name": "Assistant Professor Kishan Kumar Ganguly",
+      "url": "https://www.linkedin.com/in/kkganguly/"
+    },
+    "coSupervisor": {
+      "name": "Professor Dr. Kazi Muheymin Us Sakib",
+      "url": "https://www.linkedin.com/in/kazi-muheymin-us-sakib-5871a535b/"
+    }
+  }
+]

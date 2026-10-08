@@ -1,0 +1,63 @@
+[
+  {
+    "institution": "CSE, Bangladesh Army University of Science and Technology (BAUST)",
+    "role": "Final Year Project Co-Supervisor (CSE 17th Batch)",
+    "period": "August 2026 - Present",
+    "studentCount": "1 Student",
+    "location": "University Campus",
+    "projects": [
+      "Scope To Be Decided"
+    ],
+    "notes": "Railway Routing Optimization & Train Tracing Prediction — scope not finalized yet"
+  },
+  {
+    "institution": "CSE, Bangladesh Army University of Science and Technology (BAUST)",
+    "role": "Final Year Project Co-Supervisor (CSE 17th Batch)",
+    "period": "August 2026 - Present",
+    "studentCount": "1 Student",
+    "location": "University Campus",
+    "projects": [
+      "Scope To Be Decided"
+    ],
+    "notes": "Large Language Model Chatting Application Localization & MLOps — scope not finalized yet"
+  },
+  {
+    "institution": "CSE, Bangladesh Army University of Science and Technology (BAUST)",
+    "role": "Final Year Project Co-Supervisor (CSE 16th Batch)",
+    "period": "February 2026 - Present",
+    "studentCount": "3 Students",
+    "location": "University Campus",
+    "projects": [
+      "Anonymized, Community-Visible LLM Chat",
+      "AI For Education",
+      "Large Language Models Response Analysis",
+      "Reinforcement Learning Based Educational Content Improvement"
+    ]
+  },
+  {
+    "institution": "CSE, Bangladesh University of Engineering and Technology (BUET)",
+    "role": "Industry Mentor @ Streams Tech Ltd.",
+    "period": "December 2025 - January 2026",
+    "studentCount": "5 Students",
+    "location": "Online",
+    "projects": [
+      "Satellite Imagery Analysis for Deforestation",
+      "River Bank Erosion & Delta Land-cover Tracking",
+      "Multi-spectral Data Processing Workflows"
+    ]
+  },
+  {
+    "institution": "IIT, University of Dhaka (DU)",
+    "role": "Internship Supervisor @ Streams Tech Ltd.",
+    "period": "October 2025 - January 2026",
+    "studentCount": "3 Students",
+    "location": "Office",
+    "projects": [
+      "Meeting Summarizer (AI Transcription)",
+      "Call Center AI Agents",
+      "CCTV Attendance & Anomaly Detection",
+      "Cattle Management Detection System",
+      "Election Commission Analytics Dashboard"
+    ]
+  }
+]

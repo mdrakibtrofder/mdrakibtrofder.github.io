@@ -1,0 +1,103 @@
+{
+  "counseling": {
+    "hours": [
+      "Monday, 9:00 AM – 11:00 AM",
+      "Thursday, 10:00 AM – 12:00 PM"
+    ],
+    "room": "Room 303 (C), Department of CSE",
+    "institution": "Bangladesh Army University of Science and Technology"
+  },
+  "courses": [
+    {
+      "code": "CSE 2205",
+      "title": "Database Management Systems",
+      "semester": "Summer 2026",
+      "type": "Theory",
+      "icon": "database",
+      "description": "Relational data modeling, normalization, SQL query design, transaction management, and indexing strategies for reliable data-driven systems."
+    },
+    {
+      "code": "CSE 2206",
+      "title": "Database Management Systems Sessional",
+      "semester": "Summer 2026",
+      "type": "Sessional",
+      "icon": "database",
+      "description": "Hands-on lab work building and querying relational schemas, writing stored procedures, and tuning queries for real-world workloads."
+    },
+    {
+      "code": "CSE 3100",
+      "title": "Software Development Project II",
+      "semester": "Summer 2026",
+      "type": "Sessional",
+      "icon": "rocket",
+      "description": "Team-based capstone project spanning requirement analysis, system design, iterative implementation, and deployment of a complete software product."
+    },
+    {
+      "code": "CSE 3102",
+      "title": "Software Engineering Sessional",
+      "semester": "Summer 2026",
+      "type": "Sessional",
+      "icon": "layers",
+      "description": "Applied practice in software process models, UML modeling, version control workflows, testing, and collaborative engineering documentation."
+    },
+    {
+      "code": "CSE 2123",
+      "title": "Introduction to Computer Programming",
+      "semester": "Winter 2026",
+      "type": "Theory",
+      "icon": "code",
+      "description": "Covering the core concepts of procedural programming, data types, control flow, and algorithmic thinking.",
+      "url": "https://mdrakibtrofder.github.io/introduction-to-computer-programming"
+    },
+    {
+      "code": "CSE 2109",
+      "title": "Computer Fundamentals",
+      "semester": "Winter 2026",
+      "type": "Theory",
+      "icon": "monitor",
+      "description": "Undergraduate foundational course on computer architecture, operating systems, and digital logic design.",
+      "url": "https://mdrakibtrofder.github.io/computer-fundamentals"
+    },
+    {
+      "code": "CSE 4215",
+      "title": "Professional Issues and Ethics for Computer Science",
+      "semester": "Winter 2026",
+      "type": "Theory",
+      "icon": "shield",
+      "description": "Examining the social impact of technology, ethical frameworks for developers, and legal issues in computing.",
+      "url": "https://mdrakibtrofder.github.io/professional-issues-and-ethics-for-computer-science/"
+    },
+    {
+      "code": "CSE 1204",
+      "title": "Computer Applications for Business",
+      "semester": "Winter 2026",
+      "type": "Sessional",
+      "icon": "briefcase",
+      "description": "Bridging technology and business with advanced spreadsheet modeling, database management, and IT workflows."
+    },
+    {
+      "code": "CSE 2124",
+      "title": "Introduction to Computer Programming Sessional",
+      "semester": "Winter 2026",
+      "type": "Sessional",
+      "icon": "terminal",
+      "description": "Hands-on implementation of programming concepts through weekly lab exercises and project-based learning."
+    },
+    {
+      "code": "CSE 2110",
+      "title": "Computer Fundamentals Sessional",
+      "semester": "Winter 2026",
+      "type": "Sessional",
+      "icon": "monitor",
+      "description": "Practical exploration of hardware components, peripheral interfacing, and system software configuration."
+    },
+    {
+      "code": "CSE 4102",
+      "title": "Computer Security Sessional",
+      "semester": "Winter 2026",
+      "type": "Sessional",
+      "icon": "shield",
+      "description": "Advanced lab focused on penetration testing, security auditing, and implementing robust cryptographic protocols."
+    }
+  ]
+}
