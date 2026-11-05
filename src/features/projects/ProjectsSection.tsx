@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import Section from "@/components/common/Section";
 import ShowMoreButton from "@/components/common/ShowMoreButton";
+import { Timeline, TimelineItem } from "@/components/common/Timeline";
 import { projects } from "@/data";
 import { cn } from "@/lib/utils";
 import ProjectCard from "./ProjectCard";
@@ -68,11 +69,13 @@ const ProjectsSection = () => {
         ))}
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <Timeline>
         {visible.map((p) => (
-          <ProjectCard key={p.name} project={p} />
+          <TimelineItem key={p.name} tone="engineering">
+            <ProjectCard project={p} />
+          </TimelineItem>
         ))}
-      </div>
+      </Timeline>
 
       {filtered.length > INITIAL && (
         <ShowMoreButton

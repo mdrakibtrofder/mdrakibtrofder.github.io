@@ -1,6 +1,7 @@
 import { ArrowUpRight, Building2 } from "lucide-react";
 import Section from "@/components/common/Section";
 import Tag from "@/components/common/Tag";
+import { Timeline, TimelineItem } from "@/components/common/Timeline";
 import { supervision } from "@/data";
 import type { Person } from "@/types";
 
@@ -28,9 +29,10 @@ const SupervisionSection = () => (
     title="Supervision"
     description="Supervisors and mentors who guided my work across academia and industry."
   >
-    <div className="grid gap-4 md:grid-cols-2">
+    <Timeline>
       {supervision.map((s, i) => (
-        <article key={`${s.supervisionType}-${i}`} className="surface p-5">
+        <TimelineItem key={`${s.supervisionType}-${i}`}>
+        <article className="surface p-5">
           <div className="flex items-start justify-between gap-3">
             <div className="flex min-w-0 items-start gap-2">
               <Building2 className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground" />
@@ -48,8 +50,9 @@ const SupervisionSection = () => (
             {s.mentor && <PersonLine label="Mentor" person={s.mentor} />}
           </div>
         </article>
+        </TimelineItem>
       ))}
-    </div>
+    </Timeline>
   </Section>
 );
 

@@ -1,7 +1,8 @@
 import { parse } from "date-fns";
-import type { Certificate } from "@/types";
 
 const FORMATS = ["MMM d, yyyy", "MMMM d, yyyy", "d MMMM, yyyy", "dd/MM/yy", "MM/dd/yyyy", "d MMM yyyy", "MMM yyyy", "dd.MM.yyyy", "yyyy"];
+
+export const UNDATED = "Undated";
 
 /** Certificate dates come in many formats; unknown ones sort to the end. */
 export const parseCertificateDate = (value: string): number => {
@@ -13,16 +14,10 @@ export const parseCertificateDate = (value: string): number => {
   return 0;
 };
 
-/** Groups similar issuer names under one filter label. */
-export const issuerGroup = (c: Certificate): string => {
-  const o = c.organization;
-  if (o.includes("Google")) return "Google";
-  if (o.includes("IBM")) return "IBM";
-  if (o.includes("Michigan")) return "University of Michigan";
-  if (o.includes("HackerRank")) return "HackerRank";
-  if (o.includes("Coursera")) return "Coursera";
-  if (o.includes("Ministry")) return "Ministry of Education";
-  return o.split(",")[0].trim();
+/** Year label for the certificate tabs, e.g. "2021", or "Undated". */
+export const certificateYear = (value: string): string => {
+  const t = parseCertificateDate(value);
+  if (t) return String(new Date(t).getFullYear());
+  const m = value?.match(/\b(19|20)\d{2}\b/);
+  return m ? m[0] : UNDATED;
 };
-
-export const CERTIFICATE_TYPES = ["Course", "Participation", "Achievement", "Honour", "Excellence"];

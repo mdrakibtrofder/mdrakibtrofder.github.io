@@ -2,6 +2,7 @@ import { CalendarDays, Presentation } from "lucide-react";
 import ExternalLink from "@/components/common/ExternalLink";
 import Section from "@/components/common/Section";
 import Tag from "@/components/common/Tag";
+import { Timeline, TimelineItem } from "@/components/common/Timeline";
 import { workshops } from "@/data";
 
 const WorkshopsSection = () => (
@@ -12,9 +13,10 @@ const WorkshopsSection = () => (
     title="Technical workshops"
     description="Hands-on sessions where I bring industry practice to university students."
   >
-    <div className="grid gap-4 md:grid-cols-2">
+    <Timeline>
       {workshops.map((w) => (
-        <article key={w.title} className="surface surface-hover flex flex-col p-5 md:p-6">
+        <TimelineItem key={w.title} tone="academic">
+        <article className="surface surface-hover flex flex-col p-5 md:p-6">
           <div className="flex items-start gap-4">
             <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-academic-soft text-academic">
               <Presentation className="h-5 w-5" />
@@ -47,8 +49,9 @@ const WorkshopsSection = () => (
             </ExternalLink>
           )}
         </article>
+        </TimelineItem>
       ))}
-    </div>
+    </Timeline>
   </Section>
 );
 

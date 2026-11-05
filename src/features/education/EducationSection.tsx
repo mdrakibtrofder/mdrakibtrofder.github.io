@@ -4,6 +4,7 @@ import LogoBox from "@/components/common/LogoBox";
 import Section from "@/components/common/Section";
 import ShowMoreButton from "@/components/common/ShowMoreButton";
 import Tag from "@/components/common/Tag";
+import { Timeline, TimelineItem } from "@/components/common/Timeline";
 import { education } from "@/data";
 
 const EducationSection = () => {
@@ -14,10 +15,9 @@ const EducationSection = () => {
 
   return (
     <Section id="education" eyebrow="Background" title="Education">
-      <ol className="relative space-y-4 border-l pl-6 md:pl-8">
+      <Timeline>
         {list.map((e) => (
-          <li key={e.degree + e.institute} className="relative">
-            <span className="absolute -left-[31px] top-6 h-3 w-3 rounded-full border-2 border-background bg-foreground/60 md:-left-[39px]" />
+          <TimelineItem key={e.degree + e.institute}>
             <article className="surface p-5">
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start">
                 <LogoBox src={e.logo} alt={`${e.institute} logo`} href={e.link} fallbackIcon={GraduationCap} size="sm" />
@@ -42,9 +42,9 @@ const EducationSection = () => {
                 </div>
               </div>
             </article>
-          </li>
+          </TimelineItem>
         ))}
-      </ol>
+      </Timeline>
       {more.length > 0 && (
         <ShowMoreButton
           expanded={expanded}

@@ -2,6 +2,7 @@ import { MapPin } from "lucide-react";
 import LogoBox from "@/components/common/LogoBox";
 import Section from "@/components/common/Section";
 import Tag from "@/components/common/Tag";
+import { Timeline, TimelineItem } from "@/components/common/Timeline";
 import { experience } from "@/data";
 import type { Experience } from "@/types";
 import { cn } from "@/lib/utils";
@@ -70,20 +71,24 @@ const ExperienceSection = () => {
         </>
       }
     >
-      <div className="space-y-4">
+      <Timeline>
         {fullTime.map((e) => (
-          <ExperienceCard key={e.company + e.role} item={e} />
+          <TimelineItem key={e.company + e.role} tone={e.track}>
+            <ExperienceCard item={e} />
+          </TimelineItem>
         ))}
-      </div>
+      </Timeline>
 
       {internships.length > 0 && (
         <>
           <h3 className="eyebrow mb-4 mt-10 text-muted-foreground">Internships & research</h3>
-          <div className="grid gap-4 lg:grid-cols-2">
+          <Timeline>
             {internships.map((e) => (
-              <ExperienceCard key={e.company + e.role} item={e} />
+              <TimelineItem key={e.company + e.role} tone={e.track}>
+                <ExperienceCard item={e} />
+              </TimelineItem>
             ))}
-          </div>
+          </Timeline>
         </>
       )}
     </Section>

@@ -3,10 +3,20 @@ import { Link as LinkIcon, Users } from "lucide-react";
 import LogoBox from "@/components/common/LogoBox";
 import Section from "@/components/common/Section";
 import ShowMoreButton from "@/components/common/ShowMoreButton";
+import { Timeline, TimelineItem } from "@/components/common/Timeline";
 import { volunteer } from "@/data";
 import type { Volunteer } from "@/types";
 
 const INITIAL = 6;
+
+const MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+
+/** "Jan 2024 - Feb 2025" -> sortable start value (year * 12 + month). */
+const startValue = (duration: string): number => {
+  const m = duration.trim().match(/^([A-Za-z]{3})[a-z]*\s+(\d{4})/);
+  if (!m) return 0;
+  return Number(m[2]) * 12 + Math.max(0, MONTHS.indexOf(m[1].toLowerCase()));
+};
 
 interface Group {
   organization: string;
@@ -26,7 +36,10 @@ const VolunteerSection = () => {
       if (!map.has(key)) map.set(key, { organization: key, category: v.category, logo: v.logo, roles: [] });
       map.get(key)!.roles.push(v);
     }
-    return [...map.values()];
+    // Newest first: roles within an organisation, then organisations by their latest role.
+    const list = [...map.values()];
+    list.forEach((g) => g.roles.sort((a, b) => startValue(b.duration) - startValue(a.duration)));
+    return list.sort((a, b) => startValue(b.roles[0].duration) - startValue(a.roles[0].duration));
   }, []);
 
   const visible = expanded ? groups : groups.slice(0, INITIAL);
@@ -38,9 +51,10 @@ const VolunteerSection = () => {
       title="Volunteer experience"
       description="Clubs and community organisations I have served."
     >
-      <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      <Timeline>
         {visible.map((g) => (
-          <article key={g.organization} className="surface flex flex-col p-5">
+          <TimelineItem key={g.organization}>
+          <article className="surface flex flex-col p-5">
             <div className="flex items-center gap-3">
               <LogoBox src={g.logo} alt={`${g.organization} logo`} fallbackIcon={Users} size="sm" />
               <div className="min-w-0">
@@ -69,8 +83,9 @@ const VolunteerSection = () => {
               ))}
             </ul>
           </article>
+          </TimelineItem>
         ))}
-      </div>
+      </Timeline>
       {groups.length > INITIAL && (
         <ShowMoreButton
           expanded={expanded}

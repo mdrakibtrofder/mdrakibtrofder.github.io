@@ -1,5 +1,6 @@
 import LogoBox from "@/components/common/LogoBox";
 import Section from "@/components/common/Section";
+import { Timeline, TimelineItem } from "@/components/common/Timeline";
 import { programs } from "@/data";
 import { getIcon } from "@/lib/icons";
 
@@ -10,9 +11,10 @@ const ProgramsSection = () => (
     title="Professional programs"
     description="Career tracks and leadership programs outside formal degrees."
   >
-    <div className="grid gap-4 md:grid-cols-2">
+    <Timeline>
       {programs.map((p) => (
-        <article key={p.title} className="surface flex items-start gap-4 p-5">
+        <TimelineItem key={p.title}>
+        <article className="surface flex items-start gap-4 p-5">
           <LogoBox src={p.logo} alt={`${p.organization} logo`} fallbackIcon={getIcon(p.icon)} />
           <div>
             <h3 className="font-semibold capitalize leading-snug">{p.title.toLowerCase()}</h3>
@@ -20,8 +22,9 @@ const ProgramsSection = () => (
             <p className="mt-1 text-sm tabular-nums text-muted-foreground">{p.duration}</p>
           </div>
         </article>
+        </TimelineItem>
       ))}
-    </div>
+    </Timeline>
   </Section>
 );
 

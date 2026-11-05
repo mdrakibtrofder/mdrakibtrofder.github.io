@@ -1,6 +1,7 @@
 import { MapPin, Users } from "lucide-react";
 import Section from "@/components/common/Section";
 import Tag from "@/components/common/Tag";
+import { Timeline, TimelineItem } from "@/components/common/Timeline";
 import { mentorship } from "@/data";
 
 const MentorshipSection = () => (
@@ -11,9 +12,10 @@ const MentorshipSection = () => (
     title="Student mentorship"
     description="Final-year projects I co-supervise and student interns I have mentored in industry."
   >
-    <div className="grid gap-4 md:grid-cols-2">
+    <Timeline>
       {mentorship.map((m, i) => (
-        <article key={`${m.role}-${i}`} className="surface surface-hover flex flex-col p-5 md:p-6">
+        <TimelineItem key={`${m.role}-${i}`} tone="academic">
+        <article className="surface surface-hover flex flex-col p-5 md:p-6">
           <p className="text-sm font-medium tabular-nums text-muted-foreground">{m.period}</p>
           <h3 className="mt-1 text-lg font-semibold leading-snug">{m.role}</h3>
           <p className="text-sm text-muted-foreground">{m.institution}</p>
@@ -37,8 +39,9 @@ const MentorshipSection = () => (
             </ul>
           </div>
         </article>
+        </TimelineItem>
       ))}
-    </div>
+    </Timeline>
   </Section>
 );
 
