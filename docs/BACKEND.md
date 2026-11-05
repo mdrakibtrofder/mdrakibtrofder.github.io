@@ -89,6 +89,12 @@ the output in `ADMIN_PASSWORD_HASH` (in `.env` and on Render).
 ## Local development
 
 ```bash
+npm run dev:all   # starts both (also: npm run project); Ctrl+C stops both
+```
+
+Or run them separately:
+
+```bash
 # terminal 1 — API on http://localhost:3000
 cd backend && npm ci && npm run start:dev
 # terminal 2 — site on http://localhost:8080 (admin at /admin)
