@@ -1,5 +1,7 @@
-// Navigation and section ids. Section ids are also URL anchors (e.g. /#teaching),
-// so keep them stable once published.
+// Navigation is built from the content: each chapter is a menu, each section
+// in it is an entry. Section keys are also URL anchors (e.g. /#teaching), so
+// keep them stable once published.
+import { chapters, sections } from "@/data";
 
 export interface NavItem {
   id: string;
@@ -11,54 +13,16 @@ export interface NavGroup {
   items: NavItem[];
 }
 
-export const NAV_GROUPS: NavGroup[] = [
-  {
-    label: "About",
-    items: [
-      { id: "about", label: "Overview" },
-      { id: "experience", label: "Experience" },
-    ],
-  },
-  {
-    label: "Teaching",
-    items: [
-      { id: "teaching", label: "Courses" },
-      { id: "mentorship", label: "Student Mentorship" },
-      { id: "workshops", label: "Workshops" },
-    ],
-  },
-  {
-    label: "Engineering",
-    items: [
-      { id: "projects", label: "Projects" },
-      { id: "skills", label: "Skills" },
-    ],
-  },
-  {
-    label: "Background",
-    items: [
-      { id: "education", label: "Education" },
-      { id: "non-academic-program", label: "Programs" },
-      { id: "certificates", label: "Certificates" },
-      { id: "supervision", label: "Supervision" },
-      { id: "volunteer", label: "Volunteer" },
-    ],
-  },
-  {
-    label: "Content",
-    items: [
-      { id: "technical-content", label: "Technical Content" },
-      { id: "writings", label: "Writings" },
-      { id: "vlogs", label: "Vlogs & Local Guide" },
-    ],
-  },
-];
+export const NAV_GROUPS: NavGroup[] = chapters
+  .map((c) => ({
+    label: c.navLabel || c.title,
+    items: sections
+      .filter((s) => s.chapter === c.id)
+      .map((s) => ({ id: s.key, label: s.navLabel || s.title })),
+  }))
+  .filter((g) => g.items.length > 0);
 
-export const SECTION_IDS = [
-  "home",
-  ...NAV_GROUPS.flatMap((g) => g.items.map((i) => i.id)),
-  "contact",
-];
+export const SECTION_IDS = ["home", ...sections.map((s) => s.key), "contact"];
 
 /** Height of the fixed header, used when scrolling to a section. */
 export const HEADER_OFFSET = 72;

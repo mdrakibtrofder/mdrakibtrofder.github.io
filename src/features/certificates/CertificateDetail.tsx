@@ -1,4 +1,4 @@
-import { ImageIcon } from "lucide-react";
+import { FileText, ImageIcon } from "lucide-react";
 import { DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import type { Certificate } from "@/types";
 
@@ -20,6 +20,18 @@ const CertificateDetail = ({ cert }: { cert: Certificate }) => (
         <div className="col-span-2">
           <Field label="Signed by" value={cert.signed_by || "N/A"} />
         </div>
+        {cert.pdf && (
+          <div className="col-span-2">
+            <a
+              href={cert.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-sm font-medium underline-offset-4 hover:underline"
+            >
+              <FileText className="h-4 w-4" /> Open PDF
+            </a>
+          </div>
+        )}
         {cert.credential_id && (
           <div className="col-span-2">
             <Field label="Credential ID" value={cert.credential_id} mono />

@@ -1,18 +1,13 @@
 import LogoBox from "@/components/common/LogoBox";
-import Section from "@/components/common/Section";
+import Section, { sectionProps } from "@/components/common/Section";
 import { Timeline, TimelineItem } from "@/components/common/Timeline";
-import { programs } from "@/data";
+import type { Program, SiteSection } from "@/types";
 import { getIcon } from "@/lib/icons";
 
-const ProgramsSection = () => (
-  <Section
-    id="non-academic-program"
-    eyebrow="Background"
-    title="Professional programs"
-    description="Career tracks and leadership programs outside formal degrees."
-  >
+const ProgramsSection = ({ section }: { section: SiteSection<Program> }) => (
+  <Section {...sectionProps(section)}>
     <Timeline>
-      {programs.map((p) => (
+      {section.items.map((p) => (
         <TimelineItem key={p.title}>
         <article className="surface flex items-start gap-4 p-5">
           <LogoBox src={p.logo} alt={`${p.organization} logo`} fallbackIcon={getIcon(p.icon)} />

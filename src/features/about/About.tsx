@@ -1,21 +1,17 @@
 import { Check, GraduationCap, Microscope, TerminalSquare } from "lucide-react";
-import Section from "@/components/common/Section";
+import Section, { sectionProps } from "@/components/common/Section";
 import Tag from "@/components/common/Tag";
 import { profile } from "@/data";
 import { cn } from "@/lib/utils";
+import type { SiteSection } from "@/types";
 
 const TRACKS = [
   { key: "academic", icon: GraduationCap, color: "text-academic", bg: "bg-academic-soft", bar: "bg-academic" },
   { key: "engineering", icon: TerminalSquare, color: "text-engineering", bg: "bg-engineering-soft", bar: "bg-engineering" },
 ] as const;
 
-const About = () => (
-  <Section
-    id="about"
-    eyebrow="About"
-    title="Two sides of my work"
-    description="I teach what I have built. My classroom draws on real engineering practice, and my engineering is shaped by research."
-  >
+const About = ({ section }: { section: SiteSection }) => (
+  <Section {...sectionProps(section)}>
     <div className="grid gap-6 md:grid-cols-2">
       {TRACKS.map(({ key, icon: Icon, color, bg, bar }) => {
         const track = profile.tracks[key];

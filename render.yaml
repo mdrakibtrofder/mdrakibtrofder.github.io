@@ -1,0 +1,46 @@
+# Render Blueprint for the content API (https://render.com/docs/blueprint-spec).
+# In Render: New → Blueprint → pick this repository. Values marked "sync: false"
+# are secrets: Render asks for them once and stores them privately. They never
+# go into this repository.
+services:
+  - type: web
+    name: mdrakibtrofder-api
+    runtime: node
+    plan: free
+    region: singapore
+    rootDir: backend
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: MONGODB_HOST
+        sync: false
+      - key: MONGODB_DATABASE
+        value: mdrakibtrofder
+      - key: MONGODB_USER
+        sync: false
+      - key: MONGODB_PASSWORD
+        sync: false
+      - key: CLOUDINARY_URL
+        sync: false
+      - key: CLOUDINARY_FOLDER
+        value: portfolio
+      - key: CORS_ORIGIN
+        value: https://mdrakibtrofder.github.io,http://localhost:8080
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD_HASH
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: GITHUB_REPO
+        value: mdrakibtrofder/mdrakibtrofder.github.io
+      - key: GITHUB_WORKFLOW
+        value: deploy.yml
+      - key: GITHUB_REF
+        value: main

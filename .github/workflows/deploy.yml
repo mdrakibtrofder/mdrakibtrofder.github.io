@@ -1,9 +1,12 @@
 name: Deploy to GitHub Pages
 
+# Runs on every push to main, and when you press "Publish" in the admin panel
+# (the API calls GitHub's workflow_dispatch endpoint).
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -17,6 +20,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      # Repository variable (not a secret): Settings → Secrets and variables → Actions → Variables.
+      # It is the public address of the API, e.g. https://mdrakibtrofder-api.onrender.com
+      API_URL: ${{ vars.API_URL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,8 +37,34 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      # Downloads the published content. No database or Cloudinary credentials are
+      # needed here: the API's /api/public/site endpoint is read-only and public.
+      # Free hosting sleeps when idle, so this retries while the API wakes up.
+      # If the API can't be reached, the committed src/data/site.json is used instead.
+      - name: Fetch latest content
+        if: env.API_URL != ''
+        run: |
+          for i in 1 2 3 4 5 6; do
+            if curl -fsS --max-time 90 "$API_URL/api/public/site" -o /tmp/site.json \
+              && node -e "const d=require('/tmp/site.json'); if(!Array.isArray(d.sections)||d.sections.length===0) process.exit(1)"; then
+              mv /tmp/site.json src/data/site.json
+              echo "Using live content ($(node -e "console.log(require('./src/data/site.json').sections.length)") sections)"
+              exit 0
+            fi
+            echo "API not ready (attempt $i of 6), retrying in 20s…"
+            sleep 20
+          done
+          echo "::warning::Could not reach $API_URL — building with the committed snapshot."
+
       - name: Build
         run: npm run build
+        env:
+          VITE_API_URL: ${{ vars.API_URL }}
+
+      # GitHub Pages serves 404.html for unknown paths; copying the app there
+      # makes deep links such as /admin and /projects work on refresh.
+      - name: SPA fallback
+        run: cp dist/index.html dist/404.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

@@ -1,11 +1,10 @@
 import { useMemo, useState } from "react";
 import { ImageIcon } from "lucide-react";
-import Section from "@/components/common/Section";
+import Section, { sectionProps } from "@/components/common/Section";
 import Tag from "@/components/common/Tag";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import { certificates } from "@/data";
 import { cn } from "@/lib/utils";
-import type { Certificate } from "@/types";
+import type { Certificate, SiteSection } from "@/types";
 import CertificateDetail from "./CertificateDetail";
 import { certificateYear, parseCertificateDate, UNDATED } from "./certificateUtils";
 
@@ -44,7 +43,8 @@ const CertificateCard = ({ cert }: { cert: Certificate }) => (
   </Dialog>
 );
 
-const CertificatesSection = () => {
+const CertificatesSection = ({ section }: { section: SiteSection<Certificate> }) => {
+  const certificates = useMemo(() => section.items.filter((c) => !c.is_sensitive_certificate), [section.items]);
   // Year tabs, newest first; certificates without a readable date go last.
   const byYear = useMemo(() => {
     const map = new Map<string, Certificate[]>();
@@ -59,7 +59,7 @@ const CertificatesSection = () => {
       if (b === UNDATED) return -1;
       return Number(b) - Number(a);
     });
-  }, []);
+  }, [certificates]);
 
   const [year, setYear] = useState(byYear[0]?.[0] ?? UNDATED);
   const [count, setCount] = useState(PAGE);
@@ -71,12 +71,7 @@ const CertificatesSection = () => {
   };
 
   return (
-    <Section
-      id="certificates"
-      eyebrow="Background"
-      title="Certificates"
-      description={`${certificates.length} certificates from courses, competitions and events, grouped by year. Click any card for details.`}
-    >
+    <Section {...sectionProps(section)}>
       <div
         className="-mx-4 mb-6 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0"
         role="tablist"

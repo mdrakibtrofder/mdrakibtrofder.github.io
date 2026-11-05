@@ -1,4 +1,4 @@
-import { certificates, experience, mentorship, projects, teaching } from "@/data";
+import { certificates, courses, experience, mentorship, projects } from "@/data";
 
 const MONTHS = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
 
@@ -26,7 +26,7 @@ const industryMonths = experience
   .reduce((sum, e) => sum + monthsInRange(e.duration), 0);
 
 export const stats = {
-  courses: new Set(teaching.courses.map((c) => c.code)).size,
+  courses: new Set(courses.map((c) => c.code)).size,
   studentsMentored: mentorship.reduce((sum, m) => sum + (parseInt(m.studentCount, 10) || 0), 0),
   industryYears: Math.floor(industryMonths / 12),
   projects: projects.length,

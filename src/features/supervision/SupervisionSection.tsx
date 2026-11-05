@@ -1,9 +1,8 @@
 import { ArrowUpRight, Building2 } from "lucide-react";
-import Section from "@/components/common/Section";
+import Section, { sectionProps } from "@/components/common/Section";
 import Tag from "@/components/common/Tag";
 import { Timeline, TimelineItem } from "@/components/common/Timeline";
-import { supervision } from "@/data";
-import type { Person } from "@/types";
+import type { Person, SiteSection, Supervision } from "@/types";
 
 const PersonLine = ({ label, person }: { label: string; person: Person }) => (
   <div className="flex items-baseline justify-between gap-3 py-2 text-sm">
@@ -22,22 +21,17 @@ const PersonLine = ({ label, person }: { label: string; person: Person }) => (
   </div>
 );
 
-const SupervisionSection = () => (
-  <Section
-    id="supervision"
-    eyebrow="Background"
-    title="Supervision"
-    description="Supervisors and mentors who guided my work across academia and industry."
-  >
+const SupervisionSection = ({ section }: { section: SiteSection<Supervision> }) => (
+  <Section {...sectionProps(section)}>
     <Timeline>
-      {supervision.map((s, i) => (
+      {section.items.map((s, i) => (
         <TimelineItem key={`${s.supervisionType}-${i}`}>
         <article className="surface p-5">
           <div className="flex items-start justify-between gap-3">
             <div className="flex min-w-0 items-start gap-2">
               <Building2 className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground" />
               <div>
-                <h3 className="font-semibold leading-snug">{s.institutes.join(" · ")}</h3>
+                <h3 className="font-semibold leading-snug">{(s.institutes ?? []).join(" · ")}</h3>
                 {s.department && <p className="text-sm text-muted-foreground">{s.department}</p>}
               </div>
             </div>
@@ -45,9 +39,9 @@ const SupervisionSection = () => (
           </div>
           <p className="mt-2 pl-6 text-sm tabular-nums text-muted-foreground">{s.duration}</p>
           <div className="mt-3 divide-y border-t pl-6">
-            {s.supervisor && <PersonLine label="Supervisor" person={s.supervisor} />}
-            {s.coSupervisor && <PersonLine label="Co-supervisor" person={s.coSupervisor} />}
-            {s.mentor && <PersonLine label="Mentor" person={s.mentor} />}
+            {s.supervisor?.name && <PersonLine label="Supervisor" person={s.supervisor} />}
+            {s.coSupervisor?.name && <PersonLine label="Co-supervisor" person={s.coSupervisor} />}
+            {s.mentor?.name && <PersonLine label="Mentor" person={s.mentor} />}
           </div>
         </article>
         </TimelineItem>

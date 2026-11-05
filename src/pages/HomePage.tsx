@@ -1,26 +1,20 @@
-import { Briefcase, GraduationCap, Layers, PlayCircle } from "lucide-react";
+import { Fragment } from "react";
 import ChapterHeader from "@/components/common/ChapterHeader";
 import BackToTop from "@/components/layout/BackToTop";
 import Footer from "@/components/layout/Footer";
 import Navigation from "@/components/layout/Navigation";
 import { SECTION_IDS } from "@/config/site";
-import About from "@/features/about/About";
-import CertificatesSection from "@/features/certificates/CertificatesSection";
+import { chapters, sections } from "@/data";
 import ContactSection from "@/features/contact/ContactSection";
-import ContentSection from "@/features/content/ContentSection";
-import EducationSection from "@/features/education/EducationSection";
-import ExperienceSection from "@/features/experience/ExperienceSection";
 import Hero from "@/features/hero/Hero";
-import MentorshipSection from "@/features/mentorship/MentorshipSection";
-import ProgramsSection from "@/features/programs/ProgramsSection";
-import ProjectsSection from "@/features/projects/ProjectsSection";
-import SkillsSection from "@/features/skills/SkillsSection";
-import SupervisionSection from "@/features/supervision/SupervisionSection";
-import TeachingSection from "@/features/teaching/TeachingSection";
-import VolunteerSection from "@/features/volunteer/VolunteerSection";
-import WorkshopsSection from "@/features/workshops/WorkshopsSection";
+import { SectionRenderer } from "@/features/registry";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { useScrollToHash } from "@/hooks/useScrollToHash";
+import { getIcon } from "@/lib/icons";
+
+const chapterIds = new Set(chapters.map((c) => c.id));
+/** Sections whose chapter was deleted still show, at the end. */
+const orphans = sections.filter((s) => !chapterIds.has(s.chapter));
 
 const HomePage = () => {
   const activeSection = useActiveSection(SECTION_IDS);
@@ -31,51 +25,30 @@ const HomePage = () => {
       <Navigation activeSection={activeSection} />
       <main>
         <Hero />
-        <About />
-        <ExperienceSection />
 
-        <ChapterHeader
-          icon={GraduationCap}
-          accent="academic"
-          label="Part 1"
-          title="Teaching & mentorship"
-          description="Courses I teach, students I supervise, and workshops I run."
-        />
-        <TeachingSection />
-        <MentorshipSection />
-        <WorkshopsSection />
-
-        <ChapterHeader
-          icon={Briefcase}
-          accent="engineering"
-          label="Part 2"
-          title="Software engineering"
-          description="Things I have built and the tools I build them with."
-        />
-        <ProjectsSection />
-        <SkillsSection />
-
-        <ChapterHeader
-          icon={Layers}
-          accent="neutral"
-          label="Part 3"
-          title="Background"
-          description="Education, programs, certificates, the people who guided me, and community work."
-        />
-        <EducationSection />
-        <ProgramsSection />
-        <CertificatesSection />
-        <SupervisionSection />
-        <VolunteerSection />
-
-        <ChapterHeader
-          icon={PlayCircle}
-          accent="neutral"
-          label="Part 4"
-          title="Beyond work"
-          description="Where I write, teach online, and share places I visit."
-        />
-        <ContentSection />
+        {chapters.map((chapter) => {
+          const inChapter = sections.filter((s) => s.chapter === chapter.id);
+          if (inChapter.length === 0) return null;
+          return (
+            <Fragment key={chapter.id}>
+              {chapter.showHeader && (
+                <ChapterHeader
+                  icon={getIcon(chapter.icon)}
+                  accent={chapter.accent}
+                  label={chapter.label}
+                  title={chapter.title}
+                  description={chapter.description}
+                />
+              )}
+              {inChapter.map((s) => (
+                <SectionRenderer key={s._id} section={s} />
+              ))}
+            </Fragment>
+          );
+        })}
+        {orphans.map((s) => (
+          <SectionRenderer key={s._id} section={s} />
+        ))}
 
         <ContactSection />
       </main>

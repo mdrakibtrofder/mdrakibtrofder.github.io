@@ -1,19 +1,13 @@
 import { MapPin, Users } from "lucide-react";
-import Section from "@/components/common/Section";
+import Section, { sectionProps } from "@/components/common/Section";
 import Tag from "@/components/common/Tag";
 import { Timeline, TimelineItem } from "@/components/common/Timeline";
-import { mentorship } from "@/data";
+import type { Mentorship, SiteSection } from "@/types";
 
-const MentorshipSection = () => (
-  <Section
-    id="mentorship"
-    eyebrow="Teaching"
-    accent="academic"
-    title="Student mentorship"
-    description="Final-year projects I co-supervise and student interns I have mentored in industry."
-  >
+const MentorshipSection = ({ section }: { section: SiteSection<Mentorship> }) => (
+  <Section {...sectionProps(section)}>
     <Timeline>
-      {mentorship.map((m, i) => (
+      {section.items.map((m, i) => (
         <TimelineItem key={`${m.role}-${i}`} tone="academic">
         <article className="surface surface-hover flex flex-col p-5 md:p-6">
           <p className="text-sm font-medium tabular-nums text-muted-foreground">{m.period}</p>
@@ -30,7 +24,7 @@ const MentorshipSection = () => (
           <div className="mt-4 border-t pt-4">
             <p className="eyebrow mb-2 text-muted-foreground">Projects</p>
             <ul className="space-y-1.5 text-sm">
-              {m.projects.map((p) => (
+              {(m.projects ?? []).map((p) => (
                 <li key={p} className="flex gap-2">
                   <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-academic" />
                   <span>{p}</span>

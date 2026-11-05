@@ -1,11 +1,10 @@
 import { useMemo, useState } from "react";
 import { Link as LinkIcon, Users } from "lucide-react";
 import LogoBox from "@/components/common/LogoBox";
-import Section from "@/components/common/Section";
+import Section, { sectionProps } from "@/components/common/Section";
 import ShowMoreButton from "@/components/common/ShowMoreButton";
 import { Timeline, TimelineItem } from "@/components/common/Timeline";
-import { volunteer } from "@/data";
-import type { Volunteer } from "@/types";
+import type { SiteSection, Volunteer } from "@/types";
 
 const INITIAL = 6;
 
@@ -25,7 +24,8 @@ interface Group {
   roles: Volunteer[];
 }
 
-const VolunteerSection = () => {
+const VolunteerSection = ({ section }: { section: SiteSection<Volunteer> }) => {
+  const volunteer = section.items;
   const [expanded, setExpanded] = useState(false);
 
   // One card per organisation, listing every role held there.
@@ -40,17 +40,12 @@ const VolunteerSection = () => {
     const list = [...map.values()];
     list.forEach((g) => g.roles.sort((a, b) => startValue(b.duration) - startValue(a.duration)));
     return list.sort((a, b) => startValue(b.roles[0].duration) - startValue(a.roles[0].duration));
-  }, []);
+  }, [volunteer]);
 
   const visible = expanded ? groups : groups.slice(0, INITIAL);
 
   return (
-    <Section
-      id="volunteer"
-      eyebrow="Background"
-      title="Volunteer experience"
-      description="Clubs and community organisations I have served."
-    >
+    <Section {...sectionProps(section)}>
       <Timeline>
         {visible.map((g) => (
           <TimelineItem key={g.organization}>

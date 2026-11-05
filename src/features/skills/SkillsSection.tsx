@@ -1,27 +1,22 @@
 import { Code2, Wrench } from "lucide-react";
 import ExternalLink from "@/components/common/ExternalLink";
-import Section from "@/components/common/Section";
-import { skills } from "@/data";
+import Section, { sectionProps } from "@/components/common/Section";
+import type { Certification, SiteSection } from "@/types";
 
-const SkillsSection = () => {
+const SkillsSection = ({ section }: { section: SiteSection<Certification> }) => {
+  const o = section.options;
   const groups = [
-    { title: "Languages & frameworks", icon: Code2, items: skills.languages_frameworks },
-    { title: "Tools & platforms", icon: Wrench, items: skills.tools_technologies },
-  ];
+    { title: o.languagesLabel || "Languages & frameworks", icon: Code2, items: (o.languages_frameworks ?? []) as string[] },
+    { title: o.toolsLabel || "Tools & platforms", icon: Wrench, items: (o.tools_technologies ?? []) as string[] },
+  ].filter((g) => g.items.length > 0);
 
-  const certsByTag = skills.certifications.reduce<Record<string, typeof skills.certifications>>((acc, c) => {
+  const certsByTag = section.items.reduce<Record<string, Certification[]>>((acc, c) => {
     (acc[c.tag] ??= []).push(c);
     return acc;
   }, {});
 
   return (
-    <Section
-      id="skills"
-      eyebrow="Engineering"
-      accent="engineering"
-      title="Skills"
-      description="The stack I use day to day, and the certifications behind it."
-    >
+    <Section {...sectionProps(section)}>
       <div className="grid gap-4 md:grid-cols-2">
         {groups.map(({ title, icon: Icon, items }) => (
           <div key={title} className="surface p-6">
@@ -40,8 +35,9 @@ const SkillsSection = () => {
         ))}
       </div>
 
+      {section.items.length > 0 && (
       <div className="surface mt-4 p-6">
-        <h3 className="mb-4 font-semibold">Technical certifications</h3>
+        <h3 className="mb-4 font-semibold">{o.certificationsLabel || "Technical certifications"}</h3>
         <div className="grid gap-6 md:grid-cols-3">
           {Object.entries(certsByTag).map(([tag, certs]) => (
             <div key={tag}>
@@ -59,6 +55,7 @@ const SkillsSection = () => {
           ))}
         </div>
       </div>
+      )}
     </Section>
   );
 };

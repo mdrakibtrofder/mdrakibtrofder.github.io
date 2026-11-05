@@ -1,49 +1,28 @@
-// Single entry point for all site content.
-// Later, any of these can be swapped for an API call (see services/ when added)
-// without touching the components that display them.
+// All site content comes from one snapshot file. In production GitHub Actions
+// replaces site.json with the latest content from the API before building,
+// so edits made in the admin panel appear after "Publish".
 import type {
   Certificate,
-  ContentChannels,
-  Education,
+  Course,
   Experience,
   Mentorship,
-  Profile,
-  Program,
   Project,
-  Skills,
-  Supervision,
-  Teaching,
-  Volunteer,
-  Workshop,
+  SiteSection,
+  SiteSnapshot,
 } from "@/types";
+import siteJson from "./site.json";
 
-import profileJson from "./profile.json";
-import experienceJson from "./experience.json";
-import educationJson from "./education.json";
-import projectsJson from "./projects.json";
-import skillsJson from "./skills.json";
-import teachingJson from "./teaching.json";
-import supervisionJson from "./supervision.json";
-import mentorshipJson from "./mentorship.json";
-import workshopsJson from "./workshops.json";
-import programsJson from "./programs.json";
-import volunteerJson from "./volunteer.json";
-import contentJson from "./content.json";
-// Certificate images and PDFs live in public/certificates, so the details file stays next to them.
-import certificatesJson from "../../public/certificates/certificate_details.json";
+export const site = siteJson as unknown as SiteSnapshot;
+export const profile = site.settings.profile;
+export const chapters = site.settings.chapters;
+export const sections = site.sections;
 
-export const profile = profileJson as Profile;
-export const experience = experienceJson as Experience[];
-export const education = educationJson as Education[];
-export const projects = projectsJson as Project[];
-export const skills = skillsJson as Skills;
-export const teaching = teachingJson as Teaching;
-export const supervision = supervisionJson as Supervision[];
-export const mentorship = mentorshipJson as Mentorship[];
-export const workshops = workshopsJson as Workshop[];
-export const programs = programsJson as Program[];
-export const volunteer = volunteerJson as Volunteer[];
-export const content = contentJson as ContentChannels;
-export const certificates = (certificatesJson as Certificate[]).filter(
-  (c) => !c.is_sensitive_certificate,
-);
+/** Every item across all sections of one kind (used for headline stats). */
+const itemsOfKind = <T,>(kind: SiteSection["kind"]) =>
+  sections.filter((s) => s.kind === kind).flatMap((s) => s.items) as unknown as T[];
+
+export const experience = itemsOfKind<Experience>("experience");
+export const mentorship = itemsOfKind<Mentorship>("mentorship");
+export const projects = itemsOfKind<Project>("projects");
+export const courses = itemsOfKind<Course>("teaching");
+export const certificates = itemsOfKind<Certificate>("certificates").filter((c) => !c.is_sensitive_certificate);

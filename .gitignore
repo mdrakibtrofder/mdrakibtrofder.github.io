@@ -23,3 +23,14 @@ dist-ssr
 *.sln
 *.sw?
 .puku
+
+# Secrets — never commit these (see docs/BACKEND.md)
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+backend/node_modules
+backend/dist
+backend/migration-report.json

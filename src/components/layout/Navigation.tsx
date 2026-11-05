@@ -27,7 +27,7 @@ const Navigation = ({ activeSection }: { activeSection: string }) => {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
         <a href="#home" onClick={(e) => go("home", e)} className="flex items-center gap-2.5 font-bold">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-foreground text-sm text-background">
-            RT
+            {profile.initials || profile.name.split(/\s+/).map((w) => w[0]).slice(-2).join("")}
           </span>
           <span className="hidden sm:inline">{profile.name}</span>
         </a>

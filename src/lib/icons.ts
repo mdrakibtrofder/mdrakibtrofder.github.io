@@ -1,5 +1,15 @@
 import {
   Award,
+  Globe,
+  GraduationCap,
+  Heart,
+  Lightbulb,
+  Link as LinkIcon,
+  Mic,
+  PlayCircle,
+  Presentation,
+  Trophy,
+  Users,
   BookOpen,
   Briefcase,
   Code,
@@ -39,7 +49,20 @@ const ICONS: Record<string, LucideIcon> = {
   star: Star,
   terminal: Terminal,
   youtube: Youtube,
+  globe: Globe,
+  "graduation-cap": GraduationCap,
+  heart: Heart,
+  lightbulb: Lightbulb,
+  link: LinkIcon,
+  mic: Mic,
+  "play-circle": PlayCircle,
+  presentation: Presentation,
+  trophy: Trophy,
+  users: Users,
 };
+
+/** Icon names the admin panel offers. */
+export const ICON_NAMES = Object.keys(ICONS);
 
 export const getIcon = (name?: string, fallback: LucideIcon = Award): LucideIcon =>
   (name && ICONS[name]) || fallback;

@@ -1,21 +1,22 @@
 import { useMemo, useState } from "react";
-import Section from "@/components/common/Section";
+import Section, { sectionProps } from "@/components/common/Section";
 import ShowMoreButton from "@/components/common/ShowMoreButton";
 import { Timeline, TimelineItem } from "@/components/common/Timeline";
-import { projects } from "@/data";
+import type { Project, SiteSection } from "@/types";
 import { cn } from "@/lib/utils";
 import ProjectCard from "./ProjectCard";
 
 const ALL = "All";
 const INITIAL = 6;
 
-const ProjectsSection = () => {
+const ProjectsSection = ({ section }: { section: SiteSection<Project> }) => {
+  const projects = section.items;
   // Categories in the order they first appear in projects.json, with counts.
   const categories = useMemo(() => {
     const counts = new Map<string, number>();
     projects.forEach((p) => counts.set(p.type, (counts.get(p.type) ?? 0) + 1));
     return [...counts.entries()];
-  }, []);
+  }, [projects]);
 
   const [active, setActive] = useState(ALL);
   const [expanded, setExpanded] = useState(false);
@@ -28,7 +29,7 @@ const ProjectsSection = () => {
       buckets.forEach((b) => b[i] && out.push(b[i]));
     }
     return out;
-  }, [categories]);
+  }, [categories, projects]);
 
   const filtered = active === ALL ? mixed : projects.filter((p) => p.type === active);
   const visible = expanded ? filtered : filtered.slice(0, INITIAL);
@@ -39,13 +40,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <Section
-      id="projects"
-      eyebrow="Engineering"
-      accent="engineering"
-      title="Projects"
-      description="Course tools, concept visualizers, capstones and engineering work. Many are live and free to use."
-    >
+    <Section {...sectionProps(section)}>
       <div className="mb-6 flex flex-wrap gap-2" role="tablist" aria-label="Project category">
         {[[ALL, projects.length] as const, ...categories].map(([cat, count]) => (
           <button

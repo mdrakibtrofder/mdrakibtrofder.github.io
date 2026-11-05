@@ -1,20 +1,14 @@
 import { CalendarDays, Presentation } from "lucide-react";
 import ExternalLink from "@/components/common/ExternalLink";
-import Section from "@/components/common/Section";
+import Section, { sectionProps } from "@/components/common/Section";
 import Tag from "@/components/common/Tag";
 import { Timeline, TimelineItem } from "@/components/common/Timeline";
-import { workshops } from "@/data";
+import type { SiteSection, Workshop } from "@/types";
 
-const WorkshopsSection = () => (
-  <Section
-    id="workshops"
-    eyebrow="Teaching"
-    accent="academic"
-    title="Technical workshops"
-    description="Hands-on sessions where I bring industry practice to university students."
-  >
+const WorkshopsSection = ({ section }: { section: SiteSection<Workshop> }) => (
+  <Section {...sectionProps(section)}>
     <Timeline>
-      {workshops.map((w) => (
+      {section.items.map((w) => (
         <TimelineItem key={w.title} tone="academic">
         <article className="surface surface-hover flex flex-col p-5 md:p-6">
           <div className="flex items-start gap-4">
@@ -36,7 +30,7 @@ const WorkshopsSection = () => (
             <Tag tone="academic">{w.program}</Tag>
           </div>
           <p className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">{w.description}</p>
-          {w.tags && (
+          {w.tags && w.tags.length > 0 && (
             <div className="mt-4 flex flex-wrap gap-1.5">
               {w.tags.map((t) => (
                 <Tag key={t}>{t}</Tag>

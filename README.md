@@ -67,3 +67,9 @@ React Query hook (React Query is already set up in `app/providers.tsx`); the com
   They are defined as CSS variables in `src/index.css` and as Tailwind colours in `tailwind.config.ts`.
 - The page is grouped into parts: About & Experience, Teaching, Software Engineering, Background, Beyond Work, Contact.
 - Section anchors (`/#teaching`, `/#projects`, ...) and paths (`/teaching`) are unchanged from the previous version.
+
+## Editing content
+
+Content is no longer edited in JSON files. It lives in MongoDB and is managed from
+the admin panel at `/admin`; images and PDFs are stored in Cloudinary. The NestJS
+API is in `backend/`. Setup, deployment and secret handling: [docs/BACKEND.md](docs/BACKEND.md).

@@ -1,10 +1,9 @@
 import { MapPin } from "lucide-react";
 import LogoBox from "@/components/common/LogoBox";
-import Section from "@/components/common/Section";
+import Section, { sectionProps } from "@/components/common/Section";
 import Tag from "@/components/common/Tag";
 import { Timeline, TimelineItem } from "@/components/common/Timeline";
-import { experience } from "@/data";
-import type { Experience } from "@/types";
+import type { Experience, SiteSection } from "@/types";
 import { cn } from "@/lib/utils";
 
 const trackLabel = { academic: "Academia", engineering: "Industry" } as const;
@@ -35,7 +34,7 @@ const ExperienceCard = ({ item }: { item: Experience }) => (
           <p className="shrink-0 text-sm font-medium tabular-nums text-muted-foreground">{item.duration}</p>
         </div>
         <div className="mt-2 flex flex-wrap items-center gap-2">
-          <Tag tone={item.track}>{trackLabel[item.track]}</Tag>
+          <Tag tone={item.track}>{trackLabel[item.track] ?? item.track}</Tag>
           <Tag tone="outline">{item.type}</Tag>
           <span className="inline-flex items-center gap-1 text-xs text-muted-foreground">
             <MapPin className="h-3 w-3" /> {item.location}
@@ -54,23 +53,25 @@ const ExperienceCard = ({ item }: { item: Experience }) => (
   </article>
 );
 
-const ExperienceSection = () => {
-  const fullTime = experience.filter((e) => e.type === "Full-time");
+/** Colours the words "academic" and "industry" in the description to act as a legend. */
+const withLegend = (text: string) =>
+  text.split(/\b(academic|industry)\b/i).map((part, i) =>
+    /^(academic|industry)$/i.test(part) ? (
+      <span key={i} className={cn("font-medium", /^a/i.test(part) ? "text-academic" : "text-engineering")}>
+        {part}
+      </span>
+    ) : (
+      part
+    ),
+  );
+
+const ExperienceSection = ({ section }: { section: SiteSection<Experience> }) => {
+  const experience = section.items;
+  const fullTime = experience.filter((e) => e.type !== "Internship");
   const internships = experience.filter((e) => e.type === "Internship");
 
   return (
-    <Section
-      id="experience"
-      eyebrow="Career"
-      title="Experience"
-      description={
-        <>
-          From software engineering to the lecture hall. Bars mark{" "}
-          <span className="font-medium text-academic">academic</span> and{" "}
-          <span className="font-medium text-engineering">industry</span> roles.
-        </>
-      }
-    >
+    <Section {...sectionProps(section)} description={section.description ? withLegend(section.description) : undefined}>
       <Timeline>
         {fullTime.map((e) => (
           <TimelineItem key={e.company + e.role} tone={e.track}>
@@ -81,7 +82,9 @@ const ExperienceSection = () => {
 
       {internships.length > 0 && (
         <>
-          <h3 className="eyebrow mb-4 mt-10 text-muted-foreground">Internships & research</h3>
+          <h3 className="eyebrow mb-4 mt-10 text-muted-foreground">
+            {section.options.internshipsLabel || "Internships"}
+          </h3>
           <Timeline>
             {internships.map((e) => (
               <TimelineItem key={e.company + e.role} tone={e.track}>

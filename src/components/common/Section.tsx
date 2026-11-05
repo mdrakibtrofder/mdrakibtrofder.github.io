@@ -48,3 +48,18 @@ const Section = ({
 );
 
 export default Section;
+
+/** Maps a content section's labels onto <Section> props. */
+export const sectionProps = (s: {
+  key: string;
+  eyebrow?: string;
+  title: string;
+  description?: string;
+  accent?: "academic" | "engineering" | "neutral";
+}) => ({
+  id: s.key,
+  eyebrow: s.eyebrow || undefined,
+  title: s.title,
+  description: s.description || undefined,
+  accent: s.accent ?? "neutral",
+});

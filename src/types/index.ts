@@ -1,9 +1,12 @@
-// Shared types for everything in src/data. Edit the JSON files, not the components.
+// Shared types for the site content. Content is edited in the admin panel (/admin),
+// stored in MongoDB, and baked into src/data/site.json at build time.
 
 export type Track = "academic" | "engineering";
 
 export interface Profile {
   name: string;
+  /** Shown in the logo badge, e.g. "RT". */
+  initials?: string;
   shortName: string;
   headline: string;
   affiliation: { name: string; url: string };
@@ -153,4 +156,71 @@ export interface Certificate {
   credential_id: string | null;
   is_sensitive_certificate: boolean;
   image: string | null;
+  pdf?: string;
+}
+
+// ---------- Site snapshot (src/data/site.json, produced by GET /api/public/site) ----------
+
+export type Accent = "neutral" | "academic" | "engineering";
+
+/** A group of sections: one nav menu and (optionally) a "Part N" divider. */
+export interface Chapter {
+  id: string;
+  navLabel: string;
+  label: string;
+  title: string;
+  description: string;
+  icon: string;
+  accent: Accent;
+  showHeader: boolean;
+}
+
+export type SectionKind =
+  | "about"
+  | "experience"
+  | "teaching"
+  | "mentorship"
+  | "workshops"
+  | "projects"
+  | "skills"
+  | "education"
+  | "programs"
+  | "certificates"
+  | "supervision"
+  | "volunteer"
+  | "timeline"
+  | "cards"
+  | "links";
+
+export interface SiteSection<T = Record<string, unknown>> {
+  _id: string;
+  key: string;
+  kind: SectionKind;
+  chapter: string;
+  navLabel: string;
+  eyebrow: string;
+  title: string;
+  description: string;
+  accent: Accent;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  options: Record<string, any>;
+  items: (T & { _id?: string })[];
+}
+
+export interface SiteSnapshot {
+  generatedAt: string;
+  settings: { profile: Profile; chapters: Chapter[] };
+  sections: SiteSection[];
+}
+
+/** Fields used by sections you add yourself ("timeline" and "cards"). */
+export interface GenericItem {
+  title: string;
+  subtitle?: string;
+  date?: string;
+  description?: string;
+  image?: string;
+  url?: string;
+  linkLabel?: string;
+  tags?: string[];
 }

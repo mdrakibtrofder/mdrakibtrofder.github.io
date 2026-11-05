@@ -1,14 +1,21 @@
 import { useMemo, useState } from "react";
 import { Clock, MapPin } from "lucide-react";
-import Section from "@/components/common/Section";
-import { teaching } from "@/data";
+import Section, { sectionProps } from "@/components/common/Section";
 import { cn } from "@/lib/utils";
+import type { Course, SiteSection } from "@/types";
 import CourseCard from "./CourseCard";
 
 const ALL = "All semesters";
 
-const TeachingSection = () => {
-  const { courses, counseling } = teaching;
+interface Counseling {
+  hours?: string[];
+  room?: string;
+  institution?: string;
+}
+
+const TeachingSection = ({ section }: { section: SiteSection<Course> }) => {
+  const courses = section.items;
+  const counseling = section.options.counseling as Counseling | undefined;
 
   // Semesters in the order they appear in teaching.json (newest first).
   const semesters = useMemo(() => [...new Set(courses.map((c) => c.semester))], [courses]);
@@ -18,20 +25,15 @@ const TeachingSection = () => {
   const theory = visible.filter((c) => c.type === "Theory").length;
 
   return (
-    <Section
-      id="teaching"
-      eyebrow="Teaching"
-      accent="academic"
-      title="Courses"
-      description="Undergraduate theory and lab courses I teach at the Department of CSE, BAUST. Several have their own interactive course sites."
-    >
+    <Section {...sectionProps(section)}>
       {/* Counseling hours */}
+      {counseling && (counseling.hours?.length || counseling.room) && (
       <div className="mb-8 grid gap-4 rounded-2xl border border-academic/20 bg-academic-soft/60 p-5 sm:grid-cols-2">
         <div className="flex gap-3">
           <Clock className="mt-0.5 h-5 w-5 shrink-0 text-academic" />
           <div>
             <p className="font-semibold">Counseling hours</p>
-            {counseling.hours.map((h) => (
+            {(counseling.hours ?? []).map((h) => (
               <p key={h} className="text-sm text-muted-foreground">
                 {h}
               </p>
@@ -46,6 +48,7 @@ const TeachingSection = () => {
           </div>
         </div>
       </div>
+      )}
 
       {/* Semester filter */}
       <div className="mb-6 flex flex-wrap items-center gap-2" role="tablist" aria-label="Semester">
