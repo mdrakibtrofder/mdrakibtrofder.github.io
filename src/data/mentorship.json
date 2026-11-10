@@ -6,9 +6,12 @@
     "studentCount": "1 Student",
     "location": "University Campus",
     "projects": [
-      "Scope To Be Decided"
-    ],
-    "notes": "Railway Routing Optimization & Train Tracing Prediction — scope not finalized yet"
+      "University Class Schedule & Routine Management System",
+      "Complex resource-allocation algorithm for conflict-free timetable generation across departments, faculty, rooms, and time slots",
+      "Automated constraint satisfaction handling multi-faculty availability, room capacity, lab requirements, and section overlaps",
+      "Admin dashboard for managing semesters, departments, courses, and real-time schedule adjustments",
+      "Role-based access for administrators, faculty, and students with personalized routine views"
+    ]
   },
   {
     "institution": "CSE, Bangladesh Army University of Science and Technology (BAUST)",
@@ -17,9 +20,12 @@
     "studentCount": "1 Student",
     "location": "University Campus",
     "projects": [
-      "Scope To Be Decided"
-    ],
-    "notes": "Large Language Model Chatting Application Localization & MLOps — scope not finalized yet"
+      "RAG-Based University Information Desk",
+      "Retrieval-Augmented Generation (RAG) system built on top of official university documents, policies, and rules",
+      "Intelligent chatbot that enables students, faculty, and visitors to query university regulations, admission procedures, and academic policies in natural language",
+      "Document ingestion pipeline for processing PDFs, notices, and circulars into a searchable vector knowledge base",
+      "Context-aware response generation grounded in authoritative university sources to minimize hallucination"
+    ]
   },
   {
     "institution": "CSE, Bangladesh Army University of Science and Technology (BAUST)",
