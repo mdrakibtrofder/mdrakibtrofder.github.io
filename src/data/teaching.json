@@ -14,7 +14,8 @@
       "semester": "Summer 2026",
       "type": "Theory",
       "icon": "database",
-      "description": "Relational data modeling, normalization, SQL query design, transaction management, and indexing strategies for reliable data-driven systems."
+      "description": "Relational data modeling, normalization, SQL query design, transaction management, and indexing strategies for reliable data-driven systems.",
+      "url": "https://mdrakibtrofder.github.io/database-management-systems"
     },
     {
       "code": "CSE 2206",
@@ -22,7 +23,8 @@
       "semester": "Summer 2026",
       "type": "Sessional",
       "icon": "database",
-      "description": "Hands-on lab work building and querying relational schemas, writing stored procedures, and tuning queries for real-world workloads."
+      "description": "Hands-on lab work building and querying relational schemas, writing stored procedures, and tuning queries for real-world workloads.",
+      "url": "https://mdrakibtrofder.github.io/database-management-systems-sessional"
     },
     {
       "code": "CSE 3100",
@@ -30,7 +32,8 @@
       "semester": "Summer 2026",
       "type": "Sessional",
       "icon": "rocket",
-      "description": "Team-based capstone project spanning requirement analysis, system design, iterative implementation, and deployment of a complete software product."
+      "description": "Team-based capstone project spanning requirement analysis, system design, iterative implementation, and deployment of a complete software product.",
+      "url": "https://mdrakibtrofder.github.io/software-development-project-II"
     },
     {
       "code": "CSE 3102",
@@ -38,7 +41,8 @@
       "semester": "Summer 2026",
       "type": "Sessional",
       "icon": "layers",
-      "description": "Applied practice in software process models, UML modeling, version control workflows, testing, and collaborative engineering documentation."
+      "description": "Applied practice in software process models, UML modeling, version control workflows, testing, and collaborative engineering documentation.",
+      "url": "https://mdrakibtrofder.github.io/software-engineering-sessional"
     },
     {
       "code": "CSE 2123",
