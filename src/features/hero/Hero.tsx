@@ -1,4 +1,4 @@
-import { ArrowRight, Github, GraduationCap, Linkedin, Mail, MapPin, TerminalSquare } from "lucide-react";
+import { ArrowRight, Download, Eye, Github, GraduationCap, Linkedin, Mail, MapPin, TerminalSquare } from "lucide-react";
 import { profile } from "@/data";
 import { scrollToSection } from "@/lib/scroll";
 import { stats } from "@/lib/stats";
@@ -9,6 +9,8 @@ const STAT_ITEMS = [
   { value: `${stats.industryYears}+`, label: "Years in industry" },
   { value: stats.projects, label: "Projects built" },
 ];
+
+const CV_URL = "/Resume-Md-Rakib-Trofder.pdf";
 
 const Hero = () => {
   const { academic, engineering } = profile.tracks;
@@ -23,6 +25,23 @@ const Hero = () => {
 
       <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.25fr_1fr]">
         <div>
+          <div className="mb-6 flex flex-wrap gap-3">
+            <a
+              href={CV_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-lg border bg-card px-4 py-2 text-sm font-semibold shadow-sm transition-colors hover:bg-secondary"
+            >
+              <Eye className="h-4 w-4" /> View CV
+            </a>
+            <a
+              href={CV_URL}
+              download="Resume-Md-Rakib-Trofder.pdf"
+              className="inline-flex items-center gap-2 rounded-lg bg-foreground px-4 py-2 text-sm font-semibold text-background shadow-sm transition-opacity hover:opacity-90"
+            >
+              <Download className="h-4 w-4" /> Download CV
+            </a>
+          </div>
           <div className="mb-6 flex flex-wrap gap-2">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-academic-soft px-3 py-1 text-sm font-medium text-academic">
               <GraduationCap className="h-4 w-4" /> Educator
