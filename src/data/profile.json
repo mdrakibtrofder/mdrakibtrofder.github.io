@@ -34,6 +34,24 @@
     "AI in education",
     "Geospatial data processing"
   ],
+  "courseLinks": [
+    {
+      "title": "Computer Applications for Business",
+      "url": "https://mdrakibtrofder.github.io/computer-applications-for-business"
+    },
+    {
+      "title": "Introduction to Computer Programming Sessional",
+      "url": "https://mdrakibtrofder.github.io/introduction-to-computer-programming-sessional"
+    },
+    {
+      "title": "Computer Fundamentals Sessional",
+      "url": "https://mdrakibtrofder.github.io/computer-fundamentals-sessional"
+    },
+    {
+      "title": "Computer Security Sessional",
+      "url": "https://mdrakibtrofder.github.io/computer-security-sessional"
+    }
+  ],
   "contact": {
     "email": "mdrakibtrofder@gmail.com",
     "phone": "+8801939649428",
